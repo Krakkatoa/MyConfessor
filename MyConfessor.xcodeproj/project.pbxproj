@@ -14,6 +14,7 @@
 		716044811B9BF1E600323E6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716044801B9BF1E600323E6E /* Images.xcassets */; };
 		716044841B9BF1E600323E6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 716044821B9BF1E600323E6E /* LaunchScreen.xib */; };
 		716044901B9BF1E700323E6E /* MyConfessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160448F1B9BF1E700323E6E /* MyConfessorTests.swift */; };
+		718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		716044891B9BF1E600323E6E /* MyConfessorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyConfessorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7160448E1B9BF1E700323E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7160448F1B9BF1E700323E6E /* MyConfessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConfessorTests.swift; sourceTree = "<group>"; };
+		718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfessionGuide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				716044791B9BF1E600323E6E /* FirstViewController.swift */,
 				7160447B1B9BF1E600323E6E /* SecondViewController.swift */,
 				7160447D1B9BF1E600323E6E /* Main.storyboard */,
+				718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */,
 				716044801B9BF1E600323E6E /* Images.xcassets */,
 				716044821B9BF1E600323E6E /* LaunchScreen.xib */,
 				716044751B9BF1E600323E6E /* Supporting Files */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7160447C1B9BF1E600323E6E /* SecondViewController.swift in Sources */,
+				718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */,
 				716044781B9BF1E600323E6E /* AppDelegate.swift in Sources */,
 				7160447A1B9BF1E600323E6E /* FirstViewController.swift in Sources */,
 			);
@@ -413,6 +417,7 @@
 				716044951B9BF1E700323E6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		716044961B9BF1E700323E6E /* Build configuration list for PBXNativeTarget "MyConfessorTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				716044981B9BF1E700323E6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

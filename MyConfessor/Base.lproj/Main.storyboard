@@ -16,8 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Priest Log-In" image="Password 1-50" id="iEc-Nl-n9c"/>
+                    <tabBarItem key="tabBarItem" title="Priest Log-In" image="Knight Shield Filled-50" id="iEc-Nl-n9c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fGe-0B-9yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -35,8 +36,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="FAQ" image="FAQ-50-2" id="k08-hd-RL6"/>
+                    <tabBarItem key="tabBarItem" title="FAQ" image="FAQ Filled-50" id="k08-hd-RL6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDL-Is-Yxt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,8 +56,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Guide" image="Literature-50" id="odh-eI-ZjJ"/>
+                    <tabBarItem key="tabBarItem" title="Guide" image="Literature Filled-50" id="odh-eI-ZjJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kU7-j8-e8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,33 +76,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="158" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="195" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeilmanApp5" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="736"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="706" y="-784"/>
+            <point key="canvasLocation" x="839" y="-893"/>
         </scene>
         <!--Conscience Exam-->
         <scene sceneID="wg7-f3-ORb">
@@ -113,29 +103,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-yo-Axt">
+                                <rect key="frame" x="22" y="52" width="288" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">(1)Having entered the confessional, place yourself in the presence of God, Who sees all things, and then address His minister: (2)Bless me, Father, for I have sinned, I confess to almighty God, and to you, Father, that I have sinned exceedingly in thought, word, deed, and omission, through my fault.It has been ____ weeks since my last confession. I accuse myself of having committed, during that time, the following sins:                     (3) State your sins, followed by, "For these, and all the sins of which I have at any time been guilty, I humbly ask pardon of God, and absolution of you, Father, if you think me worthy."               (4)    The Act of Contrition: "O My God, I am heartily sorry for having offended Thee and I detest all my sins because I dread the loss of heaven and the pains of hell, but most of all because they offend Thee, my God, Who art all good and deserving of all my love. I firmly resolve, with the help of Thy grace, to sin no more and avoid the near occasions of sin. Amen."                           (5)Listen intently to anything the confessor may choose to say; humbly accept the penance he imposes, and, once he has completed the prayer of absolution, recite the act of contrition. However, the priest may ask you to pray the Act of Contrition prior to offering his prayer of absolution.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Confession Guide " translatesAutoresizingMaskIntoConstraints="NO" id="dKr-QK-XbY">
+                                <rect key="frame" x="98" y="20" width="231" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Conscience Exam" image="Decision-50" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Conscience Exam" image="Decision Filled-50" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,14 +132,14 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.94509803920000002" green="0.93333333330000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92054665089999999" green="0.86144691330000001" blue="0.55261380280000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="selectedImageTintColor" red="0.94509803920000002" green="0.93333333330000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.92054665088653564" green="0.86144691327828082" blue="0.55261380281240091" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -169,9 +156,10 @@
     </scenes>
     <resources>
         <image name="Clock-50" width="50" height="50"/>
-        <image name="Decision-50" width="50" height="50"/>
-        <image name="FAQ-50-2" width="50" height="50"/>
-        <image name="Literature-50" width="50" height="50"/>
-        <image name="Password 1-50" width="50" height="50"/>
+        <image name="Decision Filled-50" width="50" height="50"/>
+        <image name="FAQ Filled-50" width="50" height="50"/>
+        <image name="HeilmanApp5" width="880" height="1564"/>
+        <image name="Knight Shield Filled-50" width="50" height="50"/>
+        <image name="Literature Filled-50" width="50" height="50"/>
     </resources>
 </document>
