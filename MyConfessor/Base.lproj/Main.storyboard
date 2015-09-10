@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Priest Log-In-->
@@ -13,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6Ae-7F-QsU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EEP-Ci-Wpp">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -22,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fGe-0B-9yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-675" y="-784"/>
+            <point key="canvasLocation" x="-360" y="-742.18666666666661"/>
         </scene>
         <!--FAQ-->
         <scene sceneID="uLT-tO-MRi">
@@ -33,16 +34,56 @@
                         <viewControllerLayoutGuide type="bottom" id="OWA-g5-n54"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wZS-Bz-oAN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebc-J1-WB9">
+                                <rect key="frame" x="16" y="20" width="288" height="563"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Welcome to MyConfessor, the app that lets you find priests who are available for confession in real time!
+
+As a priest, you can use MyConfessor to publish the fact that you are ready to hear confessions.
+
+As a penitent, you can search for priests who are currently in the confessional or are willing to hear confessions outside normally scheduled hours.
+
+We know this is a unique idea, and we're pretty sure you've got some questions, so check out our FAQ section below, or email our developer at info@carmelheart.com.
+
+Frequently Asked Questions
+
+Q: How can MyConfessor be used now? 
+
+A: MyConfessor is currently designed for use by parishioners of Father Richard Heilman, in Pine Bluff, Wisconsin. We hope that priests in other areas will want to make themselves available for confession at other times outside their usual schedule. We hope you will also choose to make this app a tool for encouraging more parishioners to confess more often.  
+
+Q: How will I eventually be able to use MyConfessor?
+
+A: Eventually, you will be able to go to the home tab and use the search box to search all priests in the area to find a priest by name, parish, city, diocese or zip code.
+
+Q: Is any information I submit confidential and anonymous?
+
+A: MyConfessor is completely confidential and anonymous for penitents (that's you!)
+
+Q: I'm a priest. How do I get on board?
+
+A: Great! Please email us of your interest, and when we enable the account request feature, we'll notify you. (developer's email: info@carmelheart.com)
+
+Q. How can I donate to help your cause become more successful?
+
+A: We are accepting PayPal contributions from this webpage:
+(fill in)
+</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="FAQ" image="FAQ Filled-50" id="k08-hd-RL6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDL-Is-Yxt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-646" y="-39"/>
+            <point key="canvasLocation" x="-345" y="-37"/>
         </scene>
         <!--Guide-->
         <scene sceneID="o3S-F4-gdg">
@@ -53,16 +94,63 @@
                         <viewControllerLayoutGuide type="bottom" id="6Ng-gf-lw8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DID-En-P58">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Confession Guide" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-y9-7XP">
+                                <rect key="frame" x="48" y="28" width="197" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxy-bg-zWu">
+                                <rect key="frame" x="16" y="70" width="288" height="428"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Having entered the confessional, place yourself in the presence of God, Who sees all things, and then address His minister:
+
+“Bless me, Father, for I have sinned.
+I confess to almighty God, and to you, Father, that I have sinned exceedingly in thought, word, deed, and omission, through my fault.
+
+It has been ____ weeks since my last confession. I accuse myself of having committed, during that time, the following sins...”
+
+State your sins, followed by:
+
+“For these, and all the sins of which I have at any time been guilty, I humbly ask pardon of God, and absolution of you, Father, if you think me worthy.”
+
+Listen intently to anything the confessor may choose to say; humbly accept the penance he imposes, and, once he has completed the prayer of absolution, recite the act of contrition. However, the priest may ask you to pray the Act of Contrition prior to offering his prayer of absolution.
+
+The Act of Contrition
+
+“O My God, I am heartily sorry for having offended Thee and I detest all my sins because I dread the loss of heaven and the pains of hell, but most of all because they offend Thee, my God, Who art all good and deserving of all my love. I firmly resolve, with the help of Thy grace, to sin no more and avoid the near occasions of sin. Amen.”
+
+After confession, we should return thanks to God for His mercies in forgiving our sins, beg that He supply whatever has been wanting in us and bless our good resolutions, and immediately thereafter say our penance.
+   </mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="sxy-bg-zWu" secondAttribute="leading" id="5gH-Wz-a33"/>
+                            <constraint firstItem="6Ng-gf-lw8" firstAttribute="top" secondItem="sxy-bg-zWu" secondAttribute="bottom" constant="21" id="8CB-jC-BxI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wK3-y9-7XP" secondAttribute="leading" constant="-32" id="93H-8J-lH7"/>
+                            <constraint firstAttribute="centerX" secondItem="sxy-bg-zWu" secondAttribute="centerX" id="CLR-hs-NM2"/>
+                            <constraint firstItem="wK3-y9-7XP" firstAttribute="top" secondItem="gGj-7R-T77" secondAttribute="bottom" constant="8" id="GgW-nT-hrv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sxy-bg-zWu" secondAttribute="trailing" id="YAR-3Q-bU7"/>
+                            <constraint firstItem="sxy-bg-zWu" firstAttribute="top" secondItem="wK3-y9-7XP" secondAttribute="bottom" constant="8" id="dhK-jE-WyA"/>
+                            <constraint firstItem="gGj-7R-T77" firstAttribute="bottom" secondItem="wK3-y9-7XP" secondAttribute="top" constant="-8" id="njm-Ob-bxC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wK3-y9-7XP" secondAttribute="trailing" constant="59" id="oav-gd-9EJ"/>
+                            <constraint firstAttribute="centerY" secondItem="sxy-bg-zWu" secondAttribute="centerY" id="z7N-qr-JhT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Guide" image="Literature Filled-50" id="odh-eI-ZjJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kU7-j8-e8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="-60"/>
+            <point key="canvasLocation" x="22" y="-57"/>
         </scene>
         <!--Status-->
         <scene sceneID="hNz-n2-bh7">
@@ -73,7 +161,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeilmanApp5" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
@@ -89,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839" y="-893"/>
+            <point key="canvasLocation" x="447.46666666666664" y="-845.37333333333333"/>
         </scene>
         <!--Conscience Exam-->
         <scene sceneID="wg7-f3-ORb">
@@ -100,22 +188,215 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-yo-Axt">
-                                <rect key="frame" x="22" y="52" width="288" height="480"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Examination of Conscience" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-QK-XbY">
+                                <rect key="frame" x="22" y="20" width="288" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">(1)Having entered the confessional, place yourself in the presence of God, Who sees all things, and then address His minister: (2)Bless me, Father, for I have sinned, I confess to almighty God, and to you, Father, that I have sinned exceedingly in thought, word, deed, and omission, through my fault.It has been ____ weeks since my last confession. I accuse myself of having committed, during that time, the following sins:                     (3) State your sins, followed by, "For these, and all the sins of which I have at any time been guilty, I humbly ask pardon of God, and absolution of you, Father, if you think me worthy."               (4)    The Act of Contrition: "O My God, I am heartily sorry for having offended Thee and I detest all my sins because I dread the loss of heaven and the pains of hell, but most of all because they offend Thee, my God, Who art all good and deserving of all my love. I firmly resolve, with the help of Thy grace, to sin no more and avoid the near occasions of sin. Amen."                           (5)Listen intently to anything the confessor may choose to say; humbly accept the penance he imposes, and, once he has completed the prayer of absolution, recite the act of contrition. However, the priest may ask you to pray the Act of Contrition prior to offering his prayer of absolution.</mutableString>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Confession Guide " translatesAutoresizingMaskIntoConstraints="NO" id="dKr-QK-XbY">
-                                <rect key="frame" x="98" y="20" width="231" height="40"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" indicatorStyle="white" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-yo-Axt">
+                                <rect key="frame" x="16" y="68" width="288" height="397"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Special thanks to "Beginning Catholic" for this examination.
+
+We use an examination of conscience to help call to mind our sins and failings during a period of quiet reflection before approaching the priest in Confession. It’s important for a good Catholic examination of conscience to be thorough. This will help you learn about sins that you may not be aware of. It’s also a chance to develop your conscience.
+Set aside some quiet time for your reflection.'
+
+Start by praying to the Holy Spirit, asking for help in making a good examination to prepare for Confession. Use the Ten Commandments to guide your examination. If necessary, take this list or some brief notes (keep them private!) to Confession to help you remember your sins.
+
+First Commandment
+
+I am the Lord your God. You shall worship the Lord your God and Him only shall you serve.
+
+Have I …
+
+*Disobeyed the commandments of God or the Church?
+*Refused to accept what God has revealed as true, or what the Catholic Church proposes for belief?
+*Denied the existence of God?
+*Failed to nourish and protect my faith?
+*Rejected everything opposed to a sound faith?
+*Deliberately misled others about doctrine or the faith?
+*Rejected the Catholic faith, joined another Christian denomination, or joined or practiced another religion?
+*Joined a group forbidden to Catholics (Masons, communists, etc.)?
+*Despaired about my salvation or the forgiveness of my sins?
+*Presumed on God’s mercy? (Committing a sin in expectation of forgiveness, or asking for forgiveness without conversion and practicing virtue.)
+*Loved someone or something more than God (money, power, sex, ambition, etc.)?
+*Let someone or something influence my choices more than God?
+*Engaged in superstitious practices? (Including horoscopes, fortunetellers, etc.)
+*Been involved in the occult? (séances, Ouija board, worship of Satan, etc.)
+*Formally left the Catholic Church?
+*Hidden a serious sin or told a lie in Confession?
+
+Second Commandment
+
+You shall not take the name of the Lord your God in vain.
+
+Have I…
+
+*Used the name of God in cursing or blasphemy?
+*Failed to keep vows or promises that I have made to God?
+*Spoken about the Faith, the Church, the saints, or sacred things with irreverence, hatred, or defiance?
+*Watched television or movies, or listened to music that treated God, the Church, the saints, or sacred things irreverently?
+*Used vulgar, suggestive, or obscene speech?
+*Belittled others in my speech?
+*Behaved disrespectfully in Church?
+*Misused places or things set apart for the worship of God?
+*Committed perjury? (Breaking an oath or lying under oath.)
+Blamed God for my failings?
+
+Third Commandment
+
+Remember to keep holy the Sabbath day.
+
+Have I…
+
+*Set time aside each day for personal prayer to God?
+*Missed Mass on Sunday or Holy Days (through my own fault without sufficient reason)?
+*Committed a sacrilege against the Blessed Sacrament?
+*Received a sacrament while in the state of mortal sin?
+*Habitually came late to and/or left early from Mass without a good reason?
+*Shopped, labored, or done business unnecessarily on Sunday or other Holy Days of Obligation?
+*Not attended to taking my children to Mass?
+*Knowingly eaten meat on a day of penance (or not fasted on a fast day)?
+*Eaten or drank within one hour of receiving Communion (other than water or medical need)?
+
+Fourth Commandment
+
+*Honor your father and your mother.
+
+Have I…
+
+*Obeyed all that my parents reasonably asked of me? (If still under my parents’ care.)
+*Neglected the needs of my parents in their old age or in their time of need?
+*Obeyed the reasonable demands of my teachers? (If still in school.)
+*Neglected to give my children proper food, clothing, shelter, education, discipline, and care (even after Confirmation)?
+*Provided for the religious education and formation of my children for as long as they were under my care?
+*Ensured that my children still under my care regularly frequent the sacraments of Penance and Holy Communion?
+*Educated my children in a way that corresponds to my religious convictions?
+*Provided my children with a positive, prudent, and personalized education in the Catholic teaching on human sexuality?
+*Been to my children a good example of how to live the Catholic Faith?
+*Prayed with and for my children?
+*Lived in humble obedience to those who legitimately exercise authority over me?
+*Broken the law?
+*Supported or voted for a politician whose positions are opposed to the teachings of Christ and the Catholic Church?
+
+Fifth Commandment
+
+You shall not kill.
+
+Have I…
+
+*Unjustly and intentionally killed a human being?
+*Been involved in an abortion, directly or indirectly (through advice, etc.)?
+*Seriously considered or attempted suicide?
+*Supported, promoted, or encouraged the practice of assisted suicide or mercy killing?
+*Deliberately desired to kill an innocent human being?
+*Unjustly inflicted bodily harm on another person?
+*Unjustly threatened another person with bodily harm?
+*Verbally or emotionally abused another person?
+*Hated another person, or wished him evil?
+*Been prejudiced or unjustly discriminating against others because of their race, color, nationality, sex, or religion?
+*Joined a hate group?
+*Purposely provoked another by teasing or nagging?
+*Recklessly endangered my life or health, or that of another, by my actions?
+*Driven recklessly or under the influence of alcohol or other drugs?
+*Abused alcohol or other drugs?
+*Sold or given drugs to others to use for non-therapeutic purposes?
+*Used tobacco immoderately?
+*Over-eaten?
+*Encouraged others to sin by giving scandal?
+*Helped another to commit a mortal sin? (through advice, driving them somewhere, etc.)
+*Caused serious injury or death by criminal neglect?
+*Indulged in serious anger?
+*Refused to control my temper?
+*Been mean to, quarreled with, or willfully hurt someone?
+*Been unforgiving to others, when mercy or pardon was requested?
+*Sought revenge or hoped something bad would happen to someone?
+*Delighted to see someone else get hurt or suffer?
+*Treated animals cruelly, causing them to suffer or die needlessly?
+
+Sixth and Ninth Commandments
+
+You shall not commit adultery.
+You shall not covet your neighbor’s wife.
+
+Have I…
+
+*Practiced the virtue of chastity?
+*Given in to lust? (The desire for sexual pleasure unrelated to spousal love in marriage.)
+*Used an artificial means of birth control?
+*Refused to be open to conception, without just cause? (Catechism of the Catholic Church paragraph 2368)
+*Participated in immoral techniques for in vitro fertilization or artificial insemination?
+*Sterilized my sex organs for contraceptive purposes?
+*Deprived my spouse of the marital right, without just cause?
+*Claimed my own marital right without concern for my spouse?
+*Deliberately caused male climax outside of normal sexual intercourse? (Catechism of the Catholic Church paragraph 2366)
+*Willfully entertained impure thoughts?
+*Purchased, viewed, or made use of pornography?
+*Watched movies and television that involved sex and nudity?
+*Listened to music or jokes that were harmful to purity?
+*Committed adultery? (Sexual relations with someone who is married, or with someone other than my spouse.)
+*Committed incest? (Sexual relations with a relative or in-law.)
+*Committed fornication? (Sexual relations with someone of the opposite sex when neither is married.)
+*Engaged in homosexual activity? (Sexual activity with someone of the same sex.)
+*Committed rape?
+*Masturbated? (Deliberate stimulation of one’s own sexual organs for sexual pleasure.)
+*Engaged in sexual foreplay (petting) reserved for marriage?
+*Preyed upon children or youth for my sexual pleasure?
+*Engaged in unnatural sexual activities?
+*Engaged in prostitution, or paid for the services of a prostitute?
+*Seduced someone, or allowed myself to be seduced?
+*Made uninvited and unwelcome sexual advances toward another?
+*Purposely dressed immodestly?
+
+Seventh and Tenth Commandments
+
+You shall not steal.
+You shall not covet your neighbor’s goods.
+
+Have I…
+
+*Stolen? (Take something that doesn’t belong to me against the reasonable will of the owner.)
+*Envied others on account of their possessions?
+*Tried to live in a spirit of Gospel poverty and simplicity?
+*Given generously to others in need?
+*Considered that God has provided me with money so that I might use it to benefit others, as well as for my own legitimate needs?
+*Freed myself from a consumer mentality?
+*Practiced the works of mercy?
+*Deliberately defaced, destroyed, or lost another’s property?
+*Cheated on a test, taxes, sports, games, or in business?
+*Squandered money in compulsive gambling?
+*Make a false claim to an insurance company?
+*Paid my employees a living wage, or failed to give a full day’s work for a full day’s pay?
+*Failed to honor my part of a contract?
+*Failed to make good on a debt?
+*Overcharged someone, especially to take advantage of another’s hardship or ignorance?
+*Misused natural resources?
+
+Eighth Commandment
+
+You shall not bear false witness against your neighbor.
+
+Have I…
+
+*Lied?
+*Knowingly and willfully deceived another?
+*Perjured myself under oath?
+*Gossiped?
+*Committed detraction? (Hurting a person’s reputation by telling others about his faults for no good reason.)
+*Committed slander or calumny? (Telling lies about another person in order to hurt his reputation.)
+*Committed libel? (Writing lies about another person in order to destroy his reputation.)
+*Been guilty of rash judgment? (Assuming the worst of another person based on circumstantial evidence.)
+*Failed to make reparation for a lie I told, or for harm done to a person’s reputation?
+*Failed to speak out in defense of the Catholic Faith, the Church, or of another person?
+*Betrayed another’s confidence through speech?
+   </mutableString>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -126,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="-48"/>
+            <point key="canvasLocation" x="389" y="-46"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -151,7 +432,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="-784"/>
+            <point key="canvasLocation" x="-8.5333333333333332" y="-742.18666666666661"/>
         </scene>
     </scenes>
     <resources>
@@ -162,4 +443,10 @@
         <image name="Knight Shield Filled-50" width="50" height="50"/>
         <image name="Literature Filled-50" width="50" height="50"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
