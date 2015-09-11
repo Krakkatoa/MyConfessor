@@ -37,8 +37,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebc-J1-WB9">
-                                <rect key="frame" x="16" y="20" width="288" height="563"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebc-J1-WB9">
+                                <rect key="frame" x="16" y="70" width="288" height="428"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">Welcome to MyConfessor, the app that lets you find priests who are available for confession in real time!
 
@@ -52,11 +52,13 @@ Frequently Asked Questions
 
 Q: How can MyConfessor be used now? 
 
-A: MyConfessor is currently designed for use by parishioners of Father Richard Heilman, in Pine Bluff, Wisconsin. We hope that priests in other areas will want to make themselves available for confession at other times outside their usual schedule. We hope you will also choose to make this app a tool for encouraging more parishioners to confess more often.  
+A: MyConfessor is currently designed for use by parishioners of Father Richard Heilman, in Pine Bluff, Wisconsin. If you are a parishioner of Father Heilman, the default status you will see on the home tab will be his most recent status information. 
 
 Q: How will I eventually be able to use MyConfessor?
 
 A: Eventually, you will be able to go to the home tab and use the search box to search all priests in the area to find a priest by name, parish, city, diocese or zip code.
+
+We hope that priests in other areas will want to make themselves available for confession at other times outside their usual schedule. We hope you will also choose to make this app a tool for encouraging more parishioners to confess more often. 
 
 Q: Is any information I submit confidential and anonymous?
 
@@ -69,15 +71,33 @@ A: Great! Please email us of your interest, and when we enable the account reque
 Q. How can I donate to help your cause become more successful?
 
 A: We are accepting PayPal contributions from this webpage:
-(fill in)
-</mutableString>
+(fill in)</mutableString>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="About Us" translatesAutoresizingMaskIntoConstraints="NO" id="BAJ-Ej-ImV">
+                                <rect key="frame" x="107" y="28" width="107" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="KtP-AA-yNk"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BAJ-Ej-ImV" secondAttribute="trailing" constant="90" id="ECA-lP-GaD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="BAJ-Ej-ImV" secondAttribute="leading" constant="-91" id="L5b-Yt-FDc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ebc-J1-WB9" secondAttribute="trailing" id="TXC-EO-bjd"/>
+                            <constraint firstItem="ADn-5A-0DY" firstAttribute="bottom" secondItem="BAJ-Ej-ImV" secondAttribute="top" constant="-8" id="XIZ-fT-yup"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ebc-J1-WB9" secondAttribute="leading" id="nQM-nf-50R"/>
+                            <constraint firstItem="Ebc-J1-WB9" firstAttribute="top" secondItem="BAJ-Ej-ImV" secondAttribute="bottom" constant="8" id="nox-27-qBB"/>
+                            <constraint firstItem="OWA-g5-n54" firstAttribute="top" secondItem="Ebc-J1-WB9" secondAttribute="bottom" constant="21" id="vPS-xX-Euh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="FAQ" image="FAQ Filled-50" id="k08-hd-RL6"/>
                 </viewController>
@@ -98,7 +118,7 @@ A: We are accepting PayPal contributions from this webpage:
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Confession Guide" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-y9-7XP">
-                                <rect key="frame" x="48" y="28" width="197" height="34"/>
+                                <rect key="frame" x="62" y="28" width="197" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
@@ -127,7 +147,7 @@ The Act of Contrition
 After confession, we should return thanks to God for His mercies in forgiving our sins, beg that He supply whatever has been wanting in us and bless our good resolutions, and immediately thereafter say our penance.
    </mutableString>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -136,13 +156,13 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="sxy-bg-zWu" secondAttribute="leading" id="5gH-Wz-a33"/>
                             <constraint firstItem="6Ng-gf-lw8" firstAttribute="top" secondItem="sxy-bg-zWu" secondAttribute="bottom" constant="21" id="8CB-jC-BxI"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="wK3-y9-7XP" secondAttribute="leading" constant="-32" id="93H-8J-lH7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wK3-y9-7XP" secondAttribute="leading" constant="-46" id="93H-8J-lH7"/>
                             <constraint firstAttribute="centerX" secondItem="sxy-bg-zWu" secondAttribute="centerX" id="CLR-hs-NM2"/>
                             <constraint firstItem="wK3-y9-7XP" firstAttribute="top" secondItem="gGj-7R-T77" secondAttribute="bottom" constant="8" id="GgW-nT-hrv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sxy-bg-zWu" secondAttribute="trailing" id="YAR-3Q-bU7"/>
                             <constraint firstItem="sxy-bg-zWu" firstAttribute="top" secondItem="wK3-y9-7XP" secondAttribute="bottom" constant="8" id="dhK-jE-WyA"/>
                             <constraint firstItem="gGj-7R-T77" firstAttribute="bottom" secondItem="wK3-y9-7XP" secondAttribute="top" constant="-8" id="njm-Ob-bxC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wK3-y9-7XP" secondAttribute="trailing" constant="59" id="oav-gd-9EJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wK3-y9-7XP" secondAttribute="trailing" constant="45" id="oav-gd-9EJ"/>
                             <constraint firstAttribute="centerY" secondItem="sxy-bg-zWu" secondAttribute="centerY" id="z7N-qr-JhT"/>
                         </constraints>
                     </view>
@@ -191,15 +211,18 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Examination of Conscience" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-QK-XbY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Examination of Conscience" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-QK-XbY">
                                 <rect key="frame" x="22" y="20" width="288" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mOT-tG-IzT"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" indicatorStyle="white" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-yo-Axt">
-                                <rect key="frame" x="16" y="68" width="288" height="397"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" indicatorStyle="white" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-yo-Axt">
+                                <rect key="frame" x="16" y="70" width="288" height="428"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">Special thanks to "Beginning Catholic" for this examination.
 
@@ -402,6 +425,15 @@ Have I…
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xYR-yo-Axt" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="2gc-KD-BZC"/>
+                            <constraint firstItem="dKr-QK-XbY" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="CBy-KR-04h"/>
+                            <constraint firstItem="dKr-QK-XbY" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="6" id="D7m-Zj-AJ8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dKr-QK-XbY" secondAttribute="trailing" constant="-6" id="Dtz-Yh-kl9"/>
+                            <constraint firstItem="xYR-yo-Axt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="KeN-mO-GoS"/>
+                            <constraint firstItem="xYR-yo-Axt" firstAttribute="top" secondItem="dKr-QK-XbY" secondAttribute="bottom" constant="10" id="WTp-bl-zDl"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="xYR-yo-Axt" secondAttribute="bottom" constant="21" id="jdj-zr-2cL"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Conscience Exam" image="Decision Filled-50" id="cPa-gy-q4n"/>
                 </viewController>
