@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Priest Log-In-->
@@ -40,7 +41,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebc-J1-WB9">
                                 <rect key="frame" x="16" y="70" width="288" height="428"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Welcome to MyConfessor, the app that lets you find priests who are available for confession in real time!
+                                <string key="text">Welcome to MyConfessor, the app that lets you find priests who are available for confession in real time!
 
 As a priest, you can use MyConfessor to publish the fact that you are ready to hear confessions.
 
@@ -71,7 +72,7 @@ A: Great! Please email us of your interest, and when we enable the account reque
 Q. How can I donate to help your cause become more successful?
 
 A: We are accepting PayPal contributions from this webpage:
-(fill in)</mutableString>
+(fill in)</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -127,7 +128,7 @@ A: We are accepting PayPal contributions from this webpage:
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxy-bg-zWu">
                                 <rect key="frame" x="16" y="70" width="288" height="428"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Having entered the confessional, place yourself in the presence of God, Who sees all things, and then address His minister:
+                                <string key="text">Having entered the confessional, place yourself in the presence of God, Who sees all things, and then address His minister:
 
 “Bless me, Father, for I have sinned.
 I confess to almighty God, and to you, Father, that I have sinned exceedingly in thought, word, deed, and omission, through my fault.
@@ -145,7 +146,7 @@ The Act of Contrition
 “O My God, I am heartily sorry for having offended Thee and I detest all my sins because I dread the loss of heaven and the pains of hell, but most of all because they offend Thee, my God, Who art all good and deserving of all my love. I firmly resolve, with the help of Thy grace, to sin no more and avoid the near occasions of sin. Amen.”
 
 After confession, we should return thanks to God for His mercies in forgiving our sins, beg that He supply whatever has been wanting in us and bless our good resolutions, and immediately thereafter say our penance.
-   </mutableString>
+   </string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -184,14 +185,22 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeilmanApp5" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
-                                <rect key="frame" x="0.0" y="0.0" width="415" height="736"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeilmanApp-forprogram@x1" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="545"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Gxa-KU-GTN" secondAttribute="bottom" constant="-26" id="3Ed-FY-BGb"/>
+                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-20" id="8JZ-L0-6YR"/>
+                            <constraint firstAttribute="height" secondItem="Gxa-KU-GTN" secondAttribute="height" multiplier="568:545" id="Gko-ys-UkG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gxa-KU-GTN" secondAttribute="trailing" constant="-16" id="K5v-WT-Zle"/>
+                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="juA-8e-FxP"/>
+                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="wtK-Gk-oKk"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
                 </viewController>
@@ -224,7 +233,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" indicatorStyle="white" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-yo-Axt">
                                 <rect key="frame" x="16" y="70" width="288" height="428"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Special thanks to "Beginning Catholic" for this examination.
+                                <string key="text">Special thanks to "Beginning Catholic" for this examination.
 
 We use an examination of conscience to help call to mind our sins and failings during a period of quiet reflection before approaching the priest in Confession. It’s important for a good Catholic examination of conscience to be thorough. This will help you learn about sins that you may not be aware of. It’s also a chance to develop your conscience.
 Set aside some quiet time for your reflection.'
@@ -417,7 +426,7 @@ Have I…
 *Failed to make reparation for a lie I told, or for harm done to a person’s reputation?
 *Failed to speak out in defense of the Catholic Faith, the Church, or of another person?
 *Betrayed another’s confidence through speech?
-   </mutableString>
+   </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -445,7 +454,7 @@ Have I…
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -471,7 +480,7 @@ Have I…
         <image name="Clock-50" width="50" height="50"/>
         <image name="Decision Filled-50" width="50" height="50"/>
         <image name="FAQ Filled-50" width="50" height="50"/>
-        <image name="HeilmanApp5" width="880" height="1564"/>
+        <image name="HeilmanApp-forprogram@x1" width="724" height="1286"/>
         <image name="Knight Shield Filled-50" width="50" height="50"/>
         <image name="Literature Filled-50" width="50" height="50"/>
     </resources>
