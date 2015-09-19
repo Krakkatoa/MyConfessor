@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>45CC10DD-A58C-4A4D-B414-DFD194B0E028</string>
 	<key>IDESourceControlProjectName</key>
-	<string>MyConfessor</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>714BC084F1E89DB772F02EFE5D83BDA435136336</key>
 		<string>https://github.com/Krakkatoa/MyConfessor.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MyConfessor.xcodeproj</string>
+	<string>MyConfessor.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>714BC084F1E89DB772F02EFE5D83BDA435136336</key>
