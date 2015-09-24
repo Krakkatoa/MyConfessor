@@ -1,32 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Priest Log-In-->
-        <scene sceneID="zUy-ju-SPV">
-            <objects>
-                <viewController id="Cos-dw-J9a" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TKB-eM-1rZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="6Ae-7F-QsU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EEP-Ci-Wpp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Priest Log-In" image="Knight Shield Filled-50" id="iEc-Nl-n9c"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fGe-0B-9yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-700" y="-735"/>
-        </scene>
         <!--Guide-->
         <scene sceneID="o3S-F4-gdg">
             <objects>
@@ -92,7 +71,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kU7-j8-e8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="43" y="418"/>
+            <point key="canvasLocation" x="109" y="546"/>
         </scene>
         <!--Status-->
         <scene sceneID="hNz-n2-bh7">
@@ -376,8 +355,7 @@ Have I…
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="O3H-xg-dJ4" kind="relationship" relationship="viewControllers" id="AO9-qy-HDi"/>
-                        <segue destination="Cos-dw-J9a" kind="relationship" relationship="viewControllers" id="Usa-VH-mJG"/>
-                        <segue destination="rIb-ec-Ygc" kind="relationship" relationship="viewControllers" id="S0n-Wj-yAq"/>
+                        <segue destination="02X-z4-xku" kind="relationship" relationship="viewControllers" id="Itb-U3-fSu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -385,40 +363,23 @@ Have I…
             <point key="canvasLocation" x="-19" y="-749"/>
         </scene>
         <!--FAQ-->
-        <scene sceneID="fhh-0c-e7n">
+        <scene sceneID="kab-AG-lQ6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mAB-Nl-eBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="rIb-ec-Ygc" sceneMemberID="viewController">
+                <viewController id="02X-z4-xku" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8fG-GV-98N"/>
-                        <viewControllerLayoutGuide type="bottom" id="PdM-YH-zQU"/>
+                        <viewControllerLayoutGuide type="top" id="Dwe-k2-H6b"/>
+                        <viewControllerLayoutGuide type="bottom" id="6JZ-CT-Igr"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Wqb-v4-YzO">
+                    <view key="view" contentMode="scaleToFill" id="YEM-Ef-Jj7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L71-PT-Vnk">
-                                <rect key="frame" x="12" y="70" width="296" height="428"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Welcome to MyConfessor, the app that lets you find priests who are available for confession in real time!
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BJ6-n7-x0l">
+                                <rect key="frame" x="32" y="28" width="259" height="491"/>
+                                <mutableString key="text">FAQ
 
-As a priest, you can use MyConfessor to publish the fact that you are ready to hear confessions.
-
-As a penitent, you can search for priests who are currently in the confessional or are willing to hear confessions outside normally scheduled hours.
-
-We know this is a unique idea, and we're pretty sure you've got some questions, so check out our FAQ section below, or email our developer at info@carmelheart.com.
-
-Frequently Asked Questions
-
-Q: How can MyConfessor be used now? 
-
-A: MyConfessor is currently designed for use by parishioners of Father Richard Heilman, in Pine Bluff, Wisconsin. If you are a parishioner of Father Heilman, the default status you will see on the home tab will be his most recent status information. 
-
-Q: How will I eventually be able to use MyConfessor?
-
-A: Eventually, you will be able to go to the home tab and use the search box to search all priests in the area to find a priest by name, parish, city, diocese or zip code.
-
-We hope that priests in other areas will want to make themselves available for confession at other times outside their usual schedule. We hope you will also choose to make this app a tool for encouraging more parishioners to confess more often. 
+Welcome to MyConfessor, the app that makes it possible to find priests available for confession in real time!
+Currently, this app serves parishioners of Fr Richard Heilman of Pine Bluff, Wisconsin, but  we hope that priests in other areas will want to make themselves available for confession at other times outside their usual schedule. We hope you will also choose to make this app a tool for encouraging more parishioners to confess more often. 
 
 Q: Is any information I submit confidential and anonymous?
 
@@ -428,41 +389,23 @@ Q: I'm a priest. How do I get on board?
 
 A: Great! Please email us of your interest, and when we enable the account request feature, we'll notify you. (developer's email: info@carmelheart.com)
 
-Q. How can I donate to help your cause become more successful?
+Q: How can I donate to help your cause become more successful?
 
-A: We are accepting PayPal contributions from this webpage:
-(fill in)</string>
+A: We are accepting PayPal contributions from this webpage: (TBA)</mutableString>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="About Us" translatesAutoresizingMaskIntoConstraints="NO" id="VJb-9A-y1l">
-                                <rect key="frame" x="103" y="28" width="115" height="34"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="lpy-LL-dSI"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="L71-PT-Vnk" secondAttribute="trailing" constant="-4" id="7En-nN-7Ck"/>
-                            <constraint firstItem="PdM-YH-zQU" firstAttribute="top" secondItem="L71-PT-Vnk" secondAttribute="bottom" constant="21" id="9w3-B6-t0l"/>
-                            <constraint firstItem="L71-PT-Vnk" firstAttribute="top" secondItem="VJb-9A-y1l" secondAttribute="bottom" constant="8" id="MSO-SK-au9"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="VJb-9A-y1l" secondAttribute="leading" constant="-87" id="TW8-ae-bS8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VJb-9A-y1l" secondAttribute="trailing" constant="86" id="Xt5-IY-ql9"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="L71-PT-Vnk" secondAttribute="leading" constant="4" id="lOF-Ui-ySg"/>
-                            <constraint firstItem="8fG-GV-98N" firstAttribute="bottom" secondItem="VJb-9A-y1l" secondAttribute="top" constant="-8" id="oSw-tA-Mif"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="FAQ" image="FAQ Filled-50" id="ZR0-hF-uyP"/>
+                    <tabBarItem key="tabBarItem" title="FAQ" image="FAQ Filled-50" id="XFz-Nc-aN5"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNO-VE-EnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-107" y="-66"/>
+            <point key="canvasLocation" x="-218" y="-88"/>
         </scene>
     </scenes>
     <resources>
@@ -470,7 +413,6 @@ A: We are accepting PayPal contributions from this webpage:
         <image name="Decision Filled-50" width="50" height="50"/>
         <image name="FAQ Filled-50" width="50" height="50"/>
         <image name="HeilmanApp-forprogram@x1" width="724" height="1286"/>
-        <image name="Knight Shield Filled-50" width="50" height="50"/>
         <image name="Literature Filled-50" width="50" height="50"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
