@@ -71,7 +71,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kU7-j8-e8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109" y="546"/>
+            <point key="canvasLocation" x="-417" y="-509"/>
         </scene>
         <!--Status-->
         <scene sceneID="hNz-n2-bh7">
@@ -106,7 +106,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="447.46666666666664" y="-845.37333333333333"/>
+            <point key="canvasLocation" x="368" y="-1218"/>
         </scene>
         <!--Conscience Exam-->
         <scene sceneID="wg7-f3-ORb">
@@ -336,7 +336,75 @@ Have I…
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="421" y="-181"/>
+            <point key="canvasLocation" x="363" y="-518"/>
+        </scene>
+        <!--Password Table VC-->
+        <scene sceneID="KQu-zL-7si">
+            <objects>
+                <tableViewController id="RVG-A5-Os2" userLabel="Password Table VC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="40A-ed-99y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="I0o-OI-hVw">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I0o-OI-hVw" id="vFK-Fh-2gY">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RVG-A5-Os2" id="2Zm-MQ-jhM"/>
+                            <outlet property="delegate" destination="RVG-A5-Os2" id="iPS-2m-Hme"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Ke5-Cy-4gm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ntD-ai-fjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="-1218"/>
+        </scene>
+        <!--Priest Log-in-->
+        <scene sceneID="e1d-rX-IBt">
+            <objects>
+                <navigationController id="4oI-nk-puX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Priest Log-in" image="Knight Shield Filled-50" id="QUj-B7-QJt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CvH-LG-djL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gtU-Gw-VOl" kind="relationship" relationship="rootViewController" id="yTg-mB-pOH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bp-3X-DL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-872" y="-1218"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZQH-QK-EwC">
+            <objects>
+                <viewController id="gtU-Gw-VOl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="49c-ei-era"/>
+                        <viewControllerLayoutGuide type="bottom" id="JMB-Le-ZRr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ym-9Z-YIv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CoN-hv-ABP"/>
+                    <connections>
+                        <segue destination="RVG-A5-Os2" kind="modal" identifier="status" id="uWc-Of-Xcc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lLK-M6-a6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-405" y="-1218"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -356,11 +424,12 @@ Have I…
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="O3H-xg-dJ4" kind="relationship" relationship="viewControllers" id="AO9-qy-HDi"/>
                         <segue destination="02X-z4-xku" kind="relationship" relationship="viewControllers" id="Itb-U3-fSu"/>
+                        <segue destination="4oI-nk-puX" kind="relationship" relationship="viewControllers" id="Na3-xR-Kp6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="-749"/>
+            <point key="canvasLocation" x="-972" y="-523"/>
         </scene>
         <!--FAQ-->
         <scene sceneID="kab-AG-lQ6">
@@ -379,6 +448,7 @@ Have I…
                                 <mutableString key="text">FAQ
 
 Welcome to MyConfessor, the app that makes it possible to find priests available for confession in real time!
+
 Currently, this app serves parishioners of Fr Richard Heilman of Pine Bluff, Wisconsin, but  we hope that priests in other areas will want to make themselves available for confession at other times outside their usual schedule. We hope you will also choose to make this app a tool for encouraging more parishioners to confess more often. 
 
 Q: Is any information I submit confidential and anonymous?
@@ -405,7 +475,7 @@ A: We are accepting PayPal contributions from this webpage: (TBA)</mutableString
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNO-VE-EnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-218" y="-88"/>
+            <point key="canvasLocation" x="-14" y="-518"/>
         </scene>
     </scenes>
     <resources>
@@ -413,6 +483,7 @@ A: We are accepting PayPal contributions from this webpage: (TBA)</mutableString
         <image name="Decision Filled-50" width="50" height="50"/>
         <image name="FAQ Filled-50" width="50" height="50"/>
         <image name="HeilmanApp-forprogram@x1" width="724" height="1286"/>
+        <image name="Knight Shield Filled-50" width="50" height="50"/>
         <image name="Literature Filled-50" width="50" height="50"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
