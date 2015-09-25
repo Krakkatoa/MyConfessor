@@ -14,6 +14,19 @@
 		716044811B9BF1E600323E6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716044801B9BF1E600323E6E /* Images.xcassets */; };
 		716044841B9BF1E600323E6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 716044821B9BF1E600323E6E /* LaunchScreen.xib */; };
 		716044901B9BF1E700323E6E /* MyConfessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160448F1B9BF1E700323E6E /* MyConfessorTests.swift */; };
+		71612FA11BB4D55700B2B6B5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FA01BB4D55700B2B6B5 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		71612FA31BB4D56500B2B6B5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FA21BB4D56500B2B6B5 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		71612FA91BB4DD9F00B2B6B5 /* DTPerformanceSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */; };
+		71612FAA1BB4DDA100B2B6B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718555681BB38EEC00DC7D75 /* UIKit.framework */; };
+		71612FAB1BB4DDA400B2B6B5 /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718555661BB38EDC00DC7D75 /* InterfaceBuilderKit.framework */; };
+		71612FAE1BB4E2FB00B2B6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FAD1BB4E2FB00B2B6B5 /* AudioToolbox.framework */; };
+		71612FB01BB4E30B00B2B6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FAF1BB4E30B00B2B6B5 /* CFNetwork.framework */; };
+		71612FB21BB4E31A00B2B6B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB11BB4E31A00B2B6B5 /* CoreLocation.framework */; };
+		71612FB41BB4E32800B2B6B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB31BB4E32800B2B6B5 /* QuartzCore.framework */; };
+		71612FB61BB4E33300B2B6B5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB51BB4E33300B2B6B5 /* StoreKit.framework */; };
+		71612FB81BB4E34300B2B6B5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB71BB4E34300B2B6B5 /* SystemConfiguration.framework */; };
+		71612FBA1BB4E37A00B2B6B5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB91BB4E37A00B2B6B5 /* libsqlite3.tbd */; };
+		71612FBC1BB4E3D000B2B6B5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FBB1BB4E3D000B2B6B5 /* Social.framework */; };
 		718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +52,16 @@
 		716044891B9BF1E600323E6E /* MyConfessorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyConfessorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7160448E1B9BF1E700323E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7160448F1B9BF1E700323E6E /* MyConfessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConfessorTests.swift; sourceTree = "<group>"; };
+		71612FA01BB4D55700B2B6B5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-starter-project-1/ParseStarterProject-Swift/Parse.framework"; sourceTree = "<group>"; };
+		71612FA21BB4D56500B2B6B5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-starter-project-1/ParseStarterProject-Swift/Bolts.framework"; sourceTree = "<group>"; };
+		71612FAD1BB4E2FB00B2B6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		71612FAF1BB4E30B00B2B6B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		71612FB11BB4E31A00B2B6B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		71612FB31BB4E32800B2B6B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		71612FB51BB4E33300B2B6B5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		71612FB71BB4E34300B2B6B5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		71612FB91BB4E37A00B2B6B5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		71612FBB1BB4E3D000B2B6B5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		718555661BB38EDC00DC7D75 /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
 		718555681BB38EEC00DC7D75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTPerformanceSession.framework; path = Library/Frameworks/DTPerformanceSession.framework; sourceTree = DEVELOPER_DIR; };
@@ -50,6 +73,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71612FBC1BB4E3D000B2B6B5 /* Social.framework in Frameworks */,
+				71612FBA1BB4E37A00B2B6B5 /* libsqlite3.tbd in Frameworks */,
+				71612FA31BB4D56500B2B6B5 /* Bolts.framework in Frameworks */,
+				71612FA11BB4D55700B2B6B5 /* Parse.framework in Frameworks */,
+				71612FB81BB4E34300B2B6B5 /* SystemConfiguration.framework in Frameworks */,
+				71612FB61BB4E33300B2B6B5 /* StoreKit.framework in Frameworks */,
+				71612FB41BB4E32800B2B6B5 /* QuartzCore.framework in Frameworks */,
+				71612FB21BB4E31A00B2B6B5 /* CoreLocation.framework in Frameworks */,
+				71612FB01BB4E30B00B2B6B5 /* CFNetwork.framework in Frameworks */,
+				71612FAE1BB4E2FB00B2B6B5 /* AudioToolbox.framework in Frameworks */,
+				71612FAB1BB4DDA400B2B6B5 /* InterfaceBuilderKit.framework in Frameworks */,
+				71612FAA1BB4DDA100B2B6B5 /* UIKit.framework in Frameworks */,
+				71612FA91BB4DD9F00B2B6B5 /* DTPerformanceSession.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +102,10 @@
 		716044691B9BF1E500323E6E = {
 			isa = PBXGroup;
 			children = (
-				7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */,
-				718555681BB38EEC00DC7D75 /* UIKit.framework */,
-				718555661BB38EDC00DC7D75 /* InterfaceBuilderKit.framework */,
 				716044741B9BF1E600323E6E /* MyConfessor */,
 				7160448C1B9BF1E600323E6E /* MyConfessorTests */,
 				716044731B9BF1E600323E6E /* Products */,
+				71612F9F1BB4D52300B2B6B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +156,26 @@
 				7160448E1B9BF1E700323E6E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71612F9F1BB4D52300B2B6B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71612FBB1BB4E3D000B2B6B5 /* Social.framework */,
+				71612FB91BB4E37A00B2B6B5 /* libsqlite3.tbd */,
+				71612FB71BB4E34300B2B6B5 /* SystemConfiguration.framework */,
+				71612FB51BB4E33300B2B6B5 /* StoreKit.framework */,
+				71612FB31BB4E32800B2B6B5 /* QuartzCore.framework */,
+				71612FB11BB4E31A00B2B6B5 /* CoreLocation.framework */,
+				71612FAF1BB4E30B00B2B6B5 /* CFNetwork.framework */,
+				71612FAD1BB4E2FB00B2B6B5 /* AudioToolbox.framework */,
+				71612FA21BB4D56500B2B6B5 /* Bolts.framework */,
+				71612FA01BB4D55700B2B6B5 /* Parse.framework */,
+				7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */,
+				718555681BB38EEC00DC7D75 /* UIKit.framework */,
+				718555661BB38EDC00DC7D75 /* InterfaceBuilderKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +345,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -336,6 +391,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -357,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_PKGINFO_FILE = NO;
 				INFOPLIST_FILE = MyConfessor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -369,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_PKGINFO_FILE = NO;
 				INFOPLIST_FILE = MyConfessor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
