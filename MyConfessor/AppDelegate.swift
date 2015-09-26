@@ -6,29 +6,30 @@
 //  Copyright (c) 2015 Carmel Heart Media. All rights reserved.
 //
 
-import Parse
 import UIKit
-import Bolts
+import Parse    
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Parse.enableLocalDatastore()
         
         // Parse Installation
         Parse.setApplicationId("HTYnotuaSnkT4xrZxslB497gb7Q5JGMbpOBnJ0To", clientKey: "56xM6nJjCYMArgN4c0gsywG7J9OzOnobilwBpru5")
-       // let notificationType: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
+        let notificationType: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
         
-      //  let settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
-       // UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-      //  UIApplication.sharedApplication().registerForRemoteNotifications()
+        let settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
         
         //This creates a identifier for each device, so we know which user is who
-  //      let defaults = NSUserDefaults.standardUserDefaults()
-     //  defaults.setObject(UIDevice.currentDevice().identifierForVendor!.UUIDString, forKey: "status")
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(UIDevice.currentDevice().identifierForVendor!.UUIDString, forKey: "status")
         
         return true
     }
