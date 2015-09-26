@@ -45,6 +45,7 @@
 		71EAA9301BB6176600E684B6 /* DTPerformanceSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */; };
 		71EAA9311BB6176700E684B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718555681BB38EEC00DC7D75 /* UIKit.framework */; };
 		71EAA9321BB6176A00E684B6 /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718555661BB38EDC00DC7D75 /* InterfaceBuilderKit.framework */; };
+		71EAA9361BB6506500E684B6 /* MyConfessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EAA9351BB6506500E684B6 /* MyConfessorTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfessionGuide.swift; sourceTree = "<group>"; };
 		71EAA9201BB6153900E684B6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		71EAA9221BB6155200E684B6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		71EAA9341BB64F9900E684B6 /* Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bridging_Header.h; path = MyConfessor/Bridging_Header.h; sourceTree = "<group>"; };
+		71EAA9351BB6506500E684B6 /* MyConfessorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyConfessorTests.swift; path = MyConfessorTests/MyConfessorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +141,11 @@
 		716044691B9BF1E500323E6E = {
 			isa = PBXGroup;
 			children = (
+				71EAA9341BB64F9900E684B6 /* Bridging_Header.h */,
 				716044741B9BF1E600323E6E /* MyConfessor */,
 				7160448C1B9BF1E600323E6E /* MyConfessorTests */,
 				716044731B9BF1E600323E6E /* Products */,
+				71EAA9351BB6506500E684B6 /* MyConfessorTests.swift */,
 				71612F9F1BB4D52300B2B6B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				7160447C1B9BF1E600323E6E /* SecondViewController.swift in Sources */,
 				718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */,
 				716044781B9BF1E600323E6E /* AppDelegate.swift in Sources */,
+				71EAA9361BB6506500E684B6 /* MyConfessorTests.swift in Sources */,
 				7160447A1B9BF1E600323E6E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +413,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = MyConfessor/Bridging_Header.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = MyConfessor/Bridging_Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -447,6 +455,8 @@
 				MODULE_NAME = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = MyConfessor/Bridging_Header.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = MyConfessor/Bridging_Header.h;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
