@@ -6,8 +6,9 @@
 //  Copyright (c) 2015 Carmel Heart Media. All rights reserved.
 //
 
-import Parse
+
 import UIKit
+import Parse
 import Bolts
 
 
