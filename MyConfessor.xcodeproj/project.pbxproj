@@ -28,6 +28,7 @@
 		71612FBA1BB4E37A00B2B6B5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB91BB4E37A00B2B6B5 /* libsqlite3.tbd */; };
 		71612FBC1BB4E3D000B2B6B5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FBB1BB4E3D000B2B6B5 /* Social.framework */; };
 		718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */; };
+		71ED19791BB9F64100A892FF /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19781BB9F64100A892FF /* Password.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		718555681BB38EEC00DC7D75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTPerformanceSession.framework; path = Library/Frameworks/DTPerformanceSession.framework; sourceTree = DEVELOPER_DIR; };
 		718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfessionGuide.swift; sourceTree = "<group>"; };
+		719AB8541BB65856002E4AF8 /* MyConfessor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyConfessor-Bridging-Header.h"; sourceTree = "<group>"; };
+		71ED19781BB9F64100A892FF /* Password.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +125,11 @@
 			isa = PBXGroup;
 			children = (
 				716044771B9BF1E600323E6E /* AppDelegate.swift */,
+				719AB8541BB65856002E4AF8 /* MyConfessor-Bridging-Header.h */,
 				716044791B9BF1E600323E6E /* FirstViewController.swift */,
 				7160447B1B9BF1E600323E6E /* SecondViewController.swift */,
 				7160447D1B9BF1E600323E6E /* Main.storyboard */,
+				71ED19781BB9F64100A892FF /* Password.swift */,
 				718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */,
 				716044801B9BF1E600323E6E /* Images.xcassets */,
 				716044821B9BF1E600323E6E /* LaunchScreen.xib */,
@@ -283,6 +288,7 @@
 				7160447C1B9BF1E600323E6E /* SecondViewController.swift in Sources */,
 				718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */,
 				716044781B9BF1E600323E6E /* AppDelegate.swift in Sources */,
+				71ED19791BB9F64100A892FF /* Password.swift in Sources */,
 				7160447A1B9BF1E600323E6E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +373,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -405,6 +412,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -419,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carmelheartmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -432,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carmelheartmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
 			};
 			name = Release;
 		};
