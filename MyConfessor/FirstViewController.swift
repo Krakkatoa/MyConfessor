@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 
 class FirstViewController: UIViewController {
@@ -17,7 +18,7 @@ class FirstViewController: UIViewController {
         let testObject = PFObject(className: "TestObject")
         testObject["foo"] = "bar"
         testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
+            print("Object has been saved.")
         } }
 
     override func didReceiveMemoryWarning() {

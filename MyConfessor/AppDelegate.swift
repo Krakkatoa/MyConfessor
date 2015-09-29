@@ -12,24 +12,45 @@ import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    
+    //--------------------------------------
+    // MARK: - UIApplicationDelegate
+    //--------------------------------------
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // Enable storing and querying data from Local Datastore.
+        // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
+       // Parse.enableLocalDatastore()
         
-        // Parse Installation
-        Parse.setApplicationId("HTYnotuaSnkT4xrZxslB497gb7Q5JGMbpOBnJ0To", clientKey: "56xM6nJjCYMArgN4c0gsywG7J9OzOnobilwBpru5")
-        let notificationType: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
+        // ****************************************************************************
+        // Uncomment this line if you want to enable Crash Reporting
+      // ParseCrashReporting.enable()
+        //
         
-        let settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+        // Uncomment and fill in with your Parse credentials:
+        Parse.setApplicationId("HTYnotuaSnkT4xrZxslB497gb7Q5JGMbpOBnJ0To",
+            clientKey: "56xM6nJjCYMArgN4c0gsywG7J9OzOnobilwBpru5")
+        
+        
+        // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
+        // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
+        // Uncomment the line inside ParseStartProject-Bridging-Header and the following line here:
+        // PFFacebookUtils.initializeFacebook()
+        // ****************************************************************************      //  let 
+        //
+        
+        //notificationType: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
+        
+      //  let settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
+      //  UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+      //  UIApplication.sharedApplication().registerForRemoteNotifications()
         
         //This creates a identifier for each device, so we know which user is who
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setObject(UIDevice.currentDevice().identifierForVendor!.UUIDString, forKey: "status")
+     //   let defaults = NSUserDefaults.standardUserDefaults()
+      //  defaults.setObject(UIDevice.currentDevice().identifierForVendor!.UUIDString, forKey: "status")
         
         return true
     }

@@ -397,10 +397,10 @@ Have I…
             </objects>
             <point key="canvasLocation" x="-22" y="-1218"/>
         </scene>
-        <!--Priest Log-in-->
+        <!--Priest Nav Controller-->
         <scene sceneID="e1d-rX-IBt">
             <objects>
-                <navigationController id="4oI-nk-puX" sceneMemberID="viewController">
+                <navigationController id="4oI-nk-puX" userLabel="Priest Nav Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Priest Log-in" image="Knight Shield Filled-50" id="QUj-B7-QJt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CvH-LG-djL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -465,7 +465,7 @@ Have I…
         <!--Priest Data-->
         <scene sceneID="ZQH-QK-EwC">
             <objects>
-                <viewController id="gtU-Gw-VOl" userLabel="Priest Data" sceneMemberID="viewController">
+                <viewController id="gtU-Gw-VOl" userLabel="Priest Data" customClass="DataViewController" customModule="MyConfessor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="49c-ei-era"/>
                         <viewControllerLayoutGuide type="bottom" id="JMB-Le-ZRr"/>

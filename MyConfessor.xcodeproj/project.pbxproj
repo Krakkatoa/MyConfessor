@@ -14,8 +14,6 @@
 		716044811B9BF1E600323E6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716044801B9BF1E600323E6E /* Images.xcassets */; };
 		716044841B9BF1E600323E6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 716044821B9BF1E600323E6E /* LaunchScreen.xib */; };
 		716044901B9BF1E700323E6E /* MyConfessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160448F1B9BF1E700323E6E /* MyConfessorTests.swift */; };
-		71612FA11BB4D55700B2B6B5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FA01BB4D55700B2B6B5 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		71612FA31BB4D56500B2B6B5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FA21BB4D56500B2B6B5 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		71612FA91BB4DD9F00B2B6B5 /* DTPerformanceSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */; };
 		71612FAA1BB4DDA100B2B6B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718555681BB38EEC00DC7D75 /* UIKit.framework */; };
 		71612FAB1BB4DDA400B2B6B5 /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718555661BB38EDC00DC7D75 /* InterfaceBuilderKit.framework */; };
@@ -29,6 +27,10 @@
 		71612FBC1BB4E3D000B2B6B5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FBB1BB4E3D000B2B6B5 /* Social.framework */; };
 		718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */; };
 		71ED19791BB9F64100A892FF /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19781BB9F64100A892FF /* Password.swift */; settings = {ASSET_TAGS = (); }; };
+		71ED198F1BBA118400A892FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED198E1BBA118400A892FF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		71ED19901BBA118400A892FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED198E1BBA118400A892FF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		71ED19921BBA118F00A892FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED19911BBA118F00A892FF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		71ED19931BBA118F00A892FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED19911BBA118F00A892FF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +55,6 @@
 		716044891B9BF1E600323E6E /* MyConfessorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyConfessorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7160448E1B9BF1E700323E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7160448F1B9BF1E700323E6E /* MyConfessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConfessorTests.swift; sourceTree = "<group>"; };
-		71612FA01BB4D55700B2B6B5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-starter-project-1/ParseStarterProject-Swift/Parse.framework"; sourceTree = "<group>"; };
-		71612FA21BB4D56500B2B6B5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-starter-project-1/ParseStarterProject-Swift/Bolts.framework"; sourceTree = "<group>"; };
 		71612FAD1BB4E2FB00B2B6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		71612FAF1BB4E30B00B2B6B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		71612FB11BB4E31A00B2B6B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -69,6 +69,8 @@
 		718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfessionGuide.swift; sourceTree = "<group>"; };
 		719AB8541BB65856002E4AF8 /* MyConfessor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyConfessor-Bridging-Header.h"; sourceTree = "<group>"; };
 		71ED19781BB9F64100A892FF /* Password.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		71ED198E1BBA118400A892FF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		71ED19911BBA118F00A892FF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,11 @@
 			files = (
 				71612FBC1BB4E3D000B2B6B5 /* Social.framework in Frameworks */,
 				71612FBA1BB4E37A00B2B6B5 /* libsqlite3.tbd in Frameworks */,
-				71612FA31BB4D56500B2B6B5 /* Bolts.framework in Frameworks */,
-				71612FA11BB4D55700B2B6B5 /* Parse.framework in Frameworks */,
 				71612FB81BB4E34300B2B6B5 /* SystemConfiguration.framework in Frameworks */,
+				71ED198F1BBA118400A892FF /* Bolts.framework in Frameworks */,
 				71612FB61BB4E33300B2B6B5 /* StoreKit.framework in Frameworks */,
 				71612FB41BB4E32800B2B6B5 /* QuartzCore.framework in Frameworks */,
+				71ED19921BBA118F00A892FF /* Parse.framework in Frameworks */,
 				71612FB21BB4E31A00B2B6B5 /* CoreLocation.framework in Frameworks */,
 				71612FB01BB4E30B00B2B6B5 /* CFNetwork.framework in Frameworks */,
 				71612FAE1BB4E2FB00B2B6B5 /* AudioToolbox.framework in Frameworks */,
@@ -96,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71ED19931BBA118F00A892FF /* Parse.framework in Frameworks */,
+				71ED19901BBA118400A892FF /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +170,8 @@
 		71612F9F1BB4D52300B2B6B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71ED19911BBA118F00A892FF /* Parse.framework */,
+				71ED198E1BBA118400A892FF /* Bolts.framework */,
 				71612FBB1BB4E3D000B2B6B5 /* Social.framework */,
 				71612FB91BB4E37A00B2B6B5 /* libsqlite3.tbd */,
 				71612FB71BB4E34300B2B6B5 /* SystemConfiguration.framework */,
@@ -174,8 +180,6 @@
 				71612FB11BB4E31A00B2B6B5 /* CoreLocation.framework */,
 				71612FAF1BB4E30B00B2B6B5 /* CFNetwork.framework */,
 				71612FAD1BB4E2FB00B2B6B5 /* AudioToolbox.framework */,
-				71612FA21BB4D56500B2B6B5 /* Bolts.framework */,
-				71612FA01BB4D55700B2B6B5 /* Parse.framework */,
 				7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */,
 				718555681BB38EEC00DC7D75 /* UIKit.framework */,
 				718555661BB38EDC00DC7D75 /* InterfaceBuilderKit.framework */,
@@ -369,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -409,8 +413,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
@@ -421,10 +426,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Parse.framework/Headers",
+				);
 				GENERATE_PKGINFO_FILE = NO;
 				INFOPLIST_FILE = MyConfessor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carmelheartmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
@@ -435,10 +446,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Parse.framework/Headers",
+				);
 				GENERATE_PKGINFO_FILE = NO;
 				INFOPLIST_FILE = MyConfessor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carmelheartmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
@@ -452,6 +469,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Parse.framework/Headers",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -472,6 +491,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Parse.framework/Headers",
 				);
 				INFOPLIST_FILE = MyConfessorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
