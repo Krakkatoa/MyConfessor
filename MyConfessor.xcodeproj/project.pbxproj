@@ -31,6 +31,10 @@
 		71ED19901BBA118400A892FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED198E1BBA118400A892FF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		71ED19921BBA118F00A892FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED19911BBA118F00A892FF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		71ED19931BBA118F00A892FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED19911BBA118F00A892FF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		71ED19961BBB6C0900A892FF /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19941BBB6C0900A892FF /* NoteTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		71ED19971BBB6C0900A892FF /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71ED19951BBB6C0900A892FF /* NoteTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		71ED19991BBB6E0500A892FF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19981BBB6E0500A892FF /* Data.swift */; settings = {ASSET_TAGS = (); }; };
+		71ED199B1BBB71AA00A892FF /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED199A1BBB71AA00A892FF /* StatusTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +71,14 @@
 		718555681BB38EEC00DC7D75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTPerformanceSession.framework; path = Library/Frameworks/DTPerformanceSession.framework; sourceTree = DEVELOPER_DIR; };
 		718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfessionGuide.swift; sourceTree = "<group>"; };
-		719AB8541BB65856002E4AF8 /* MyConfessor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyConfessor-Bridging-Header.h"; sourceTree = "<group>"; };
 		71ED19781BB9F64100A892FF /* Password.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		71ED198E1BBA118400A892FF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		71ED19911BBA118F00A892FF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		71ED19941BBB6C0900A892FF /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		71ED19951BBB6C0900A892FF /* NoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
+		71ED19981BBB6E0500A892FF /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		71ED199A1BBB71AA00A892FF /* StatusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
+		71ED199E1BBB96B500A892FF /* MyConfessor_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyConfessor_Bridging_Header.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,8 @@
 		716044691B9BF1E500323E6E = {
 			isa = PBXGroup;
 			children = (
+				71ED19941BBB6C0900A892FF /* NoteTableViewCell.swift */,
+				71ED19951BBB6C0900A892FF /* NoteTableViewCell.xib */,
 				716044741B9BF1E600323E6E /* MyConfessor */,
 				7160448C1B9BF1E600323E6E /* MyConfessorTests */,
 				716044731B9BF1E600323E6E /* Products */,
@@ -128,11 +138,13 @@
 		716044741B9BF1E600323E6E /* MyConfessor */ = {
 			isa = PBXGroup;
 			children = (
+				71ED199E1BBB96B500A892FF /* MyConfessor_Bridging_Header.h */,
 				716044771B9BF1E600323E6E /* AppDelegate.swift */,
-				719AB8541BB65856002E4AF8 /* MyConfessor-Bridging-Header.h */,
 				716044791B9BF1E600323E6E /* FirstViewController.swift */,
 				7160447B1B9BF1E600323E6E /* SecondViewController.swift */,
 				7160447D1B9BF1E600323E6E /* Main.storyboard */,
+				71ED19981BBB6E0500A892FF /* Data.swift */,
+				71ED199A1BBB71AA00A892FF /* StatusTableViewController.swift */,
 				71ED19781BB9F64100A892FF /* Password.swift */,
 				718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */,
 				716044801B9BF1E600323E6E /* Images.xcassets */,
@@ -238,6 +250,7 @@
 				TargetAttributes = {
 					716044711B9BF1E600323E6E = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 4UV7252NR9;
 					};
 					716044881B9BF1E600323E6E = {
 						CreatedOnToolsVersion = 6.4;
@@ -272,6 +285,7 @@
 				7160447F1B9BF1E600323E6E /* Main.storyboard in Resources */,
 				716044841B9BF1E600323E6E /* LaunchScreen.xib in Resources */,
 				716044811B9BF1E600323E6E /* Images.xcassets in Resources */,
+				71ED19971BBB6C0900A892FF /* NoteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71ED19991BBB6E0500A892FF /* Data.swift in Sources */,
 				7160447C1B9BF1E600323E6E /* SecondViewController.swift in Sources */,
 				718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */,
 				716044781B9BF1E600323E6E /* AppDelegate.swift in Sources */,
 				71ED19791BB9F64100A892FF /* Password.swift in Sources */,
+				71ED199B1BBB71AA00A892FF /* StatusTableViewController.swift in Sources */,
 				7160447A1B9BF1E600323E6E /* FirstViewController.swift in Sources */,
+				71ED19961BBB6C0900A892FF /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +355,7 @@
 		716044911B9BF1E700323E6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -377,7 +395,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = MyConfessor_Bridging_Header.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = MyConfessor_Bridging_Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -417,7 +436,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = MyConfessor_Bridging_Header.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = MyConfessor_Bridging_Header.h;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -425,7 +445,9 @@
 		716044941B9BF1E700323E6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -438,7 +460,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carmelheartmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = MyConfessor_Bridging_Header.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = MyConfessor_Bridging_Header.h;
 			};
 			name = Debug;
 		};
@@ -446,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -458,7 +482,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carmelheartmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyConfessor/MyConfessor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = MyConfessor_Bridging_Header.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = MyConfessor_Bridging_Header.h;
 			};
 			name = Release;
 		};

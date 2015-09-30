@@ -8,6 +8,8 @@
 
 import Foundation
 
+import Parse
+
 struct ConfessionGuide {
     
     let factsArray = [
