@@ -33,8 +33,8 @@
 		71ED19931BBA118F00A892FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED19911BBA118F00A892FF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		71ED19961BBB6C0900A892FF /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19941BBB6C0900A892FF /* NoteTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		71ED19971BBB6C0900A892FF /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71ED19951BBB6C0900A892FF /* NoteTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		71ED19991BBB6E0500A892FF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19981BBB6E0500A892FF /* Data.swift */; settings = {ASSET_TAGS = (); }; };
 		71ED199B1BBB71AA00A892FF /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED199A1BBB71AA00A892FF /* StatusTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		71F0C5171BBC5253005C1A9B /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F0C5161BBC5253005C1A9B /* StatusViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +76,9 @@
 		71ED19911BBA118F00A892FF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		71ED19941BBB6C0900A892FF /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		71ED19951BBB6C0900A892FF /* NoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
-		71ED19981BBB6E0500A892FF /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		71ED199A1BBB71AA00A892FF /* StatusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		71ED199E1BBB96B500A892FF /* MyConfessor_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyConfessor_Bridging_Header.h; sourceTree = SOURCE_ROOT; };
+		71F0C5161BBC5253005C1A9B /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,7 @@
 				716044791B9BF1E600323E6E /* FirstViewController.swift */,
 				7160447B1B9BF1E600323E6E /* SecondViewController.swift */,
 				7160447D1B9BF1E600323E6E /* Main.storyboard */,
-				71ED19981BBB6E0500A892FF /* Data.swift */,
+				71F0C5161BBC5253005C1A9B /* StatusViewController.swift */,
 				71ED199A1BBB71AA00A892FF /* StatusTableViewController.swift */,
 				71ED19781BB9F64100A892FF /* Password.swift */,
 				718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */,
@@ -303,13 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71ED19991BBB6E0500A892FF /* Data.swift in Sources */,
 				7160447C1B9BF1E600323E6E /* SecondViewController.swift in Sources */,
 				718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */,
 				716044781B9BF1E600323E6E /* AppDelegate.swift in Sources */,
 				71ED19791BB9F64100A892FF /* Password.swift in Sources */,
 				71ED199B1BBB71AA00A892FF /* StatusTableViewController.swift in Sources */,
 				7160447A1B9BF1E600323E6E /* FirstViewController.swift in Sources */,
+				71F0C5171BBC5253005C1A9B /* StatusViewController.swift in Sources */,
 				71ED19961BBB6C0900A892FF /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

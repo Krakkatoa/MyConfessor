@@ -21,6 +21,10 @@ class FirstViewController: UIViewController {
             print("Object has been saved.")
         } }
 
+    @IBOutlet weak var titleText: UITextView!
+    
+    
+    @IBOutlet weak var noteText: UITextView!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

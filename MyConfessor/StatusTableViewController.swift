@@ -74,8 +74,7 @@ class StatusTableViewController: UIViewController, UITableViewDataSource, UITabl
             // var installation:PFInstallation = PFInstallation.currentInstallation()
             
             let objectId = rowData.objectId
-            let object: PFObject = PFObject(withoutDataWithClassName: "status", objectId: objectId)
-            object.delete()
+            let object: PFObject = PFObject(withoutDataWithClassName: "status", objectId: objectId); object.delete()
             
             
             self.notesData.removeObjectAtIndex(indexPath.row)
