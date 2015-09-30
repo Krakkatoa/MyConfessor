@@ -78,7 +78,7 @@ class StatusViewController: UIViewController {
                     //read action
                     self.titleText.text = ""
                     self.noteText.text = ""
-                    self.performSegueWithIdentifier("petitionReadSegue", sender: nil)
+                    self.performSegueWithIdentifier("statusReadSegue", sender: nil)
                     
                 } else {
                     print(error.description)

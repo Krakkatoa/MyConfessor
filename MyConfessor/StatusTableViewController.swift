@@ -18,16 +18,16 @@ class StatusTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     
     
-    @IBOutlet var StatusTableView: UITableView!
+    @IBOutlet var statusTableView: UITableView!
     override func viewDidLoad() {
         //When the page is loaded we call parse using our identifier and get all the notes, and we save them in our array of notesData
         
-        self.StatusTableView?.estimatedRowHeight = 107.0
+        self.statusTableView?.estimatedRowHeight = 107.0
         super.viewDidLoad()
-        self.StatusTableView?.rowHeight = UITableViewAutomaticDimension
+        self.statusTableView?.rowHeight = UITableViewAutomaticDimension
         let nib = UINib(nibName: "NoteTableViewCell", bundle: nil)
         
-        StatusTableView?.registerNib(nib, forCellReuseIdentifier: "statusIdentifier")
+        statusTableView?.registerNib(nib, forCellReuseIdentifier: "statusIdentifier")
         
     }
     
@@ -35,14 +35,14 @@ class StatusTableViewController: UIViewController, UITableViewDataSource, UITabl
         let defaults = NSUserDefaults.standardUserDefaults()
         if let identifier = defaults.stringForKey("UserIdentifier")
         {
-            let query = PFQuery(className:"status")
+            let query = PFQuery(className:"Status")
             query.orderByDescending("updatedAt")
             query.whereKey("UserIdentifier", equalTo:identifier)
-           query.findObjectsInBackgroundWithBlock {
+            query.findObjectsInBackgroundWithBlock {
                 (objects: [AnyObject]!, error: NSError!) -> Void in
                 if error == nil {
                     self.notesData = NSMutableArray(array:objects)
-                    self.thoughtsTableView.reloadData()
+                    self.statusTableView.reloadData()
                     // The find succeeded.
                     print(self.notesData)
                 } else {
@@ -74,23 +74,24 @@ class StatusTableViewController: UIViewController, UITableViewDataSource, UITabl
             // var installation:PFInstallation = PFInstallation.currentInstallation()
             
             let objectId = rowData.objectId
-            let object: PFObject = PFObject(withoutDataWithClassName: "status", objectId: objectId); object.delete()
+            let object: PFObject = PFObject(withoutDataWithClassName: "Status", objectId: objectId)
+            object.delete()
             
             
             self.notesData.removeObjectAtIndex(indexPath.row)
-            self.StatusTableView!.reloadData()
+            self.statusTableView!.reloadData()
             //      self.feedsData.removeObjectAtIndex(indexPath.row)
             //    self.feedsTableView?.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
         }
         
-        let editAction = UITableViewRowAction(style: .Default, title: "Edit") { (action, indexPath) -> Void in
+        let postAction = UITableViewRowAction(style: .Default, title: "Post") { (action, indexPath) -> Void in
             tableView.editing = false
             let rowData: AnyObject = self.notesData[indexPath.row]
             //var installation:PFInstallation = PFInstallation.currentInstallation()
             
             let objectId = rowData.objectId
             //creates viewcontroller with code and then assigns value to the object id and makes a push
-            let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("FirstViewController") as! FirstViewController
+            let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("StatusPostScreen") as! FirstViewController
             destinationVC.objectId = objectId
             // self.navigationController?.pushViewController(destinationVC, animated: true)
             self.presentViewController(destinationVC, animated: true, completion: nil)
@@ -101,10 +102,10 @@ class StatusTableViewController: UIViewController, UITableViewDataSource, UITabl
             
         }
         
-        editAction.backgroundColor = UIColor.blackColor()
+        postAction.backgroundColor = UIColor.blackColor()
         
         // return [deleteAction, shareAction] No feed share for this version
-        return [deleteAction,editAction]
+        return [deleteAction,postAction]
     }
     
     
