@@ -133,7 +133,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                     </view>
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="statusTableView" destination="Jee-cb-cOt" id="610-0P-ARW"/>
+                        <outlet property="statusTableView" destination="Jee-cb-cOt" id="Yzp-p7-XoD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -515,7 +515,7 @@ Have I…
                                 </state>
                                 <connections>
                                     <action selector="readAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="Qu3-Kz-9FV"/>
-                                    <action selector="saveAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="HNM-Px-4rR"/>
+                                    <action selector="saveAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="g3C-A9-aMw"/>
                                     <segue destination="9pv-A4-QxB" kind="modal" id="GCZ-hX-PH6"/>
                                 </connections>
                             </button>
@@ -524,6 +524,10 @@ Have I…
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CoN-hv-ABP"/>
+                    <connections>
+                        <outlet property="noteText" destination="DuP-w7-sKf" id="rqW-XY-GAa"/>
+                        <outlet property="titleText" destination="yqn-3N-KUS" id="iU5-KT-Udu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLK-M6-a6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

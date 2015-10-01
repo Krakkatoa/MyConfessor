@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import Parse    
+import Parse
+import Bolts
 
 
 @UIApplicationMain
@@ -39,14 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
         // Uncomment the line inside ParseStartProject-Bridging-Header and the following line here:
         // PFFacebookUtils.initializeFacebook()
-        // ****************************************************************************      //  let 
-        //
+        // ****************************************************************************      //  
+        let notificationType: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
         
-        //notificationType: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
-        
-      //  let settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
-      //  UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-      //  UIApplication.sharedApplication().registerForRemoteNotifications()
+      let settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
+      UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+      UIApplication.sharedApplication().registerForRemoteNotifications()
         
         //This creates a identifier for each device, so we know which user is who
       let defaults = NSUserDefaults.standardUserDefaults()

@@ -26,6 +26,11 @@
 		71612FBA1BB4E37A00B2B6B5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB91BB4E37A00B2B6B5 /* libsqlite3.tbd */; };
 		71612FBC1BB4E3D000B2B6B5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FBB1BB4E3D000B2B6B5 /* Social.framework */; };
 		718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */; };
+		71EBD1771BBDCE2D00A73930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD1761BBDCE2D00A73930 /* Foundation.framework */; };
+		71EBD1791BBDCEC400A73930 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD1781BBDCEC400A73930 /* libz.tbd */; };
+		71EBD17B1BBDCFDE00A73930 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD17A1BBDCFDE00A73930 /* CoreGraphics.framework */; };
+		71EBD17D1BBDD00800A73930 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD17C1BBDD00800A73930 /* Security.framework */; };
+		71EBD17F1BBDD09900A73930 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD17E1BBDD09900A73930 /* Accounts.framework */; };
 		71ED19791BB9F64100A892FF /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19781BB9F64100A892FF /* Password.swift */; settings = {ASSET_TAGS = (); }; };
 		71ED198F1BBA118400A892FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED198E1BBA118400A892FF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		71ED19901BBA118400A892FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED198E1BBA118400A892FF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
@@ -70,6 +75,11 @@
 		718555681BB38EEC00DC7D75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTPerformanceSession.framework; path = Library/Frameworks/DTPerformanceSession.framework; sourceTree = DEVELOPER_DIR; };
 		718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfessionGuide.swift; sourceTree = "<group>"; };
+		71EBD1761BBDCE2D00A73930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		71EBD1781BBDCEC400A73930 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		71EBD17A1BBDCFDE00A73930 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		71EBD17C1BBDD00800A73930 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		71EBD17E1BBDD09900A73930 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		71ED19781BB9F64100A892FF /* Password.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		71ED198E1BBA118400A892FF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		71ED19911BBA118F00A892FF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -84,6 +94,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EBD17F1BBDD09900A73930 /* Accounts.framework in Frameworks */,
+				71EBD17D1BBDD00800A73930 /* Security.framework in Frameworks */,
+				71EBD17B1BBDCFDE00A73930 /* CoreGraphics.framework in Frameworks */,
+				71EBD1791BBDCEC400A73930 /* libz.tbd in Frameworks */,
+				71EBD1771BBDCE2D00A73930 /* Foundation.framework in Frameworks */,
+				71612FAA1BB4DDA100B2B6B5 /* UIKit.framework in Frameworks */,
 				71612FBC1BB4E3D000B2B6B5 /* Social.framework in Frameworks */,
 				71612FBA1BB4E37A00B2B6B5 /* libsqlite3.tbd in Frameworks */,
 				71612FB81BB4E34300B2B6B5 /* SystemConfiguration.framework in Frameworks */,
@@ -95,7 +111,6 @@
 				71612FB01BB4E30B00B2B6B5 /* CFNetwork.framework in Frameworks */,
 				71612FAE1BB4E2FB00B2B6B5 /* AudioToolbox.framework in Frameworks */,
 				71612FAB1BB4DDA400B2B6B5 /* InterfaceBuilderKit.framework in Frameworks */,
-				71612FAA1BB4DDA100B2B6B5 /* UIKit.framework in Frameworks */,
 				71612FA91BB4DD9F00B2B6B5 /* DTPerformanceSession.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +194,11 @@
 		71612F9F1BB4D52300B2B6B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71EBD17E1BBDD09900A73930 /* Accounts.framework */,
+				71EBD17C1BBDD00800A73930 /* Security.framework */,
+				71EBD17A1BBDCFDE00A73930 /* CoreGraphics.framework */,
+				71EBD1781BBDCEC400A73930 /* libz.tbd */,
+				71EBD1761BBDCE2D00A73930 /* Foundation.framework */,
 				71ED19911BBA118F00A892FF /* Parse.framework */,
 				71ED198E1BBA118400A892FF /* Bolts.framework */,
 				71612FBB1BB4E3D000B2B6B5 /* Social.framework */,

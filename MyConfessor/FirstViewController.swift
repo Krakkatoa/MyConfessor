@@ -8,6 +8,8 @@
 
 import UIKit
 import Parse
+import UIKit 
+
 
 
 class FirstViewController: UIViewController {
@@ -36,63 +38,81 @@ class FirstViewController: UIViewController {
             let query = PFQuery(className:"Status")
             query.orderByDescending("updatedAt")
             query.whereKey("UserIdentifier", equalTo:identifier)
-            query.findObjectsInBackgroundWithBlock
-            
-                (objects: [AnyObject]!, error: NSError!) -> Void in
-                if error == nil {
-                    self.notesData = NSMutableArray(array:objects)
-                    self.statusTableView.reloadData()
+           
+      //      query.findObjectsInBackgroundWithBlock {
+              //  (objects: [AnyObject]!, error: NSError!) -> Void in
+              //  if error == nil {
+              //      self.notesData = NSMutableArray(array:objects)
+                //    self.statusTableView.reloadData()
                     // The find succeeded.
-                    print(self.notesData)
-                } else {
+                 //   print(self.notesData)
+             //   } else {
                     // Log details of the failure
-                    NSLog("Error: %@ %@", error, error.userInfo)
+             //       NSLog("Error: %@ %@", error, error.userInfo)
                 }
-            }
+        
+        
+    }
+    
+    
+
+    
+    
+    @IBAction func backAction(sender: AnyObject){
+        self.dismissViewControllerAnimated(true) { () -> Void in
             
         }
     }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView,editActionsForRowAtIndexPath indexPath: NSIndexPath)-> [UITableViewRowAction]? {
+  // func tableView(tableView: UITableView,editActionsForRowAtIndexPath indexPath: NSIndexPath)-> [UITableViewRowAction]? {
         
-       
-            var installation:PFInstallation = PFInstallation.currentInstallation()
+     //   let deleteAction = UITableViewRowAction(style: .Default, title: "Delete") { (action, indexPath) -> Void in
+           // tableView.editing = false
+          //  let rowData: AnyObject = self.notesData[indexPath.row]
+            // _:PFInstallation = PFInstallation.currentInstallation()
             
-            let objectId = rowData.objectId
-            let object: PFObject = PFObject(withoutDataWithClassName: "Status", objectId: objectId)
-            object.delete()
+          //  let objectId = rowData.objectId
+         ////   let object: PFObject = PFObject(withoutDataWithClassName: "Status", objectId: objectId)
+           // object.delete()
             
             
-            self.notesData.removeObjectAtIndex(indexPath.row)
-            self.statusTableView!.reloadData()
+          //  self.notesData.removeObjectAtIndex(indexPath.row)
+        //   self.statusTableView!.reloadData()
             //      self.feedsData.removeObjectAtIndex(indexPath.row)
             //    self.feedsTableView?.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
-        }
-
-            //var installation:PFInstallation = PFInstallation.currentInstallation()
+        
+        
+       // let editAction = UITableViewRowAction(style: .Default, title: "Edit") { (action, indexPath) -> Void in
+          //  tableView.editing = false
+          //  let rowData: AnyObject = self.notesData[indexPath.row]
+            //     _:PFInstallation = PFInstallation.currentInstallation()
             
-            let objectId = rowData.objectId
+        //    let objectId = rowData.objectId
             //creates viewcontroller with code and then assigns value to the object id and makes a push
-            let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("StatusPostScreen") as! FirstViewController
-            destinationVC.objectId = objectId
+          //  let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("PetitionsEditScreen") as! PetitionsEditViewController
+        //    destinationVC.objectId = objectId
             // self.navigationController?.pushViewController(destinationVC, animated: true)
-            self.presentViewController(destinationVC, animated: true, completion: nil)
+        //    self.presentViewController(destinationVC, animated: true, completion: nil)
             
             //call the new view and send the object id
             
             
             
-
+        //}
         
-        postAction.backgroundColor = UIColor.blackColor()
+     //   editAction.backgroundColor = UIColor.blackColor()
         
+        // return [deleteAction, shareAction] No feed share for this version
+      //  return [deleteAction,editAction]
 
+    
+    
+    
     //Defines how big is the tableView
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notesData.count
@@ -102,17 +122,16 @@ class FirstViewController: UIViewController {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //we create a row data with the value of the index on our notes array and then assing the values
         let rowData: AnyObject = self.notesData[indexPath.row]
-        let cell: NoteTableViewCell = tableView.dequeueReusableCellWithIdentifier("statusIdentifier", forIndexPath: indexPath) as! NoteTableViewCell
+        let cell: NoteTableViewCell = tableView.dequeueReusableCellWithIdentifier("petitionsIdentifier", forIndexPath: indexPath) as! NoteTableViewCell
         
-        //print(rowData.createdAt)
-        
+        print(rowData.createdAt)
         let formatter = NSDateFormatter()
         formatter.dateStyle = .MediumStyle
         formatter.timeStyle = .NoStyle
         
-        let dateCell = formatter.stringFromDate(rowData.createdAt)
-        cell.loadNote(dateCell, titleView: rowData["title"] as! String, subtitleView: rowData["note"] as! String)
-        // Configure the cell...
+     //  let dateCell = formatter.stringFromDate(rowData.createdAt)
+ //     cell.loadNote(titleView: rowData["title"] as! String, subtitleView: rowData["note"] as! String)
+     // Configure the cell...
         
         return cell
     }
@@ -121,3 +140,9 @@ class FirstViewController: UIViewController {
     func tableView(tableView: UITableView,commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
         
     }
+}
+
+    //allows to swipe
+    
+ //   func tableView(tableView: UITableView,commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+
