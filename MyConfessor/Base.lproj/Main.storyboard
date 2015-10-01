@@ -113,15 +113,28 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jee-cb-cOt">
-                                <rect key="frame" x="151" y="-4" width="169" height="95"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="10" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jee-cb-cOt">
+                                <rect key="frame" x="151" y="0.0" width="169" height="95"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusIdentifier" rowHeight="10" id="l6o-dc-hyN">
+                                        <rect key="frame" x="0.0" y="28" width="169" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l6o-dc-hyN" id="m51-Cp-BWj">
+                                            <rect key="frame" x="0.0" y="0.0" width="169" height="9"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="statusTableView" destination="Jee-cb-cOt" id="610-0P-ARW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -357,38 +370,6 @@ Have I…
             </objects>
             <point key="canvasLocation" x="363" y="-518"/>
         </scene>
-        <!--Status Table VC-->
-        <scene sceneID="KQu-zL-7si">
-            <objects>
-                <tableViewController title="Status Table View Controller" id="RVG-A5-Os2" userLabel="Status Table VC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="40A-ed-99y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="statusIdentifier" id="I0o-OI-hVw">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I0o-OI-hVw" id="vFK-Fh-2gY">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="9pv-A4-QxB" kind="modal" id="cII-Ve-fpM"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="RVG-A5-Os2" id="2Zm-MQ-jhM"/>
-                            <outlet property="delegate" destination="RVG-A5-Os2" id="iPS-2m-Hme"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Ke5-Cy-4gm"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ntD-ai-fjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-22" y="-1218"/>
-        </scene>
         <!--Priest Nav Controller-->
         <scene sceneID="e1d-rX-IBt">
             <objects>
@@ -507,24 +488,12 @@ Have I…
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When is your next available time?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-7F-6xV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When will you be available next?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-7F-6xV">
                                 <rect key="frame" x="39" y="362" width="261" height="21"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-3C-WOP">
-                                <rect key="frame" x="128" y="461" width="53" height="30"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="20"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="readAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="Qu3-Kz-9FV"/>
-                                    <action selector="saveAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="HNM-Px-4rR"/>
-                                    <segue destination="RVG-A5-Os2" kind="modal" id="sZg-d4-EZ1"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-hO-wyj">
                                 <rect key="frame" x="91" y="28" width="138" height="21"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="25"/>
@@ -538,6 +507,18 @@ Have I…
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-3C-WOP">
+                                <rect key="frame" x="128" y="461" width="53" height="30"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="readAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="Qu3-Kz-9FV"/>
+                                    <action selector="saveAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="HNM-Px-4rR"/>
+                                    <segue destination="9pv-A4-QxB" kind="modal" id="GCZ-hX-PH6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -571,7 +552,7 @@ Have I…
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-972" y="-523"/>
+            <point key="canvasLocation" x="-942" y="-568"/>
         </scene>
         <!--FAQ-->
         <scene sceneID="kab-AG-lQ6">
@@ -586,7 +567,7 @@ Have I…
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BJ6-n7-x0l">
-                                <rect key="frame" x="32" y="28" width="259" height="491"/>
+                                <rect key="frame" x="9" y="28" width="259" height="491"/>
                                 <string key="text">FAQ
 
 Welcome to MyConfessor, the app that makes it possible to find priests available for confession in real time!
@@ -630,7 +611,7 @@ A: We are accepting PayPal contributions from this webpage: (TBA)</string>
         <image name="out" width="199" height="152"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cII-Ve-fpM"/>
+        <segue reference="u7Y-xg-7CH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
