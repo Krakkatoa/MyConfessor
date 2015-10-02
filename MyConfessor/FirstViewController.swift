@@ -58,11 +58,11 @@ class FirstViewController: UIViewController {
 
     
     
-    @IBAction func backAction(sender: AnyObject){
-        self.dismissViewControllerAnimated(true) { () -> Void in
+    //@IBAction func backAction(sender: AnyObject){
+      //  self.dismissViewControllerAnimated(true) { () -> Void in
             
-        }
-    }
+       // }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -122,7 +122,7 @@ class FirstViewController: UIViewController {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //we create a row data with the value of the index on our notes array and then assing the values
         let rowData: AnyObject = self.notesData[indexPath.row]
-        let cell: NoteTableViewCell = tableView.dequeueReusableCellWithIdentifier("petitionsIdentifier", forIndexPath: indexPath) as! NoteTableViewCell
+        let cell: NoteTableViewCell = tableView.dequeueReusableCellWithIdentifier("statusIdentifier", forIndexPath: indexPath) as! NoteTableViewCell
         
         print(rowData.createdAt)
         let formatter = NSDateFormatter()
@@ -135,11 +135,7 @@ class FirstViewController: UIViewController {
         
         return cell
     }
-    //allows to swipe
     
-    func tableView(tableView: UITableView,commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
-        
-    }
 }
 
     //allows to swipe

@@ -14,9 +14,7 @@
 		716044811B9BF1E600323E6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716044801B9BF1E600323E6E /* Images.xcassets */; };
 		716044841B9BF1E600323E6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 716044821B9BF1E600323E6E /* LaunchScreen.xib */; };
 		716044901B9BF1E700323E6E /* MyConfessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160448F1B9BF1E700323E6E /* MyConfessorTests.swift */; };
-		71612FA91BB4DD9F00B2B6B5 /* DTPerformanceSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7185556A1BB38F4400DC7D75 /* DTPerformanceSession.framework */; };
 		71612FAA1BB4DDA100B2B6B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718555681BB38EEC00DC7D75 /* UIKit.framework */; };
-		71612FAB1BB4DDA400B2B6B5 /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718555661BB38EDC00DC7D75 /* InterfaceBuilderKit.framework */; };
 		71612FAE1BB4E2FB00B2B6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FAD1BB4E2FB00B2B6B5 /* AudioToolbox.framework */; };
 		71612FB01BB4E30B00B2B6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FAF1BB4E30B00B2B6B5 /* CFNetwork.framework */; };
 		71612FB21BB4E31A00B2B6B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB11BB4E31A00B2B6B5 /* CoreLocation.framework */; };
@@ -110,8 +108,6 @@
 				71612FB21BB4E31A00B2B6B5 /* CoreLocation.framework in Frameworks */,
 				71612FB01BB4E30B00B2B6B5 /* CFNetwork.framework in Frameworks */,
 				71612FAE1BB4E2FB00B2B6B5 /* AudioToolbox.framework in Frameworks */,
-				71612FAB1BB4DDA400B2B6B5 /* InterfaceBuilderKit.framework in Frameworks */,
-				71612FA91BB4DD9F00B2B6B5 /* DTPerformanceSession.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -448,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;

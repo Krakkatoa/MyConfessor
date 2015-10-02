@@ -69,20 +69,20 @@ class StatusViewController: UIViewController {
             note["note"] = noteText.text
         note["UserIdentifier"] = identifier
         
-        //note.saveInBackgroundWithBlock
-           //     (success: Bool, error: NSError!) -> Void in
+       // note.saveInBackgroundWithBlock
+              // (success: Bool, error: NSError!) -> Void in
               //  if (success) {
                     // The object has been saved.
                  //   print("Note Saved!")
                     
-                    //read action
-                   // self.titleText.text = ""
-                 //   self.noteText.text = ""
-                 //   self.performSegueWithIdentifier("statusReadSegue", sender: nil)
-                    
-             //   } else {
-                //    print(error.description)
-                    // There was a problem, check error.description
+                  //  read action
+                   self.titleText.text = ""
+                 self.noteText.text = ""
+                 self.performSegueWithIdentifier("statusReadSegue", sender: nil)
+            
+             //  } else {
+                 // print(error.description)
+                 //   There was a problem, check error.description
         
 
 
