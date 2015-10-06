@@ -67,36 +67,42 @@ class StatusViewController: UIViewController {
             let note = PFObject(className:"Status")
             note["title"] = titleText.text
             note["note"] = noteText.text
-        note["UserIdentifier"] = identifier
-        
-       // note.saveInBackgroundWithBlock
-              // (success: Bool, error: NSError!) -> Void in
-              //  if (success) {
+            note["UserIdentifier"] = identifier
+            note.saveInBackground()
+              //  (success: Bool, error: NSError!)-> Void in
+             //   if (success) {
                     // The object has been saved.
-                 //   print("Note Saved!")
+                    print("Note Saved!")
                     
-                  //  read action
-                   self.titleText.text = ""
-                 self.noteText.text = ""
-                 self.performSegueWithIdentifier("statusReadSegue", sender: nil)
-            
-             //  } else {
-                 // print(error.description)
-                 //   There was a problem, check error.description
+                    //read action
+                    self.titleText.text = ""
+                    self.noteText.text = ""
+                    self.performSegueWithIdentifier("petitionReadSegue", sender: nil)
+                    
+              //  } else {
+                   // print(error.description)
+                    // There was a problem, check error.description
+                }
+            }
+    
         
-
-
         
-
+    }
 
     
-   // func readAction(sender: AnyObject) {
+    func readAction(sender: AnyObject) {
         
     }
     
 
 
-}
+        
+
+
+
+    
+
+
 
 //
 
@@ -118,4 +124,3 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
 
 
-}
