@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-xb-HOd">
-                        <rect key="frame" x="19" y="63" width="526" height="20"/>
+                        <rect key="frame" x="13" y="24" width="526" height="20"/>
                         <attributedString key="attributedText">
                             <fragment content="Title">
                                 <attributes>
@@ -27,21 +27,8 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC6-EV-P5n">
-                        <rect key="frame" x="19" y="29" width="404" height="26"/>
-                        <attributedString key="attributedText">
-                            <fragment content="Date">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="500" translatesAutoresizingMaskIntoConstraints="NO" id="OGW-2s-tRb">
-                        <rect key="frame" x="19" y="91" width="526" height="20"/>
+                        <rect key="frame" x="13" y="60" width="526" height="20"/>
                         <attributedString key="attributedText">
                             <fragment content="Subtitle">
                                 <attributes>
@@ -55,20 +42,15 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="OGW-2s-tRb" secondAttribute="bottom" constant="5" id="16P-Wi-JSv"/>
-                    <constraint firstItem="OGW-2s-tRb" firstAttribute="top" secondItem="t7B-xb-HOd" secondAttribute="bottom" constant="8" id="4ao-Bb-lrN"/>
-                    <constraint firstAttribute="topMargin" secondItem="sC6-EV-P5n" secondAttribute="top" constant="-21" id="6e3-5D-zFu"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="t7B-xb-HOd" secondAttribute="trailing" constant="-23" id="EhP-fi-jgC"/>
-                    <constraint firstAttribute="leadingMargin" secondItem="sC6-EV-P5n" secondAttribute="leading" constant="-11" id="Fol-fb-AD8"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="OGW-2s-tRb" secondAttribute="trailing" constant="-23" id="Oh1-ky-ZKb"/>
-                    <constraint firstItem="t7B-xb-HOd" firstAttribute="top" secondItem="sC6-EV-P5n" secondAttribute="bottom" constant="8" id="bgy-iR-j9i"/>
-                    <constraint firstItem="OGW-2s-tRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="11" id="oSl-63-h0M"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="sC6-EV-P5n" secondAttribute="trailing" constant="99" id="ohM-2y-dqk"/>
-                    <constraint firstItem="t7B-xb-HOd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="11" id="zvJ-xL-yRV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OGW-2s-tRb" secondAttribute="bottom" constant="36" id="16P-Wi-JSv"/>
+                    <constraint firstItem="OGW-2s-tRb" firstAttribute="top" secondItem="t7B-xb-HOd" secondAttribute="bottom" constant="16" id="4ao-Bb-lrN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="t7B-xb-HOd" secondAttribute="trailing" constant="-17" id="EhP-fi-jgC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OGW-2s-tRb" secondAttribute="trailing" constant="-17" id="Oh1-ky-ZKb"/>
+                    <constraint firstItem="OGW-2s-tRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="oSl-63-h0M"/>
+                    <constraint firstItem="t7B-xb-HOd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="zvJ-xL-yRV"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="dateLabel" destination="sC6-EV-P5n" id="K2A-hF-NFS"/>
                 <outlet property="subtitleLabel" destination="OGW-2s-tRb" id="ceW-mD-mbC"/>
                 <outlet property="titleLabel" destination="t7B-xb-HOd" id="jHo-Dg-xAL"/>
             </connections>

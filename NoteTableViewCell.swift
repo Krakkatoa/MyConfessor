@@ -11,9 +11,6 @@ import UIKit
 class NoteTableViewCell: UITableViewCell {
     
     
-    @IBOutlet weak var dateLabel: UILabel!
-    
-    
     @IBOutlet weak var titleLabel: UILabel!
     
     
@@ -34,7 +31,6 @@ class NoteTableViewCell: UITableViewCell {
     func loadNote (dateView: String, titleView: String, subtitleView: String)
     {
     
-        dateLabel.text = dateView
         titleLabel.text = titleView
         subtitleLabel.text = subtitleView
     }
