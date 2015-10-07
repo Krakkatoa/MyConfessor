@@ -37,7 +37,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             query.orderByDescending("updatedAt")
             query.whereKey("UserIdentifier", equalTo:identifier)
             query.findObjectsInBackgroundWithBlock {
-                (objects: [AnyObject]!, error: NSError!)-> Void
+                (objects: [AnyObject]! error: NSError!)-> Void
                 if error == nil {
                     self.notesData = NSMutableArray(array:objects)
                     self.statusTableView.reloadData()
@@ -46,60 +46,16 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
                 } else {
                     // Log details of the failure
                     NSLog("Error: %@ %@", error, error.userInfo)
+        
                 }
-            }
-      }
-
+            
     
-    func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
+            override func didReceiveMemoryWarning() {
+                super.didReceiveMemoryWarning()
+                }
+        }
         // Dispose of any resources that can be recreated.
-    }
-    
-   // func tableView(tableView: UITableView,editActionsForRowAtIndexPath indexPath: NSIndexPath)-> [UITableViewRowAction]? {
-        
-     //   let deleteAction = UITableViewRowAction(style: .Default, title: "Delete") { (action, indexPath) -> Void in
-        //    tableView.editing = false
-          //  let rowData: AnyObject = self.notesData[indexPath.row]
-       //     // _:PFInstallation = PFInstallation.currentInstallation()
-            
-         //   let objectId = rowData.objectId
-       //     let object: PFObject = PFObject(withoutDataWithClassName: "Status", objectId: objectId)
-        //    object.delete()
-            
-            
-         //   self.notesData.removeObjectAtIndex(indexPath.row)
-           // self.statusTableView!.reloadData()
-          //      self.feedsData.removeObjectAtIndex(indexPath.row)
-            //    self.feedsTableView?.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
-       // }
-        
-      //  let editAction = UITableViewRowAction(style: .Default, title: "Edit") { (action, indexPath) -> Void in
-        //    tableView.editing = false
-       //     let rowData: AnyObject = self.notesData[indexPath.row]
-            //     _:PFInstallation = PFInstallation.currentInstallation()
-            
-          //  _ = rowData.objectId
-            //creates viewcontroller with code and then assigns value to the object id and makes a push
-           // let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("PetitionsEditScreen") as! PetitionsEditViewController
-         //   destinationVC.objectId = objectId
-            // self.navigationController?.pushViewController(destinationVC, animated: true)
-           // self.presentViewController(destinationVC, animated: true, completion: nil)
-            
-            //call the new view and send the object id
-            
-            
-            
-       }
-        
-       // editAction.backgroundColor = UIColor.blackColor()
-        
-        // return [deleteAction, shareAction] No feed share for this version
-      //  return [deleteAction,editAction]
-  //  }
-    
-    
+       
     //Defines how big is the tableView
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notesData.count
@@ -124,9 +80,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         return cell
     }
-    //allows to swipe
-    
-    func tableView(tableView: UITableView,commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
-        
-    }
+       }
+}
 }

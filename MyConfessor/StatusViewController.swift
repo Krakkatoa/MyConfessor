@@ -42,7 +42,7 @@ class StatusViewController: UIViewController {
             note["title"] = titleText.text
             note["note"] = noteText.text
             note["UserIdentifier"] = identifier
-            note.saveInBackgroundWithBlock{
+            note.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError!) -> Void in
                 if (success) {
                     // The object has been saved.
