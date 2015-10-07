@@ -35,27 +35,42 @@ class StatusViewController: UIViewController {
     
     @IBAction func saveAction(sender: AnyObject) {
         //we check if we already have our identifier, if we do we save a note in parse
-        let defaults = NSUserDefaults.standardUserDefaults()
-        if let identifier = defaults.stringForKey("UserIdentifier")
-        {
-            let note = PFObject(className:"Status")
-            note["title"] = titleText.text
-            note["note"] = noteText.text
-            note["UserIdentifier"] = identifier
-            note.saveInBackgroundWithBlock {
-                (success: Bool, error: NSError!) -> Void in
-                if (success) {
-                    // The object has been saved.
-                    print("Note Saved!")
-                    
-                    //read action
-                    self.titleText.text = ""
-                    self.noteText.text = ""
-                    self.performSegueWithIdentifier("statusReadSegue", sender: nil)
-                    
-                } else {
-                    print(error.description)
-                    // There was a problem, check error.description
+        if titleText.text == "" {
+            let alertView = UIAlertController (title: "Alert", message: "Please complete all fields.", preferredStyle: UIAlertControllerStyle.Alert)
+            let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in
+                // ...
+            }
+            alertView.addAction(cancelAction)
+        self.presentViewController(alertView, animated: true, completion: nil)
+        } else {
+            let defaults = NSUserDefaults.standardUserDefaults()
+            if let identifier = defaults.stringForKey("UserIdentifier")
+            {
+                let note = PFObject(className:"Status")
+                note["title"] = titleText.text
+                note["note"] = noteText.text
+                note["UserIdentifier"] = identifier
+                note.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError?) -> Void in
+                    if (success) {
+                        // The object has been saved.
+                        print("Note Saved!")
+                        let alertView = UIAlertController (title: "Your message was saved and updated.", message: "Please return to Status Tab.", preferredStyle: UIAlertControllerStyle.Alert)
+                        let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in
+                            // ...
+                        }
+                        alertView.addAction(cancelAction)
+                        self.presentViewController(alertView, animated: true, completion: nil)
+
+                        
+                        self.titleText.text = ""
+                        self.noteText.text = ""
+                        
+                        
+                    } else {
+                        print(error!.description)
+                        // There was a problem, check error.description
+                    }
                 }
             }
         }
