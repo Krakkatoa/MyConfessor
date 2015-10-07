@@ -14,21 +14,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="530" height="124"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-xb-HOd">
-                        <rect key="frame" x="13" y="24" width="526" height="20"/>
-                        <attributedString key="attributedText">
-                            <fragment content="Title">
-                                <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="500" translatesAutoresizingMaskIntoConstraints="NO" id="OGW-2s-tRb">
-                        <rect key="frame" x="13" y="60" width="526" height="20"/>
+                        <rect key="frame" x="13" y="67" width="526" height="20"/>
                         <attributedString key="attributedText">
                             <fragment content="Subtitle">
                                 <attributes>
@@ -40,10 +27,29 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRm-bz-GhN">
+                        <rect key="frame" x="13" y="10" width="261" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-xb-HOd">
+                        <rect key="frame" x="13" y="39" width="526" height="20"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Title">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="OGW-2s-tRb" secondAttribute="bottom" constant="36" id="16P-Wi-JSv"/>
-                    <constraint firstItem="OGW-2s-tRb" firstAttribute="top" secondItem="t7B-xb-HOd" secondAttribute="bottom" constant="16" id="4ao-Bb-lrN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OGW-2s-tRb" secondAttribute="bottom" constant="29" id="16P-Wi-JSv"/>
+                    <constraint firstItem="OGW-2s-tRb" firstAttribute="top" secondItem="t7B-xb-HOd" secondAttribute="bottom" constant="8" id="4ao-Bb-lrN"/>
                     <constraint firstAttribute="trailingMargin" secondItem="t7B-xb-HOd" secondAttribute="trailing" constant="-17" id="EhP-fi-jgC"/>
                     <constraint firstAttribute="trailingMargin" secondItem="OGW-2s-tRb" secondAttribute="trailing" constant="-17" id="Oh1-ky-ZKb"/>
                     <constraint firstItem="OGW-2s-tRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="oSl-63-h0M"/>
@@ -51,6 +57,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="dateLabel" destination="tRm-bz-GhN" id="eGM-eJ-Lbk"/>
                 <outlet property="subtitleLabel" destination="OGW-2s-tRb" id="ceW-mD-mbC"/>
                 <outlet property="titleLabel" destination="t7B-xb-HOd" id="jHo-Dg-xAL"/>
             </connections>
