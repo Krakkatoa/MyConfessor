@@ -14,8 +14,8 @@ class FirstViewController: UIViewController {
     
     var notesData:NSMutableArray = []
     
-    
-   
+
+    @IBOutlet weak var statusImage: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -56,7 +56,11 @@ class FirstViewController: UIViewController {
                 if error == nil {
                     self.titleLabel.text = object!["title"] as? String
                      self.subtitleLabel.text = object!["note"] as? String
-                    
+                    if object! ["status"] as? String == "off" {
+                        self.statusImage.image = UIImage(named: "out.png")
+                    } else {
+                      self.statusImage.image = UIImage (named: "in.png")
+                    }
                     // The find succeeded.
                     print(self.notesData)
                 } else {

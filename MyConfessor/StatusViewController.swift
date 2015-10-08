@@ -19,6 +19,9 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var noteText: UITextView!
     
 
+    @IBOutlet weak var lightSwitch: UISwitch!
+    
+    
 
        override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,32 +49,46 @@ class StatusViewController: UIViewController {
             let defaults = NSUserDefaults.standardUserDefaults()
             if let identifier = defaults.stringForKey("UserIdentifier")
             {
-                let note = PFObject(className:"Status")
-                note["title"] = titleText.text
-                note["note"] = noteText.text
-                note["UserIdentifier"] = identifier
-                note.saveInBackgroundWithBlock {
-                    (success: Bool, error: NSError?) -> Void in
-                    if (success) {
-                        // The object has been saved.
-                        print("Note Saved!")
-                        let alertView = UIAlertController (title: "Your message was saved and updated.", message: "Please return to Status Tab.", preferredStyle: UIAlertControllerStyle.Alert)
-                        let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in
-                            // ...
+                var status = ""
+                if lightSwitch.on {
+                status = "on"}
+                else {
+                status = "off"}
+                
+                let query = PFQuery(className:"Status")
+            
+                query.getObjectInBackgroundWithId("Pna320IvTS"){ ( object: PFObject?, error: NSError?) -> Void in
+                    
+                    object!["status"] = status
+                    object!["title"] = self.titleText.text
+                    object!["note"] = self.noteText.text
+                    object!["UserIdentifier"] = identifier
+                    object!.saveInBackgroundWithBlock {
+                        (success: Bool, error: NSError?) -> Void in
+                        if (success) {
+                            // The object has been saved.
+                            print("Note Saved!")
+                            let alertView = UIAlertController (title: "Your message was saved and updated.", message: "Please return to Status Tab.", preferredStyle: UIAlertControllerStyle.Alert)
+                            let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in
+                                // ...
+                            }
+                            alertView.addAction(cancelAction)
+                            self.presentViewController(alertView, animated: true, completion: nil)
+                            
+                            
+                            self.titleText.text = ""
+                            self.noteText.text = ""
+                            
+                            
+                        } else {
+                            print(error!.description)
+                            // There was a problem, check error.description
                         }
-                        alertView.addAction(cancelAction)
-                        self.presentViewController(alertView, animated: true, completion: nil)
-
-                        
-                        self.titleText.text = ""
-                        self.noteText.text = ""
-                        
-                        
-                    } else {
-                        print(error!.description)
-                        // There was a problem, check error.description
                     }
                 }
+                
+                
+                
             }
         }
         

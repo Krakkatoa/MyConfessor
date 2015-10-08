@@ -132,6 +132,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="jYV-a6-ovE"/>
                     <connections>
+                        <outlet property="statusImage" destination="CUw-EC-xsi" id="QQ4-oT-MMb"/>
                         <outlet property="subtitleLabel" destination="hXb-Th-Aq1" id="Dq5-Sg-3uK"/>
                         <outlet property="titleLabel" destination="g3c-i7-gHF" id="kKH-0A-2J7"/>
                     </connections>
@@ -430,7 +431,6 @@ Have I…
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="3eM-Md-dXm" eventType="touchUpInside" id="9hH-ir-SdX"/>
-                                    <segue destination="gtU-Gw-VOl" kind="push" id="kVe-IQ-qNS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -441,6 +441,7 @@ Have I…
                     <connections>
                         <outlet property="fatherTextField" destination="KNs-J4-2yZ" id="vHi-6Z-lSP"/>
                         <outlet property="passwordTextField" destination="nIn-ZO-wmu" id="Brl-bP-AbO"/>
+                        <segue destination="gtU-Gw-VOl" kind="push" identifier="loginSegue" id="b5t-H9-Hdd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txn-18-wXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -535,6 +536,7 @@ Have I…
                     </view>
                     <navigationItem key="navigationItem" id="CoN-hv-ABP"/>
                     <connections>
+                        <outlet property="lightSwitch" destination="1lP-kf-7UQ" id="yAt-S1-Nrv"/>
                         <outlet property="noteText" destination="Sir-mD-lo6" id="qDK-TQ-b71"/>
                         <outlet property="titleText" destination="LqF-tS-FPZ" id="0KX-Tq-zC9"/>
                     </connections>

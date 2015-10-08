@@ -34,17 +34,18 @@ class PasswordViewController: UIViewController {
         let query = PFQuery(className:"Father")
         query.orderByDescending("updatedAt")
         
-        query.whereKey("Father", equalTo:fatherTextField.text!)
+        query.whereKey("User", equalTo:fatherTextField.text!)
         query.whereKey("Password", equalTo: passwordTextField.text!)
         query.getFirstObjectInBackgroundWithBlock({ (object: PFObject?, error: NSError?) -> Void in
             if error == nil {
-                if object == nil {
-                    
-                }
-                else{}
+            self.performSegueWithIdentifier("loginSegue", sender: self)
             } else {
-                
-                // Log details of the failure
+                let alertView = UIAlertController (title: "Alert", message: "User name and password do not match.", preferredStyle: UIAlertControllerStyle.Alert)
+                let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in
+                    // ...
+                }
+                alertView.addAction(cancelAction)
+                self.presentViewController(alertView, animated: true, completion: nil)                // Log details of the failure
                 NSLog("Error: %@ %@", error!, error!.userInfo)
                 
             }
