@@ -19,7 +19,6 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var noteText: UITextView!
     
 
-    
 
        override func viewDidLoad() {
         super.viewDidLoad()

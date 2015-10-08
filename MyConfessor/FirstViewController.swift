@@ -16,8 +16,6 @@ class FirstViewController: UIViewController {
     
     
    
-   
-
     
     @IBOutlet weak var titleLabel: UILabel!
     
