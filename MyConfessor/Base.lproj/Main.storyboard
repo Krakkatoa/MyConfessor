@@ -84,47 +84,38 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qr9-ZF-F6r">
-                                <rect key="frame" x="0.0" y="399" width="320" height="43"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="15"/>
-                                <state key="normal" title="Check Status">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Father " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIJ-Ga-y6b">
-                                <rect key="frame" x="15" y="55" width="60" height="21"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
+                                <rect key="frame" x="16" y="49" width="83" height="21"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="out" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-EC-xsi">
-                                <rect key="frame" x="15" y="84" width="79" height="50"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heilman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mop-io-X5g">
-                                <rect key="frame" x="76" y="55" width="83" height="21"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
+                                <rect key="frame" x="95" y="49" width="115" height="21"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeilmanApp-forprogram@x1" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
-                                <rect key="frame" x="0.0" y="235" width="320" height="310"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-i7-gHF">
+                                <rect key="frame" x="20" y="93" width="275" height="32"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Th-Aq1">
+                                <rect key="frame" x="20" y="140" width="280" height="58"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeilmanApp-clipped@x1" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
+                                <rect key="frame" x="25" y="192" width="264" height="312"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-i7-gHF">
-                                <rect key="frame" x="102" y="84" width="166" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Th-Aq1">
-                                <rect key="frame" x="102" y="118" width="175" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-EC-xsi">
+                                <rect key="frame" x="218" y="28" width="88" height="63"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,13 +123,14 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="jYV-a6-ovE"/>
                     <connections>
+                        <outlet property="statusLight" destination="CUw-EC-xsi" id="299-Lh-fjE"/>
                         <outlet property="subtitleLabel" destination="hXb-Th-Aq1" id="Dq5-Sg-3uK"/>
                         <outlet property="titleLabel" destination="g3c-i7-gHF" id="kKH-0A-2J7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1044" y="-1818"/>
+            <point key="canvasLocation" x="-959" y="-1991"/>
         </scene>
         <!--Conscience Exam-->
         <scene sceneID="wg7-f3-ORb">
@@ -374,7 +366,7 @@ Have I…
         <scene sceneID="e1d-rX-IBt">
             <objects>
                 <navigationController id="4oI-nk-puX" userLabel="Priest Nav Controller" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Priest Log-in" image="Knight Shield Filled-50" id="QUj-B7-QJt"/>
+                    <tabBarItem key="tabBarItem" title="Priest Update" image="Knight Shield Filled-50" id="QUj-B7-QJt" userLabel="Priest Update"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CvH-LG-djL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -430,7 +422,7 @@ Have I…
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="3eM-Md-dXm" eventType="touchUpInside" id="9hH-ir-SdX"/>
-                                    <segue destination="gtU-Gw-VOl" kind="push" id="kVe-IQ-qNS"/>
+                                    <segue destination="gtU-Gw-VOl" kind="push" id="CIU-Vc-BnJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -472,15 +464,11 @@ Have I…
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schedule:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf1-mH-cls">
-                                <rect key="frame" x="39" y="170" width="79" height="21"/>
+                                <rect key="frame" x="31" y="213" width="79" height="21"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="Clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-kf-7UQ">
-                                <rect key="frame" x="123" y="114" width="51" height="31"/>
-                                <color key="onTintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhF-Dg-Qpn">
                                 <rect key="frame" x="84" y="119" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
@@ -493,20 +481,14 @@ Have I…
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How long will you be out/in? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkH-cP-kDO">
-                                <rect key="frame" x="39" y="200" width="230" height="33"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When will you be available next?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-7F-6xV">
-                                <rect key="frame" x="39" y="289" width="261" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If IN, how long are you available?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkH-cP-kDO">
+                                <rect key="frame" x="31" y="318" width="270" height="33"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-3C-WOP">
-                                <rect key="frame" x="134" y="400" width="53" height="30"/>
+                                <rect key="frame" x="135" y="470" width="53" height="30"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="20"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -517,31 +499,54 @@ Have I…
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-mD-lo6" userLabel="Note View">
-                                <rect key="frame" x="40" y="318" width="249" height="74"/>
+                                <rect key="frame" x="31" y="388" width="260" height="74"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LqF-tS-FPZ" userLabel="Title View">
-                                <rect key="frame" x="39" y="241" width="250" height="39"/>
+                                <rect key="frame" x="31" y="271" width="261" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Today's Date and Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQH-gh-oN0">
+                                <rect key="frame" x="31" y="242" width="196" height="21"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If OUT, when will you back?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-7F-6xV">
+                                <rect key="frame" x="31" y="347" width="281" height="40"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="Clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-kf-7UQ">
+                                <rect key="frame" x="123" y="114" width="51" height="31"/>
+                                <color key="onTintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="lightSwitch:" destination="gtU-Gw-VOl" eventType="valueChanged" id="tVA-iY-ZT3"/>
+                                    <action selector="offLight:" destination="gtU-Gw-VOl" eventType="valueChanged" id="QdW-gH-AHE"/>
+                                    <action selector="offSwitch:" destination="gtU-Gw-VOl" eventType="primaryActionTriggered" id="B2n-FI-0tl"/>
+                                    <segue destination="9pv-A4-QxB" kind="custom" identifier="lightSwitchSegue" customClass="UISwitchSegue" id="Amj-aY-UpP"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CoN-hv-ABP"/>
                     <connections>
+                        <outlet property="lightSwitch" destination="1lP-kf-7UQ" id="Btc-EK-Wkl"/>
                         <outlet property="noteText" destination="Sir-mD-lo6" id="qDK-TQ-b71"/>
                         <outlet property="titleText" destination="LqF-tS-FPZ" id="0KX-Tq-zC9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLK-M6-a6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1523" y="-2062"/>
+            <point key="canvasLocation" x="-1499" y="-2032"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -619,10 +624,13 @@ A: We are accepting PayPal contributions from this webpage: (TBA)</string>
         <image name="Clock-50" width="50" height="50"/>
         <image name="Decision Filled-50" width="50" height="50"/>
         <image name="FAQ Filled-50" width="50" height="50"/>
-        <image name="HeilmanApp-forprogram@x1" width="724" height="1286"/>
+        <image name="HeilmanApp-clipped@x1" width="724" height="900"/>
         <image name="Knight Shield Filled-50" width="50" height="50"/>
         <image name="Literature Filled-50" width="50" height="50"/>
-        <image name="out" width="199" height="152"/>
+        <image name="in" width="199" height="152"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Amj-aY-UpP"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
