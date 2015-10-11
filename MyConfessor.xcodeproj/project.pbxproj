@@ -24,6 +24,9 @@
 		71612FBA1BB4E37A00B2B6B5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB91BB4E37A00B2B6B5 /* libsqlite3.tbd */; };
 		71612FBC1BB4E3D000B2B6B5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FBB1BB4E3D000B2B6B5 /* Social.framework */; };
 		718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DC9E61B9FB5C800E0851D /* ConfessionGuide.swift */; };
+		71E235F51BC9E334007B3014 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718555681BB38EEC00DC7D75 /* UIKit.framework */; };
+		71E235F61BC9E350007B3014 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB71BB4E34300B2B6B5 /* SystemConfiguration.framework */; };
+		71E235F71BC9E37D007B3014 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71612FB11BB4E31A00B2B6B5 /* CoreLocation.framework */; };
 		71EBD1771BBDCE2D00A73930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD1761BBDCE2D00A73930 /* Foundation.framework */; };
 		71EBD1791BBDCEC400A73930 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD1781BBDCEC400A73930 /* libz.tbd */; };
 		71EBD17B1BBDCFDE00A73930 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD17A1BBDCFDE00A73930 /* CoreGraphics.framework */; };
@@ -115,6 +118,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E235F71BC9E37D007B3014 /* CoreLocation.framework in Frameworks */,
+				71E235F61BC9E350007B3014 /* SystemConfiguration.framework in Frameworks */,
+				71E235F51BC9E334007B3014 /* UIKit.framework in Frameworks */,
 				71ED19931BBA118F00A892FF /* Parse.framework in Frameworks */,
 				71ED19901BBA118400A892FF /* Bolts.framework in Frameworks */,
 			);
