@@ -95,33 +95,33 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <rect key="frame" x="194" y="3" width="83" height="58"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="confessional@x1" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
-                                <rect key="frame" x="29" y="218" width="237" height="293"/>
+                                <rect key="frame" x="34" y="236" width="252" height="275"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Until" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-MD-GUi">
-                                <rect key="frame" x="29" y="62" width="40" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Until" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-MD-GUi">
+                                <rect key="frame" x="29" y="61" width="275" height="24"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Next Availability " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ5-e5-8Kc">
-                                <rect key="frame" x="29" y="89" width="149" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Next Availability " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ5-e5-8Kc">
+                                <rect key="frame" x="29" y="123" width="149" height="24"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-i7-gHF">
-                                <rect key="frame" x="86" y="58" width="35" height="36"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Th-Aq1">
-                                <rect key="frame" x="161" y="89" width="59" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Th-Aq1">
+                                <rect key="frame" x="29" y="147" width="291" height="36"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-i7-gHF">
+                                <rect key="frame" x="29" y="85" width="291" height="36"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,28 +130,16 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             <constraint firstItem="CUw-EC-xsi" firstAttribute="leading" secondItem="kIJ-Ga-y6b" secondAttribute="trailing" constant="28" id="2Rb-zu-MHK"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Gxa-KU-GTN" secondAttribute="bottom" constant="8" id="56d-AL-lQI"/>
                             <constraint firstAttribute="height" secondItem="CUw-EC-xsi" secondAttribute="height" multiplier="568:58" id="8JZ-SD-ihP"/>
-                            <constraint firstAttribute="height" secondItem="gaq-MD-GUi" secondAttribute="height" multiplier="568:28" id="AEf-kq-8RM"/>
-                            <constraint firstItem="g3c-i7-gHF" firstAttribute="top" secondItem="kIJ-Ga-y6b" secondAttribute="bottom" constant="5" id="C0y-du-qJ8"/>
                             <constraint firstItem="kIJ-Ga-y6b" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-7" id="Gz4-Xc-wSA"/>
                             <constraint firstAttribute="width" secondItem="kIJ-Ga-y6b" secondAttribute="width" multiplier="320:156" id="IBz-3A-e2H"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="CUw-EC-xsi" secondAttribute="bottom" constant="458" id="MrH-pS-rz6"/>
-                            <constraint firstItem="gaq-MD-GUi" firstAttribute="top" secondItem="CUw-EC-xsi" secondAttribute="bottom" constant="1" id="Q1H-Mw-Y54"/>
-                            <constraint firstItem="gaq-MD-GUi" firstAttribute="top" secondItem="kIJ-Ga-y6b" secondAttribute="bottom" constant="9" id="QZQ-NK-uOx"/>
-                            <constraint firstItem="g3c-i7-gHF" firstAttribute="leading" secondItem="gaq-MD-GUi" secondAttribute="trailing" constant="17" id="SHs-Bx-usA"/>
-                            <constraint firstItem="hXb-Th-Aq1" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="145" id="UGU-D2-cRa"/>
                             <constraint firstAttribute="width" secondItem="CUw-EC-xsi" secondAttribute="width" multiplier="320:83" id="dwd-Zh-6LY"/>
-                            <constraint firstAttribute="width" secondItem="Gxa-KU-GTN" secondAttribute="width" multiplier="320:237" id="hmJ-Ob-175"/>
-                            <constraint firstItem="hXb-Th-Aq1" firstAttribute="top" secondItem="bQ5-e5-8Kc" secondAttribute="bottom" constant="-24" id="kAf-Zc-FuG"/>
-                            <constraint firstItem="gaq-MD-GUi" firstAttribute="leading" secondItem="bQ5-e5-8Kc" secondAttribute="leading" id="mFR-Sq-8K6"/>
-                            <constraint firstAttribute="height" secondItem="Gxa-KU-GTN" secondAttribute="height" multiplier="568:293" id="nI7-73-hJe"/>
+                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="m7T-z8-pHf"/>
+                            <constraint firstAttribute="height" secondItem="Gxa-KU-GTN" secondAttribute="height" multiplier="568:293" constant="35" id="nI7-73-hJe"/>
                             <constraint firstAttribute="leadingMargin" secondItem="kIJ-Ga-y6b" secondAttribute="leading" constant="6" id="oU0-mm-1NA"/>
-                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="13" id="rIz-hQ-lhX"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="gaq-MD-GUi" secondAttribute="leading" constant="-13" id="rWM-Pp-tfZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bQ5-e5-8Kc" secondAttribute="trailing" constant="126" id="rma-3F-fUY"/>
+                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="18" id="rIz-hQ-lhX"/>
                             <constraint firstAttribute="height" secondItem="kIJ-Ga-y6b" secondAttribute="height" multiplier="568:40" id="tWt-2k-zbl"/>
                             <constraint firstItem="CUw-EC-xsi" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-17" id="to6-aa-Qhp"/>
-                            <constraint firstItem="bQ5-e5-8Kc" firstAttribute="top" secondItem="g3c-i7-gHF" secondAttribute="bottom" constant="7" id="vTe-4v-l3M"/>
-                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="top" secondItem="hXb-Th-Aq1" secondAttribute="bottom" constant="105" id="vna-o9-One"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
@@ -448,7 +436,7 @@ Have I…
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="New priests seeking access, please email Father Richard Heilman at rheilman@yahoo.com." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZAa-er-0lc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="New priests seeking access, please email Father Richard Heilman at rheilman@yahoo.com." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZAa-er-0lc">
                                 <rect key="frame" x="40" y="316" width="240" height="83"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
@@ -537,22 +525,10 @@ Have I…
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-mD-lo6" userLabel="Note View">
                                 <rect key="frame" x="10" y="274" width="291" height="36"/>
-=======
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-mD-lo6" userLabel="Note View">
-                                <rect key="frame" x="39" y="323" width="249" height="74"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LqF-tS-FPZ" userLabel="Title View">
-                                <rect key="frame" x="38" y="242" width="250" height="39"/>
->>>>>>> parent of 9041947... Works on all models of phones now.
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-cP-JMb">
@@ -569,11 +545,7 @@ Have I…
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-3C-WOP">
-<<<<<<< HEAD
                                 <rect key="frame" x="129" y="326" width="53" height="30"/>
-=======
-                                <rect key="frame" x="129" y="400" width="53" height="30"/>
->>>>>>> parent of 9041947... Works on all models of phones now.
                                 <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="20"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
