@@ -58,10 +58,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     //Push notifications
-    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
-        UIApplication.sharedApplication().registerForRemoteNotifications()
+  //  func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+      //  UIApplication.sharedApplication().registerForRemoteNotifications()
         
-    }
+    //}
     
     
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
