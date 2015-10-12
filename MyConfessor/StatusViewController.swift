@@ -18,24 +18,24 @@ class StatusViewController: UIViewController {
     
     @IBOutlet weak var noteText: UITextView!
     
-    
+
     @IBOutlet weak var lightSwitch: UISwitch!
     
     
-    
-    override func viewDidLoad() {
+
+       override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-          titleText.addTarget(nil, action:"firstResponderAction:", forControlEvents:.EditingDidEndOnExit)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
+    
+
+        
     }
-    
-    
     @IBAction func saveAction(sender: AnyObject) {
         //we check if we already have our identifier, if we do we save a note in parse
         if titleText.text == "" {
@@ -44,19 +44,19 @@ class StatusViewController: UIViewController {
                 // ...
             }
             alertView.addAction(cancelAction)
-            self.presentViewController(alertView, animated: true, completion: nil)
+        self.presentViewController(alertView, animated: true, completion: nil)
         } else {
             let defaults = NSUserDefaults.standardUserDefaults()
             if let identifier = defaults.stringForKey("UserIdentifier")
             {
                 var status = ""
                 if lightSwitch.on {
-                    status = "on"}
+                status = "on"}
                 else {
-                    status = "off"}
+                status = "off"}
                 
                 let query = PFQuery(className:"Status")
-                
+            
                 query.getObjectInBackgroundWithId("Pna320IvTS"){ ( object: PFObject?, error: NSError?) -> Void in
                     
                     object!["status"] = status
@@ -69,14 +69,10 @@ class StatusViewController: UIViewController {
                             // The object has been saved.
                             print("Note Saved!")
                             let alertView = UIAlertController (title: "Your message was saved and updated.", message: "Please return to Status Tab.", preferredStyle: UIAlertControllerStyle.Alert)
-                            let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in}
-                                
-                                self.dismissViewControllerAnimated(true) { () -> Void in
-                                    
+                            let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in
                                 // ...
                             }
                             alertView.addAction(cancelAction)
-                            
                             self.presentViewController(alertView, animated: true, completion: nil)
                             
                             
@@ -85,12 +81,7 @@ class StatusViewController: UIViewController {
                             
                             
                         } else {
-                            print(error!.description)}
-                            
-                        
-                        
-                                    
-                            
+                            print(error!.description)
                             // There was a problem, check error.description
                         }
                     }
@@ -99,7 +90,59 @@ class StatusViewController: UIViewController {
                 
                 
             }
-                }
+        }
         
-                }
+        
+    }
+    
+    @IBAction func readAction(sender: AnyObject) {
+        
+    }
+    
+    
+    
+    
+    
+}
+
+
+
+//
+
+/*
+// MARK: - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+
+override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+
+// Get the new view controller using segue.destinationViewController.
+// Pass the selected object to the new view controller.
+}
+*/
+
+// Change the mood operator based on input
+
+
+
+
+
+/*
+// MARK: - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+
+override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+
+// Get the new view controller using segue.destinationViewController.
+// Pass the selected object to the new view controller.
+}
+*/
+
+// Change the mood operator based on input
+
+
+
 
