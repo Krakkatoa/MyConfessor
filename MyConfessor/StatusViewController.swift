@@ -32,10 +32,10 @@ class StatusViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
+    
+
         
     }
-    
-    
     @IBAction func saveAction(sender: AnyObject) {
         //we check if we already have our identifier, if we do we save a note in parse
         if titleText.text == "" {
