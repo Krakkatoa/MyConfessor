@@ -18,7 +18,7 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var noteText: UITextField!
     
-
+    
     @IBOutlet weak var lightSwitch: UISwitch!
     
     @IBOutlet weak var saveAction: UIButton!
@@ -29,9 +29,9 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
         
         
     }
-       override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-         self.noteText.delegate = self;
+        self.noteText.delegate = self;
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -40,11 +40,14 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
-    
-
+        
+        
         
     }
     @IBAction func saveAction(sender: AnyObject) {
+        //dismiss the keyboard from the UITextField
+        titleText.resignFirstResponder()
+        noteText.resignFirstResponder()
         //we check if we already have our identifier, if we do we save a note in parse
         if titleText.text == "" {
             let alertView = UIAlertController (title: "Alert", message: "Please complete all fields.", preferredStyle: UIAlertControllerStyle.Alert)
@@ -81,7 +84,7 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
                             
                             self.dismissViewControllerAnimated(true) { () -> Void in
                                 // There was a problem, check error.description
-                                noteText.resignFirstResponder()
+                                self.noteText.resignFirstResponder()
                                 
                                 // ...
                             }
@@ -97,10 +100,10 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
                         } else {
                             print(error!.description)}
                         
-                       
                         
-                    
-                    
+                        
+                        
+                        
                         // There was a problem, check error.description
                     }
                 }

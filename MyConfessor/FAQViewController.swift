@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FAQViewController.swift
 //  MyConfessor
 //
 //  Created by My Mac on 9/5/15.
@@ -11,7 +11,7 @@ import Parse
     
 
 
-class SecondViewController: UIViewController {
+class FAQViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

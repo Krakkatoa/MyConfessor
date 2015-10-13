@@ -5,14 +5,13 @@
 //  Created by My Mac on 9/28/15.
 //  Copyright © 2015 Carmel Heart Media. All rights reserved.
 //
-
 import Foundation
 
 import Parse
 
 class PasswordViewController: UIViewController {
     @IBOutlet weak var fatherTextField: UITextField!
-
+    
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
@@ -22,7 +21,7 @@ class PasswordViewController: UIViewController {
         
     }
     
-   
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,6 +30,8 @@ class PasswordViewController: UIViewController {
     
     @IBAction func loginAction(sender: AnyObject)
     {
+        fatherTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
         let query = PFQuery(className:"Father")
         query.orderByDescending("updatedAt")
         
@@ -38,7 +39,7 @@ class PasswordViewController: UIViewController {
         query.whereKey("Password", equalTo: passwordTextField.text!)
         query.getFirstObjectInBackgroundWithBlock({ (object: PFObject?, error: NSError?) -> Void in
             if error == nil {
-            self.performSegueWithIdentifier("loginSegue", sender: self)
+                self.performSegueWithIdentifier("loginSegue", sender: self)
             } else {
                 let alertView = UIAlertController (title: "Alert", message: "User name and password do not match.", preferredStyle: UIAlertControllerStyle.Alert)
                 let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in
@@ -53,4 +54,6 @@ class PasswordViewController: UIViewController {
     }
     
 }
+
+
 

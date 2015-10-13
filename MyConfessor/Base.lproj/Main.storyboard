@@ -441,6 +441,12 @@ Have I…
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="TintColor">
+                                        <color key="value" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oI-LE-78f">
                                 <rect key="frame" x="140" y="208" width="69" height="30"/>
@@ -491,12 +497,6 @@ Have I…
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf1-mH-cls">
-                                <rect key="frame" x="109" y="151" width="103" height="21"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="Clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-kf-7UQ">
                                 <rect key="frame" x="195" y="112" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -513,20 +513,20 @@ Have I…
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When will you be available next?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-7F-6xV">
-                                <rect key="frame" x="30" y="259" width="261" height="21"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-cP-JMb">
                                 <rect key="frame" x="118" y="72" width="80" height="21"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="27"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When will you be available next?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-7F-6xV">
+                                <rect key="frame" x="30" y="230" width="261" height="21"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-3C-WOP">
-                                <rect key="frame" x="128" y="325" width="53" height="30"/>
+                                <rect key="frame" x="128" y="296" width="53" height="30"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="20"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -535,22 +535,22 @@ Have I…
                                     <action selector="saveAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="ZwF-C7-I06"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2H-V9-pNz">
-                                <rect key="frame" x="9" y="288" width="291" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Old-Az-J77">
-                                <rect key="frame" x="9" y="221" width="291" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How long will you be out/in? (Date/Time.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkH-cP-kDO">
-                                <rect key="frame" x="15" y="180" width="278" height="33"/>
+                                <rect key="frame" x="15" y="151" width="278" height="33"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2H-V9-pNz">
+                                <rect key="frame" x="9" y="259" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Old-Az-J77">
+                                <rect key="frame" x="9" y="192" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -592,10 +592,10 @@ Have I…
             </objects>
             <point key="canvasLocation" x="-2089" y="-1416"/>
         </scene>
-        <!--FAQ-->
+        <!--FAQViewController-->
         <scene sceneID="kab-AG-lQ6">
             <objects>
-                <viewController id="02X-z4-xku" sceneMemberID="viewController">
+                <viewController title="FAQViewController" id="02X-z4-xku" customClass="FAQViewController" customModule="MyConfessor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dwe-k2-H6b"/>
                         <viewControllerLayoutGuide type="bottom" id="6JZ-CT-Igr"/>
@@ -604,7 +604,7 @@ Have I…
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BJ6-n7-x0l">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BJ6-n7-x0l">
                                 <rect key="frame" x="9" y="28" width="291" height="491"/>
                                 <string key="text">FAQ
 
@@ -626,6 +626,12 @@ A: We are accepting PayPal contributions, which can be made to rheilman@yahoo.co
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="TintColor">
+                                        <color key="value" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
