@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Confession Guide" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-y9-7XP">
-                                <rect key="frame" x="62" y="28" width="197" height="34"/>
+                                <rect key="frame" x="58" y="28" width="205" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxy-bg-zWu">
-                                <rect key="frame" x="16" y="70" width="288" height="428"/>
+                                <rect key="frame" x="8" y="70" width="270" height="428"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Having entered the confessional, place yourself in the presence of God, Who sees all things, and then address His minister:
 
@@ -55,15 +55,14 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="sxy-bg-zWu" secondAttribute="leading" id="5gH-Wz-a33"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sxy-bg-zWu" secondAttribute="leading" constant="8" id="5gH-Wz-a33"/>
                             <constraint firstItem="6Ng-gf-lw8" firstAttribute="top" secondItem="sxy-bg-zWu" secondAttribute="bottom" constant="21" id="8CB-jC-BxI"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="wK3-y9-7XP" secondAttribute="leading" constant="-46" id="93H-8J-lH7"/>
-                            <constraint firstAttribute="centerX" secondItem="sxy-bg-zWu" secondAttribute="centerX" id="CLR-hs-NM2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wK3-y9-7XP" secondAttribute="leading" constant="-42" id="93H-8J-lH7"/>
                             <constraint firstItem="wK3-y9-7XP" firstAttribute="top" secondItem="gGj-7R-T77" secondAttribute="bottom" constant="8" id="GgW-nT-hrv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sxy-bg-zWu" secondAttribute="trailing" id="YAR-3Q-bU7"/>
+                            <constraint firstAttribute="width" secondItem="sxy-bg-zWu" secondAttribute="width" multiplier="320:270" id="TSh-40-0dN"/>
                             <constraint firstItem="sxy-bg-zWu" firstAttribute="top" secondItem="wK3-y9-7XP" secondAttribute="bottom" constant="8" id="dhK-jE-WyA"/>
                             <constraint firstItem="gGj-7R-T77" firstAttribute="bottom" secondItem="wK3-y9-7XP" secondAttribute="top" constant="-8" id="njm-Ob-bxC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wK3-y9-7XP" secondAttribute="trailing" constant="45" id="oav-gd-9EJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wK3-y9-7XP" secondAttribute="trailing" constant="41" id="oav-gd-9EJ"/>
                             <constraint firstAttribute="centerY" secondItem="sxy-bg-zWu" secondAttribute="centerY" id="z7N-qr-JhT"/>
                         </constraints>
                     </view>
@@ -86,60 +85,64 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="749" text="Father Heilman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIJ-Ga-y6b">
-                                <rect key="frame" x="10" y="13" width="156" height="40"/>
+                                <rect key="frame" x="6" y="13" width="156" height="40"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="out" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-EC-xsi">
-                                <rect key="frame" x="194" y="3" width="83" height="58"/>
+                                <rect key="frame" x="217" y="0.0" width="83" height="58"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="confessional@x1" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
-                                <rect key="frame" x="34" y="236" width="252" height="275"/>
+                                <rect key="frame" x="21" y="169" width="292" height="370"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Until" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-MD-GUi">
-                                <rect key="frame" x="29" y="61" width="275" height="24"/>
+                                <rect key="frame" x="29" y="43" width="275" height="24"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Next Availability " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ5-e5-8Kc">
-                                <rect key="frame" x="29" y="123" width="149" height="24"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Th-Aq1">
-                                <rect key="frame" x="29" y="147" width="291" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Th-Aq1">
+                                <rect key="frame" x="25" y="117" width="279" height="36"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-i7-gHF">
-                                <rect key="frame" x="29" y="85" width="291" height="36"/>
+                                <rect key="frame" x="29" y="56" width="284" height="36"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Next Availability " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ5-e5-8Kc">
+                                <rect key="frame" x="25" y="85" width="149" height="24"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CUw-EC-xsi" firstAttribute="leading" secondItem="kIJ-Ga-y6b" secondAttribute="trailing" constant="28" id="2Rb-zu-MHK"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Gxa-KU-GTN" secondAttribute="bottom" constant="8" id="56d-AL-lQI"/>
+                            <constraint firstItem="CUw-EC-xsi" firstAttribute="leading" secondItem="kIJ-Ga-y6b" secondAttribute="trailing" constant="55" id="2Rb-zu-MHK"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Gxa-KU-GTN" secondAttribute="bottom" constant="-20" id="56d-AL-lQI"/>
+                            <constraint firstItem="hXb-Th-Aq1" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="9" id="5FD-zu-6jl"/>
                             <constraint firstAttribute="height" secondItem="CUw-EC-xsi" secondAttribute="height" multiplier="568:58" id="8JZ-SD-ihP"/>
                             <constraint firstItem="kIJ-Ga-y6b" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-7" id="Gz4-Xc-wSA"/>
                             <constraint firstAttribute="width" secondItem="kIJ-Ga-y6b" secondAttribute="width" multiplier="320:156" id="IBz-3A-e2H"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="CUw-EC-xsi" secondAttribute="bottom" constant="458" id="MrH-pS-rz6"/>
+                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="top" secondItem="hXb-Th-Aq1" secondAttribute="bottom" constant="16" id="LFf-I4-FzB"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="CUw-EC-xsi" secondAttribute="bottom" constant="461" id="MrH-pS-rz6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CUw-EC-xsi" secondAttribute="trailing" constant="4" id="YEa-IA-zl1"/>
                             <constraint firstAttribute="width" secondItem="CUw-EC-xsi" secondAttribute="width" multiplier="320:83" id="dwd-Zh-6LY"/>
-                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="m7T-z8-pHf"/>
-                            <constraint firstAttribute="height" secondItem="Gxa-KU-GTN" secondAttribute="height" multiplier="568:293" constant="35" id="nI7-73-hJe"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="kIJ-Ga-y6b" secondAttribute="leading" constant="6" id="oU0-mm-1NA"/>
-                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="18" id="rIz-hQ-lhX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hXb-Th-Aq1" secondAttribute="trailing" id="f5f-Gj-fTy"/>
+                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="7" id="m7T-z8-pHf"/>
+                            <constraint firstAttribute="height" secondItem="Gxa-KU-GTN" secondAttribute="height" multiplier="568:370" id="nI7-73-hJe"/>
+                            <constraint firstItem="hXb-Th-Aq1" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="97" id="qka-at-L74"/>
+                            <constraint firstItem="Gxa-KU-GTN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="rIz-hQ-lhX"/>
                             <constraint firstAttribute="height" secondItem="kIJ-Ga-y6b" secondAttribute="height" multiplier="568:40" id="tWt-2k-zbl"/>
-                            <constraint firstItem="CUw-EC-xsi" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-17" id="to6-aa-Qhp"/>
+                            <constraint firstItem="CUw-EC-xsi" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-20" id="to6-aa-Qhp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
