@@ -85,21 +85,21 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="FrHeilmanImage@1x" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="FrHeilmanStatus@1x" translatesAutoresizingMaskIntoConstraints="NO" id="Gxa-KU-GTN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-i7-gHF">
-                                <rect key="frame" x="12" y="69" width="288" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="752" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-i7-gHF">
+                                <rect key="frame" x="16" y="78" width="116" height="32"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="out" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-EC-xsi">
-                                <rect key="frame" x="219" y="8" width="87" height="58"/>
+                                <rect key="frame" x="225" y="0.0" width="84" height="51"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Th-Aq1">
-                                <rect key="frame" x="12" y="117" width="288" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Th-Aq1">
+                                <rect key="frame" x="197" y="72" width="116" height="32"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -109,25 +109,24 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" secondItem="hXb-Th-Aq1" secondAttribute="height" multiplier="568:26" id="5X1-im-Uyx"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="CUw-EC-xsi" secondAttribute="bottom" constant="453" id="66z-Ww-PT8"/>
+                            <constraint firstItem="hXb-Th-Aq1" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="52" id="2XV-di-DJM"/>
                             <constraint firstAttribute="width" secondItem="Gxa-KU-GTN" secondAttribute="width" id="8vV-6F-Jzt"/>
-                            <constraint firstAttribute="height" secondItem="g3c-i7-gHF" secondAttribute="height" multiplier="568:26" id="A3G-wz-e4K"/>
-                            <constraint firstItem="CUw-EC-xsi" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="2" id="A4g-By-I7X"/>
+                            <constraint firstAttribute="height" secondItem="CUw-EC-xsi" secondAttribute="height" multiplier="568:51" id="Df0-76-5Q5"/>
                             <constraint firstAttribute="height" secondItem="Gxa-KU-GTN" secondAttribute="height" id="F8g-P4-uLy"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="g3c-i7-gHF" secondAttribute="leading" constant="8" id="FtQ-9z-Zut"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="g3c-i7-gHF" secondAttribute="trailing" id="Mdf-0a-k9G"/>
-                            <constraint firstItem="CUw-EC-xsi" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="203" id="MlA-zZ-7Nb"/>
-                            <constraint firstAttribute="width" secondItem="CUw-EC-xsi" secondAttribute="width" multiplier="320:87" id="Pkd-Nf-3G6"/>
-                            <constraint firstItem="CUw-EC-xsi" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-12" id="V6x-eg-GTN"/>
-                            <constraint firstItem="g3c-i7-gHF" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="49" id="a96-eP-MVo"/>
-                            <constraint firstAttribute="height" secondItem="CUw-EC-xsi" secondAttribute="height" multiplier="568:58" id="eMt-VW-TLk"/>
+                            <constraint firstItem="g3c-i7-gHF" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="58" id="H0p-rL-N3Q"/>
+                            <constraint firstItem="g3c-i7-gHF" firstAttribute="width" secondItem="hXb-Th-Aq1" secondAttribute="width" id="Kcn-9d-0HK"/>
+                            <constraint firstItem="hXb-Th-Aq1" firstAttribute="leading" secondItem="g3c-i7-gHF" secondAttribute="trailing" constant="65" id="Ot5-Kw-LYS"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="g3c-i7-gHF" secondAttribute="bottom" constant="409" id="Yvo-Qo-eTa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CUw-EC-xsi" secondAttribute="trailing" constant="-5" id="ZBt-PE-53Q"/>
+                            <constraint firstItem="CUw-EC-xsi" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-20" id="bXI-Er-F47"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hXb-Th-Aq1" secondAttribute="trailing" constant="-9" id="c34-Vx-pFU"/>
                             <constraint firstItem="Gxa-KU-GTN" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="ez1-El-htY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hXb-Th-Aq1" secondAttribute="trailing" id="jEc-7I-Bb9"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="hXb-Th-Aq1" secondAttribute="leading" constant="8" id="l30-14-73j"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="CUw-EC-xsi" secondAttribute="bottom" constant="468" id="fwX-O8-rTI"/>
+                            <constraint firstItem="g3c-i7-gHF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="kaA-Gn-pJo"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="hXb-Th-Aq1" secondAttribute="bottom" constant="415" id="lLl-8l-TSn"/>
+                            <constraint firstItem="g3c-i7-gHF" firstAttribute="height" secondItem="hXb-Th-Aq1" secondAttribute="height" id="qtU-23-Kmm"/>
                             <constraint firstItem="Gxa-KU-GTN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="sC4-63-Dd2"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="hXb-Th-Aq1" secondAttribute="bottom" constant="376" id="sZZ-tT-nxj"/>
-                            <constraint firstItem="g3c-i7-gHF" firstAttribute="bottom" secondItem="hXb-Th-Aq1" secondAttribute="top" constant="-22" id="weG-b1-WXZ"/>
+                            <constraint firstAttribute="width" secondItem="CUw-EC-xsi" secondAttribute="width" multiplier="320:84" id="sRc-s1-HyJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
@@ -637,7 +636,7 @@ A: We are accepting PayPal contributions, which can be made to rheilman@yahoo.co
         <image name="Clock-50" width="50" height="50"/>
         <image name="Decision Filled-50" width="50" height="50"/>
         <image name="FAQ Filled-50" width="50" height="50"/>
-        <image name="FrHeilmanImage@1x" width="724" height="1286"/>
+        <image name="FrHeilmanStatus@1x" width="724" height="1286"/>
         <image name="Knight Shield Filled-50" width="50" height="50"/>
         <image name="Literature Filled-50" width="50" height="50"/>
         <image name="out" width="199" height="152"/>
