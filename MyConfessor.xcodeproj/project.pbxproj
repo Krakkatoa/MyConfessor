@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7110DA501BEEC14800118AE4 /* CommandTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110DA4F1BEEC14800118AE4 /* CommandTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		633711DD1BEFF227000716AA /* CommandListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633711DC1BEFF227000716AA /* CommandListViewController.swift */; };
+		7110DA501BEEC14800118AE4 /* CommandTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110DA4F1BEEC14800118AE4 /* CommandTableViewController.swift */; };
 		716044781B9BF1E600323E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716044771B9BF1E600323E6E /* AppDelegate.swift */; };
 		7160447A1B9BF1E600323E6E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716044791B9BF1E600323E6E /* FirstViewController.swift */; };
 		7160447C1B9BF1E600323E6E /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160447B1B9BF1E600323E6E /* FAQViewController.swift */; };
@@ -33,14 +34,14 @@
 		71EBD17B1BBDCFDE00A73930 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD17A1BBDCFDE00A73930 /* CoreGraphics.framework */; };
 		71EBD17D1BBDD00800A73930 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD17C1BBDD00800A73930 /* Security.framework */; };
 		71EBD17F1BBDD09900A73930 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EBD17E1BBDD09900A73930 /* Accounts.framework */; };
-		71ED19791BB9F64100A892FF /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19781BB9F64100A892FF /* Password.swift */; settings = {ASSET_TAGS = (); }; };
-		71ED198F1BBA118400A892FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED198E1BBA118400A892FF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		71ED19901BBA118400A892FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED198E1BBA118400A892FF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		71ED19921BBA118F00A892FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED19911BBA118F00A892FF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		71ED19931BBA118F00A892FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED19911BBA118F00A892FF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		71ED19961BBB6C0900A892FF /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19941BBB6C0900A892FF /* NoteTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		71ED19971BBB6C0900A892FF /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71ED19951BBB6C0900A892FF /* NoteTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		71F0C5171BBC5253005C1A9B /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F0C5161BBC5253005C1A9B /* StatusViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		71ED19791BB9F64100A892FF /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19781BB9F64100A892FF /* Password.swift */; };
+		71ED198F1BBA118400A892FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED198E1BBA118400A892FF /* Bolts.framework */; };
+		71ED19901BBA118400A892FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED198E1BBA118400A892FF /* Bolts.framework */; };
+		71ED19921BBA118F00A892FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED19911BBA118F00A892FF /* Parse.framework */; };
+		71ED19931BBA118F00A892FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED19911BBA118F00A892FF /* Parse.framework */; };
+		71ED19961BBB6C0900A892FF /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED19941BBB6C0900A892FF /* NoteTableViewCell.swift */; };
+		71ED19971BBB6C0900A892FF /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71ED19951BBB6C0900A892FF /* NoteTableViewCell.xib */; };
+		71F0C5171BBC5253005C1A9B /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F0C5161BBC5253005C1A9B /* StatusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		633711DC1BEFF227000716AA /* CommandListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandListViewController.swift; sourceTree = "<group>"; };
 		7110DA4F1BEEC14800118AE4 /* CommandTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTableViewController.swift; sourceTree = "<group>"; };
 		716044721B9BF1E600323E6E /* MyConfessor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyConfessor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716044761B9BF1E600323E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				716044801B9BF1E600323E6E /* Images.xcassets */,
 				716044821B9BF1E600323E6E /* LaunchScreen.xib */,
 				716044751B9BF1E600323E6E /* Supporting Files */,
+				633711DC1BEFF227000716AA /* CommandListViewController.swift */,
 			);
 			path = MyConfessor;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			files = (
 				7160447C1B9BF1E600323E6E /* FAQViewController.swift in Sources */,
 				718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */,
+				633711DD1BEFF227000716AA /* CommandListViewController.swift in Sources */,
 				7110DA501BEEC14800118AE4 /* CommandTableViewController.swift in Sources */,
 				716044781B9BF1E600323E6E /* AppDelegate.swift in Sources */,
 				71ED19791BB9F64100A892FF /* Password.swift in Sources */,

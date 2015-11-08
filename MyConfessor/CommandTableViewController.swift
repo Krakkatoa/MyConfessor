@@ -14,8 +14,11 @@ class CommandTableViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet var commandTableView: UITableView!
    
+    @IBOutlet var testTitle: UILabel!
+    var testTitleString:String!
+    
     override func viewDidLoad() {
-        
+        self.testTitle.text=testTitleString
         self.commandTableView?.estimatedRowHeight = 107.0
         super.viewDidLoad()
         self.commandTableView?.rowHeight = UITableViewAutomaticDimension
