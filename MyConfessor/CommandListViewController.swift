@@ -16,7 +16,8 @@ class CommandListViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   commandsTable.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+        commandsTable.separatorStyle = UITableViewCellSeparatorStyle.None
+
         
 
         // Do any additional setup after loading the view.
@@ -32,6 +33,9 @@ class CommandListViewController: UIViewController, UITableViewDataSource, UITabl
         let cellTitle = cellTitles[indexPath.row]
         let cell: UITableViewCell = commandsTable.dequeueReusableCellWithIdentifier("commandmentCell")!
         cell.textLabel!.text = cellTitle
+        let additionalSeparator:UIView = UIView.init(frame: CGRect.init(x: 0, y: cell.frame.height + 5, width: cell.frame.width + 60, height: 1))
+        additionalSeparator.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        cell.addSubview(additionalSeparator)
         return cell
     }
     
@@ -40,6 +44,10 @@ class CommandListViewController: UIViewController, UITableViewDataSource, UITabl
         destinationVC.testTitleString =  commandmentsDescriptions[indexPath.row]
         navigationController?.pushViewController(destinationVC, animated: true)
         
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.separatorInset = UIEdgeInsetsZero
     }
 
     override func didReceiveMemoryWarning() {

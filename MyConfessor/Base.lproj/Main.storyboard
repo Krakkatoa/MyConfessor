@@ -212,21 +212,22 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="esZ-6h-Xzc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="esZ-6h-Xzc">
                                 <rect key="frame" x="0.0" y="-36" width="320" height="555"/>
                                 <animations/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.50747711490000003" green="0.50747711490000003" blue="0.50747711490000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.018189709599999999" green="0.018189709599999999" blue="0.018189709599999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.50747711490000003" green="0.50747711490000003" blue="0.50747711490000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="commandmentCell" textLabel="QzX-bU-7xY" style="IBUITableViewCellStyleDefault" id="xle-iS-OSu">
-                                        <rect key="frame" x="0.0" y="114" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="commandmentCell" textLabel="QzX-bU-7xY" rowHeight="50" style="IBUITableViewCellStyleDefault" id="xle-iS-OSu">
+                                        <rect key="frame" x="0.0" y="114" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xle-iS-OSu" id="kZ8-sw-Cwc">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QzX-bU-7xY">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -238,6 +239,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                         </tableViewCellContentView>
                                         <animations/>
                                         <color key="backgroundColor" red="0.50747711490000003" green="0.50747711490000003" blue="0.50747711490000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -247,7 +249,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             </tableView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.50747711490000003" green="0.50747711490000003" blue="0.50747711490000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="esZ-6h-Xzc" firstAttribute="leading" secondItem="IZu-kA-sSU" secondAttribute="leading" id="AlT-8a-yzv"/>
                             <constraint firstItem="esZ-6h-Xzc" firstAttribute="bottom" secondItem="jSz-nP-Lx1" secondAttribute="top" id="M7A-wO-Amr"/>
