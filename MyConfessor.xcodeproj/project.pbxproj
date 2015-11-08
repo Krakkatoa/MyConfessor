@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7110DA501BEEC14800118AE4 /* CommandTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110DA4F1BEEC14800118AE4 /* CommandTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		716044781B9BF1E600323E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716044771B9BF1E600323E6E /* AppDelegate.swift */; };
 		7160447A1B9BF1E600323E6E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716044791B9BF1E600323E6E /* FirstViewController.swift */; };
 		7160447C1B9BF1E600323E6E /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7160447B1B9BF1E600323E6E /* FAQViewController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7110DA4F1BEEC14800118AE4 /* CommandTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTableViewController.swift; sourceTree = "<group>"; };
 		716044721B9BF1E600323E6E /* MyConfessor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyConfessor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716044761B9BF1E600323E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716044771B9BF1E600323E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				71ED199E1BBB96B500A892FF /* MyConfessor_Bridging_Header.h */,
 				716044771B9BF1E600323E6E /* AppDelegate.swift */,
+				7110DA4F1BEEC14800118AE4 /* CommandTableViewController.swift */,
 				716044791B9BF1E600323E6E /* FirstViewController.swift */,
 				7160447B1B9BF1E600323E6E /* FAQViewController.swift */,
 				7160447D1B9BF1E600323E6E /* Main.storyboard */,
@@ -324,6 +327,7 @@
 			files = (
 				7160447C1B9BF1E600323E6E /* FAQViewController.swift in Sources */,
 				718DC9E71B9FB5C800E0851D /* ConfessionGuide.swift in Sources */,
+				7110DA501BEEC14800118AE4 /* CommandTableViewController.swift in Sources */,
 				716044781B9BF1E600323E6E /* AppDelegate.swift in Sources */,
 				71ED19791BB9F64100A892FF /* Password.swift in Sources */,
 				7160447A1B9BF1E600323E6E /* FirstViewController.swift in Sources */,

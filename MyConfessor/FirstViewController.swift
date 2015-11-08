@@ -94,8 +94,7 @@ class FirstViewController: UIViewController {
         formatter.timeStyle = .NoStyle
         
         
-        let dateCell = formatter.stringFromDate(rowData.createdAt!!)
-        cell.loadNote(dateCell, titleView: rowData["title"] as! String, subtitleView: rowData["note"] as! String)
+        
         
         
         

@@ -141,235 +141,208 @@ After confession, we should return thanks to God for His mercies in forgiving ou
             </objects>
             <point key="canvasLocation" x="-1115" y="-2158"/>
         </scene>
-        <!--Conscience Exam-->
-        <scene sceneID="wg7-f3-ORb">
+        <!--ListTableViewController-->
+        <scene sceneID="tCm-gu-3bd">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MyConfessor" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="CommandTableViewController" clearsSelectionOnViewWillAppear="NO" id="BvC-06-dfI" userLabel="ListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8fb-nG-9wa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" red="0.43745274340000001" green="0.34018541149999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="HXJ-od-u31">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="aUa-Ax-Z3G" style="IBUITableViewCellStyleDefault" id="Do9-Ws-ZW3">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Do9-Ws-ZW3" id="95W-hR-sS2">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="THE FIRST COMMANDMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aUa-Ax-Z3G">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="OeL-qX-dzP" kind="push" id="2W1-Lx-2Rw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KHm-wv-hjg">
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KHm-wv-hjg" id="aUy-hE-wU5">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE SECOND COMMANDMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oa-Xw-7y6">
+                                                    <rect key="frame" x="13" y="8" width="261" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="c4p-F3-WQz">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c4p-F3-WQz" id="LjU-S6-hKO">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE THIRD COMMANDMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e53-1C-muY">
+                                                    <rect key="frame" x="16" y="11" width="254" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="tintColor" red="0.43745274340000001" green="0.34018541149999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="irH-du-UB1">
+                                        <rect key="frame" x="0.0" y="196" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="irH-du-UB1" id="zdN-AD-Jbu">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsl-Oi-01I">
+                                                    <rect key="frame" x="111" y="-30" width="42" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="QpT-sb-M07">
+                                        <rect key="frame" x="0.0" y="240" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QpT-sb-M07" id="FPd-ht-716">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="uXn-Jq-LOo">
+                                        <rect key="frame" x="0.0" y="284" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uXn-Jq-LOo" id="8I6-6m-UGM">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="h0H-Gr-dDo">
+                                        <rect key="frame" x="0.0" y="328" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h0H-Gr-dDo" id="n4l-RZ-QzZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="5D3-4f-Fnm">
+                                        <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5D3-4f-Fnm" id="u2M-Xa-pjd">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="dRk-dF-H6G">
+                                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dRk-dF-H6G" id="cL6-3S-FTR">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="6hn-O3-YrQ">
+                                        <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6hn-O3-YrQ" id="M9f-Tu-ei0">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="lpt-1w-5Uj">
+                                        <rect key="frame" x="0.0" y="504" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lpt-1w-5Uj" id="TY8-af-c65">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="BvC-06-dfI" id="7nz-cL-68V"/>
+                            <outlet property="delegate" destination="BvC-06-dfI" id="h8W-qm-sx0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Examination of Conscience" id="H2i-AM-vev"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaX-gO-059" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1995" y="-591"/>
+        </scene>
+        <!--Command Table View Controller-->
+        <scene sceneID="MIm-iI-l3Q">
+            <objects>
+                <viewController id="OeL-qX-dzP" customClass="CommandTableViewController" customModule="MyConfessor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                        <viewControllerLayoutGuide type="top" id="lf2-2i-AGV"/>
+                        <viewControllerLayoutGuide type="bottom" id="3B5-e0-9oI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                    <view key="view" contentMode="scaleToFill" id="sc2-ry-08a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" indicatorStyle="white" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-yo-Axt">
-                                <rect key="frame" x="16" y="92" width="288" height="406"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Special thanks to "Beginning Catholic" for this examination.
-
-We use an examination of conscience to help call to mind our sins and failings during a period of quiet reflection before approaching the priest in Confession. It’s important for a good Catholic examination of conscience to be thorough. This will help you learn about sins that you may not be aware of. It’s also a chance to develop your conscience.
-Set aside some quiet time for your reflection.'
-
-Start by praying to the Holy Spirit, asking for help in making a good examination to prepare for Confession. Use the Ten Commandments to guide your examination. If necessary, take this list or some brief notes (keep them private!) to Confession to help you remember your sins.
-
-First Commandment
-
-I am the Lord your God. You shall worship the Lord your God and Him only shall you serve.
-
-Have I …
-
-*Disobeyed the commandments of God or the Church?
-*Refused to accept what God has revealed as true, or what the Catholic Church proposes for belief?
-*Denied the existence of God?
-*Failed to nourish and protect my faith?
-*Rejected everything opposed to a sound faith?
-*Deliberately misled others about doctrine or the faith?
-*Rejected the Catholic faith, joined another Christian denomination, or joined or practiced another religion?
-*Joined a group forbidden to Catholics (Masons, communists, etc.)?
-*Despaired about my salvation or the forgiveness of my sins?
-*Presumed on God’s mercy? (Committing a sin in expectation of forgiveness, or asking for forgiveness without conversion and practicing virtue.)
-*Loved someone or something more than God (money, power, sex, ambition, etc.)?
-*Let someone or something influence my choices more than God?
-*Engaged in superstitious practices? (Including horoscopes, fortunetellers, etc.)
-*Been involved in the occult? (séances, Ouija board, worship of Satan, etc.)
-*Formally left the Catholic Church?
-*Hidden a serious sin or told a lie in Confession?
-
-Second Commandment
-
-You shall not take the name of the Lord your God in vain.
-
-Have I…
-
-*Used the name of God in cursing or blasphemy?
-*Failed to keep vows or promises that I have made to God?
-*Spoken about the Faith, the Church, the saints, or sacred things with irreverence, hatred, or defiance?
-*Watched television or movies, or listened to music that treated God, the Church, the saints, or sacred things irreverently?
-*Used vulgar, suggestive, or obscene speech?
-*Belittled others in my speech?
-*Behaved disrespectfully in Church?
-*Misused places or things set apart for the worship of God?
-*Committed perjury? (Breaking an oath or lying under oath.)
-Blamed God for my failings?
-
-Third Commandment
-
-Remember to keep holy the Sabbath day.
-
-Have I…
-
-*Set time aside each day for personal prayer to God?
-*Missed Mass on Sunday or Holy Days (through my own fault without sufficient reason)?
-*Committed a sacrilege against the Blessed Sacrament?
-*Received a sacrament while in the state of mortal sin?
-*Habitually came late to and/or left early from Mass without a good reason?
-*Shopped, labored, or done business unnecessarily on Sunday or other Holy Days of Obligation?
-*Not attended to taking my children to Mass?
-*Knowingly eaten meat on a day of penance (or not fasted on a fast day)?
-*Eaten or drank within one hour of receiving Communion (other than water or medical need)?
-
-Fourth Commandment
-
-*Honor your father and your mother.
-
-Have I…
-
-*Obeyed all that my parents reasonably asked of me? (If still under my parents’ care.)
-*Neglected the needs of my parents in their old age or in their time of need?
-*Obeyed the reasonable demands of my teachers? (If still in school.)
-*Neglected to give my children proper food, clothing, shelter, education, discipline, and care (even after Confirmation)?
-*Provided for the religious education and formation of my children for as long as they were under my care?
-*Ensured that my children still under my care regularly frequent the sacraments of Penance and Holy Communion?
-*Educated my children in a way that corresponds to my religious convictions?
-*Provided my children with a positive, prudent, and personalized education in the Catholic teaching on human sexuality?
-*Been to my children a good example of how to live the Catholic Faith?
-*Prayed with and for my children?
-*Lived in humble obedience to those who legitimately exercise authority over me?
-*Broken the law?
-*Supported or voted for a politician whose positions are opposed to the teachings of Christ and the Catholic Church?
-
-Fifth Commandment
-
-You shall not kill.
-
-Have I…
-
-*Unjustly and intentionally killed a human being?
-*Been involved in an abortion, directly or indirectly (through advice, etc.)?
-*Seriously considered or attempted suicide?
-*Supported, promoted, or encouraged the practice of assisted suicide or mercy killing?
-*Deliberately desired to kill an innocent human being?
-*Unjustly inflicted bodily harm on another person?
-*Unjustly threatened another person with bodily harm?
-*Verbally or emotionally abused another person?
-*Hated another person, or wished him evil?
-*Been prejudiced or unjustly discriminating against others because of their race, color, nationality, sex, or religion?
-*Joined a hate group?
-*Purposely provoked another by teasing or nagging?
-*Recklessly endangered my life or health, or that of another, by my actions?
-*Driven recklessly or under the influence of alcohol or other drugs?
-*Abused alcohol or other drugs?
-*Sold or given drugs to others to use for non-therapeutic purposes?
-*Used tobacco immoderately?
-*Over-eaten?
-*Encouraged others to sin by giving scandal?
-*Helped another to commit a mortal sin? (through advice, driving them somewhere, etc.)
-*Caused serious injury or death by criminal neglect?
-*Indulged in serious anger?
-*Refused to control my temper?
-*Been mean to, quarreled with, or willfully hurt someone?
-*Been unforgiving to others, when mercy or pardon was requested?
-*Sought revenge or hoped something bad would happen to someone?
-*Delighted to see someone else get hurt or suffer?
-*Treated animals cruelly, causing them to suffer or die needlessly?
-
-Sixth and Ninth Commandments
-
-You shall not commit adultery.
-You shall not covet your neighbor’s wife.
-
-Have I…
-
-*Practiced the virtue of chastity?
-*Given in to lust? (The desire for sexual pleasure unrelated to spousal love in marriage.)
-*Used an artificial means of birth control?
-*Refused to be open to conception, without just cause? (Catechism of the Catholic Church paragraph 2368)
-*Participated in immoral techniques for in vitro fertilization or artificial insemination?
-*Sterilized my sex organs for contraceptive purposes?
-*Deprived my spouse of the marital right, without just cause?
-*Claimed my own marital right without concern for my spouse?
-*Deliberately caused male climax outside of normal sexual intercourse? (Catechism of the Catholic Church paragraph 2366)
-*Willfully entertained impure thoughts?
-*Purchased, viewed, or made use of pornography?
-*Watched movies and television that involved sex and nudity?
-*Listened to music or jokes that were harmful to purity?
-*Committed adultery? (Sexual relations with someone who is married, or with someone other than my spouse.)
-*Committed incest? (Sexual relations with a relative or in-law.)
-*Committed fornication? (Sexual relations with someone of the opposite sex when neither is married.)
-*Engaged in homosexual activity? (Sexual activity with someone of the same sex.)
-*Committed rape?
-*Masturbated? (Deliberate stimulation of one’s own sexual organs for sexual pleasure.)
-*Engaged in sexual foreplay (petting) reserved for marriage?
-*Preyed upon children or youth for my sexual pleasure?
-*Engaged in unnatural sexual activities?
-*Engaged in prostitution, or paid for the services of a prostitute?
-*Seduced someone, or allowed myself to be seduced?
-*Made uninvited and unwelcome sexual advances toward another?
-*Purposely dressed immodestly?
-
-Seventh and Tenth Commandments
-
-You shall not steal.
-You shall not covet your neighbor’s goods.
-
-Have I…
-
-*Stolen? (Take something that doesn’t belong to me against the reasonable will of the owner.)
-*Envied others on account of their possessions?
-*Tried to live in a spirit of Gospel poverty and simplicity?
-*Given generously to others in need?
-*Considered that God has provided me with money so that I might use it to benefit others, as well as for my own legitimate needs?
-*Freed myself from a consumer mentality?
-*Practiced the works of mercy?
-*Deliberately defaced, destroyed, or lost another’s property?
-*Cheated on a test, taxes, sports, games, or in business?
-*Squandered money in compulsive gambling?
-*Make a false claim to an insurance company?
-*Paid my employees a living wage, or failed to give a full day’s work for a full day’s pay?
-*Failed to honor my part of a contract?
-*Failed to make good on a debt?
-*Overcharged someone, especially to take advantage of another’s hardship or ignorance?
-*Misused natural resources?
-
-Eighth Commandment
-
-You shall not bear false witness against your neighbor.
-
-Have I…
-
-*Lied?
-*Knowingly and willfully deceived another?
-*Perjured myself under oath?
-*Gossiped?
-*Committed detraction? (Hurting a person’s reputation by telling others about his faults for no good reason.)
-*Committed slander or calumny? (Telling lies about another person in order to hurt his reputation.)
-*Committed libel? (Writing lies about another person in order to destroy his reputation.)
-*Been guilty of rash judgment? (Assuming the worst of another person based on circumstantial evidence.)
-*Failed to make reparation for a lie I told, or for harm done to a person’s reputation?
-*Failed to speak out in defense of the Catholic Faith, the Church, or of another person?
-*Betrayed another’s confidence through speech?
-   </string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Examination of Conscience" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-QK-XbY">
-                                <rect key="frame" x="0.0" y="20" width="320" height="47"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Imc-0p-vmX">
+                                <rect key="frame" x="0.0" y="72" width="320" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLAH BLAH BLAH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zjg-wx-Wza">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Conscience Exam" image="Decision Filled-50" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="WX5-y6-ifz"/>
+                    <connections>
+                        <outlet property="commandTableView" destination="Imc-0p-vmX" id="RI0-bA-0gb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0G-Eu-cPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1576" y="-1442"/>
+            <point key="canvasLocation" x="-1602" y="-556"/>
+        </scene>
+        <!--command-->
+        <scene sceneID="Lwx-ck-Ogc">
+            <objects>
+                <navigationController id="azH-Sc-AMX" userLabel="command" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Guide" image="Decision Filled-50" selectedImage="Decision Filled-50" id="6Gx-HM-Fan"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aqs-QK-Wzq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BvC-06-dfI" kind="relationship" relationship="rootViewController" id="dML-vS-mdv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0r7-bn-J62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2535" y="-591"/>
         </scene>
         <!--Priest Nav Controller-->
         <scene sceneID="e1d-rX-IBt">
@@ -569,10 +542,10 @@ Have I…
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="O3H-xg-dJ4" kind="relationship" relationship="viewControllers" id="AO9-qy-HDi"/>
                         <segue destination="02X-z4-xku" kind="relationship" relationship="viewControllers" id="Itb-U3-fSu"/>
                         <segue destination="4oI-nk-puX" kind="relationship" relationship="viewControllers" id="Na3-xR-Kp6"/>
+                        <segue destination="azH-Sc-AMX" kind="relationship" relationship="viewControllers" id="UtZ-vh-XlW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
