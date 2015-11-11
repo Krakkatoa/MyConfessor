@@ -11,8 +11,8 @@ import UIKit
 class CommandListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var commandsTable: UITableView!
-    let cellTitles = ["THE FIRST COMMANDMENT","THE SECOND COMMANDMENT","THE THIRD COMMANDMENT"]
-    let commandmentsDescriptions = ["THE FIRST COMMANDMENT DESCRIPTION","THE SECOND COMMANDMENT DESCRIPTION","THE THIRD COMMANDMENT DESCRIPTION"]
+    let cellTitles = ["THE FIRST COMMANDMENT","THE SECOND COMMANDMENT","THE THIRD COMMANDMENT", "4TH COMMANDMENT"]
+    let commandmentsDescriptions = ["THE FIRST COMMANDMENT DESCRIPTION","THE SECOND COMMANDMENT DESCRIPTION","THE THIRD COMMANDMENT DESCRIPTION", "4TH COMMANDMENT"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
