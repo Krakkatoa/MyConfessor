@@ -149,57 +149,6 @@ After confession, we should return thanks to God for His mercies in forgiving ou
             </objects>
             <point key="canvasLocation" x="-1115" y="-2158"/>
         </scene>
-        <!--ListTableViewController-->
-        <scene sceneID="tCm-gu-3bd">
-            <objects>
-                <tableViewController title="CommandTableViewController" clearsSelectionOnViewWillAppear="NO" id="BvC-06-dfI" userLabel="ListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8fb-nG-9wa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="sectionIndexColor" red="0.43745274340000001" green="0.34018541149999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <sections>
-                            <tableViewSection id="HXJ-od-u31">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="aUa-Ax-Z3G" style="IBUITableViewCellStyleDefault" id="Do9-Ws-ZW3">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Do9-Ws-ZW3" id="95W-hR-sS2">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="THE FIRST COMMANDMENT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aUa-Ax-Z3G">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.98259253639999999" green="1" blue="0.99185548680000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.42692550505050508" green="0.42692550505050508" blue="0.42692550505050508" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="BvC-06-dfI" id="zzF-Gg-bYh"/>
-                            <outlet property="delegate" destination="BvC-06-dfI" id="6iO-lh-WlP"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Examination of Conscience" id="H2i-AM-vev"/>
-                    <connections>
-                        <outlet property="commandsTable" destination="8fb-nG-9wa" id="M2A-S4-7N4"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zaX-gO-059" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1995" y="-591"/>
-        </scene>
         <!--Examination of Conscience-->
         <scene sceneID="XZj-yS-wgt">
             <objects>
@@ -212,33 +161,51 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="esZ-6h-Xzc">
-                                <rect key="frame" x="0.0" y="-36" width="320" height="555"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="esZ-6h-Xzc">
+                                <rect key="frame" x="0.0" y="6" width="320" height="513"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.50747711490000003" green="0.50747711490000003" blue="0.50747711490000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="separatorColor" red="0.018189709599999999" green="0.018189709599999999" blue="0.018189709599999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.50747711490000003" green="0.50747711490000003" blue="0.50747711490000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The 10 Commandments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CMe-Wg-JAd">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="commandmentCell" textLabel="QzX-bU-7xY" rowHeight="50" style="IBUITableViewCellStyleDefault" id="xle-iS-OSu">
-                                        <rect key="frame" x="0.0" y="114" width="320" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="commandmentCell" textLabel="tIO-GZ-L5c" detailTextLabel="MTa-8v-lNN" rowHeight="50" style="IBUITableViewCellStyleSubtitle" id="xle-iS-OSu">
+                                        <rect key="frame" x="0.0" y="158" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xle-iS-OSu" id="kZ8-sw-Cwc">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QzX-bU-7xY">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="49"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tIO-GZ-L5c">
+                                                    <rect key="frame" x="15" y="7" width="32" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MTa-8v-lNN">
+                                                    <rect key="frame" x="15" y="28" width="41" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.50747711490000003" green="0.50747711490000003" blue="0.50747711490000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
@@ -249,15 +216,16 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             </tableView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.50747711490000003" green="0.50747711490000003" blue="0.50747711490000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="esZ-6h-Xzc" firstAttribute="leading" secondItem="IZu-kA-sSU" secondAttribute="leading" id="AlT-8a-yzv"/>
                             <constraint firstItem="esZ-6h-Xzc" firstAttribute="bottom" secondItem="jSz-nP-Lx1" secondAttribute="top" id="M7A-wO-Amr"/>
                             <constraint firstAttribute="trailing" secondItem="esZ-6h-Xzc" secondAttribute="trailing" id="X9P-4e-FEm"/>
-                            <constraint firstItem="esZ-6h-Xzc" firstAttribute="top" secondItem="kfy-Xg-PdC" secondAttribute="bottom" constant="-100" id="ojc-Ss-gaI"/>
+                            <constraint firstItem="esZ-6h-Xzc" firstAttribute="top" secondItem="kfy-Xg-PdC" secondAttribute="bottom" constant="-58" id="ojc-Ss-gaI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8Rf-Ud-6Me"/>
+                    <navigationItem key="navigationItem" title="Examination of Conscience" id="8Rf-Ud-6Me"/>
                     <connections>
                         <outlet property="commandsTable" destination="esZ-6h-Xzc" id="oYP-jC-K1C"/>
                         <segue destination="OeL-qX-dzP" kind="push" id="sCn-Yy-THj"/>
@@ -283,14 +251,6 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <rect key="frame" x="0.0" y="72" width="320" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLAH BLAH BLAH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zjg-wx-Wza">
-                                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <animations/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7V-5k-ybX">
                                 <rect key="frame" x="8" y="208" width="307" height="21"/>
