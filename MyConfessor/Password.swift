@@ -2,7 +2,7 @@
 //  Password.swift
 //  MyConfessor
 //
-//  Created by My Mac on 9/28/15.
+//  Created by Laura Paxton on 9/28/15.
 //  Copyright © 2015 Carmel Heart Media. All rights reserved.
 //
 import Foundation

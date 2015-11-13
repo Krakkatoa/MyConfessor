@@ -2,7 +2,7 @@
 //  CommandTableViewController.swift
 //  MyConfessor
 //
-//  Created by My Mac on 11/7/15.
+//  Created by Laura Paxton on 11/7/15.
 //  Copyright © 2015 Carmel Heart Media. All rights reserved.
 //
 
@@ -13,7 +13,8 @@ class CommandTableViewController: UIViewController, UITableViewDelegate {
     
     
     @IBOutlet var commandTableView: UITableView!
-   
+    
+
     @IBOutlet var testTitle: UILabel!
     var testTitleString:String!
     
@@ -26,9 +27,8 @@ class CommandTableViewController: UIViewController, UITableViewDelegate {
         
         commandTableView?.registerNib(nib, forCellReuseIdentifier: "commandIdentifier")
         
-
+        
     }
-
 //func tableView(tableView: UITableView,commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
     
 }

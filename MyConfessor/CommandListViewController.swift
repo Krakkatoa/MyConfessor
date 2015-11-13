@@ -11,15 +11,14 @@ import UIKit
 class CommandListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var commandsTable: UITableView!
-    let cellTitles = ["MENTAL PREPARATION","1st COMMANDMENT","2nd COMMANDMENT","3rd COMMANDMENT", "4TH COMMANDMENT"]
-    let commandmentsDescriptions = ["Prep", "THE FIRST COMMANDMENT DESCRIPTION","THE SECOND COMMANDMENT DESCRIPTION","THE THIRD COMMANDMENT DESCRIPTION", "4TH COMMANDMENT"]
+    let cellTitles = ["MENTAL PREPARATION","FIRST COMMANDMENT","SECOND COMMANDMENT","THIRD COMMANDMENT", "FOURTH COMMANDMENT", "FIFTH COMMANDMENT", "SIXTH COMMANDMENT", "SEVENTH COMMANDMENT", "EIGTH COMMANDMENT", "NINTH COMMANDMENT", "TENTH COMMANDMENT"]
+    let commandmentsDescriptions = ["Prep", "THE FIRST COMMANDMENT DESCRIPTION","THE SECOND COMMANDMENT DESCRIPTION","THE THIRD COMMANDMENT DESCRIPTION", "4TH COMMANDMENT", "FIFTH", "SIXTH", "SEVENTH", "EIGHTH", "NINTH", "TENTH"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        commandsTable.separatorStyle = UITableViewCellSeparatorStyle.None
-
+        //   commandsTable.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
         
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -27,15 +26,12 @@ class CommandListViewController: UIViewController, UITableViewDataSource, UITabl
         return cellTitles.count
     }
     
-   
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellTitle = cellTitles[indexPath.row]
         let cell: UITableViewCell = commandsTable.dequeueReusableCellWithIdentifier("commandmentCell")!
         cell.textLabel!.text = cellTitle
-        let additionalSeparator:UIView = UIView.init(frame: CGRect.init(x: 0, y: cell.frame.height + 5, width: cell.frame.width + 60, height: 1))
-        additionalSeparator.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
-        cell.addSubview(additionalSeparator)
         return cell
     }
     
@@ -46,16 +42,11 @@ class CommandListViewController: UIViewController, UITableViewDataSource, UITabl
         
     }
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        cell.separatorInset = UIEdgeInsetsZero
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
