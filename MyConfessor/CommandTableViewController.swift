@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CommandTableViewController: UIViewController, UITableViewDelegate {
+class CommandTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet var commandTableView: UITableView!
@@ -17,18 +17,32 @@ class CommandTableViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet var testTitle: UILabel!
     var testTitleString:String!
+    var questionsArray:[String]!
+    var questionsSubtitlesArray:[String]!
     
     override func viewDidLoad() {
-        self.testTitle.text=testTitleString
-        self.commandTableView?.estimatedRowHeight = 107.0
+
         super.viewDidLoad()
-        self.commandTableView?.rowHeight = UITableViewAutomaticDimension
-        let nib = UINib(nibName: "NoteTableViewCell", bundle: nil)
-        
-        commandTableView?.registerNib(nib, forCellReuseIdentifier: "commandIdentifier")
+
         
         
     }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return questionsArray.count
+    }
+    
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cellTitle = questionsArray[indexPath.row]
+        let cellSubtitle = questionsSubtitlesArray[indexPath.row]
+        let cell: UITableViewCell = commandTableView.dequeueReusableCellWithIdentifier("questionCell")!
+        cell.textLabel!.text = cellTitle
+        cell.detailTextLabel!.text = cellSubtitle
+        return cell
+    }
+
 //func tableView(tableView: UITableView,commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
     
 }
