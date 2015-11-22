@@ -18,7 +18,7 @@ class CommandTableViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet var testTitle: UILabel!
     var testTitleString:String!
     var questionsArray:[String]!
-    var questionsSubtitlesArray:[String]!
+   // var questionsSubtitlesArray:[String]!
     
     override func viewDidLoad() {
 
@@ -36,10 +36,11 @@ class CommandTableViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellTitle = questionsArray[indexPath.row]
-        let cellSubtitle = questionsSubtitlesArray[indexPath.row]
+    
+        // = questionsSubtitlesArray[indexPath.row]
         let cell: UITableViewCell = commandTableView.dequeueReusableCellWithIdentifier("questionCell")!
         cell.textLabel!.text = cellTitle
-        cell.detailTextLabel!.text = cellSubtitle
+        
         return cell
     }
 
