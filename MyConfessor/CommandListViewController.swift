@@ -17,9 +17,10 @@ struct CommandmentDetails {
 class CommandListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var commandsTable: UITableView!
-    let cellTitles = ["FIRST COMMANDMENT","SECOND COMMANDMENT","THIRD COMMANDMENT", "FOURTH COMMANDMENT", "FIFTH COMMANDMENT", "SIXTH COMMANDMENT", "SEVENTH COMMANDMENT", "EIGTH COMMANDMENT", "NINTH COMMANDMENT", "TENTH COMMANDMENT"]
-   let commandmentsDescriptions = ["I am the Lord your God. You shall worship the Lord your God and Him only shall you serve.","THE SECOND COMMANDMENT DESCRIPTION sub","THE THIRD COMMANDMENT DESCRIPTION", "4TH COMMANDMENT", "FIFTH", "SIXTH", "SEVENTH", "EIGHTH", "NINTH", "TENTH"]
-    let commandmentsSubtitle = ["I am the Lord your God. You shall worship the Lord your God and Him only shall you serve.", "THE SECOND COMMANDMENT DESCRIPTION sub","THE THIRD COMMANDMENT DESCRIPTION", "4TH COMMANDMENT", "FIFTH", "SIXTH", "SEVENTH", "EIGHTH", "NINTH", "TENTH"]
+    let cellTitles = ["FIRST COMMANDMENT","SECOND COMMANDMENT","THIRD COMMANDMENT", "FOURTH COMMANDMENT", "FIFTH COMMANDMENT", "SIXTH and NINTH COMMANDMENTS", "SEVENTH AND TENTH COMMANDMENTS","EIGHTH COMMANDMENT" ]
+   let commandmentsDescriptions = ["FIRST COMMANDMENT","SECOND COMMANDMENT","THIRD COMMANDMENT", "FOURTH COMMANDMENT", "FIFTH COMMANDMENT", "SIXTH and NINTH COMMANDMENTS", "SEVENTH AND TENTH COMMANDMENTS","EIGHTH COMMANDMENT",
+    "EIGHTH COMMANDMENT"]
+    let commandmentsSubtitle = ["FIRST COMMANDMENT","SECOND COMMANDMENT","THIRD COMMANDMENT", "FOURTH COMMANDMENT", "FIFTH COMMANDMENT", "SIXTH and NINTH COMMANDMENTS", "SEVENTH AND TENTH COMMANDMENTS","EIGHTH COMMANDMENT"]
     
     var commandmentsDetailsStructs:[CommandmentDetails] = []
     
@@ -114,57 +115,107 @@ class CommandListViewController: UIViewController, UITableViewDataSource, UITabl
                 "*Sought revenge or hoped something bad would happen to someone?",
                 "*Delighted to see someone else get hurt or suffer?",
                 "*Treated animals cruelly, causing them to suffer or die needlessly?"]
+        
+        var sixthCommandment:CommandmentDetails = CommandmentDetails()
+        sixthCommandment.titles =
+            ["*Practiced the virtue of chastity?",
+            "*Given in to lust? (The desire for sexual pleasure unrelated to spousal love in marriage.)",
+            "*Used an artificial means of birth control?",
+            "*Refused to be open to conception, without just cause? (Catechism of the Catholic Church paragraph 2368)",
+            "*Participated in immoral techniques for in vitro fertilization or artificial insemination?",
+            "*Sterilized my sex organs for contraceptive purposes?",
+            "*Deprived my spouse of the marital right, without just cause?",
+            "*Claimed my own marital right without concern for my spouse?",
+            "*Deliberately caused male climax outside of normal sexual intercourse? (Catechism of the Catholic Church paragraph 2366)",
+            "*Willfully entertained impure thoughts?",
+            "*Purchased, viewed, or made use of pornography?",
+            "*Watched movies and television that involved sex and nudity?",
+            "*Listened to music or jokes that were harmful to purity?",
+            "*Committed adultery? (Sexual relations with someone who is married, or with someone other than my spouse.)",
+            "*Committed incest? (Sexual relations with a relative or in-law.)",
+            "*Committed fornication? (Sexual relations with someone of the opposite sex when neither is married.)",
+            "*Engaged in homosexual activity? (Sexual activity with someone of the same sex.)",
+            "*Committed rape?",
+            "*Masturbated? (Deliberate stimulation of one’s own sexual organs for sexual pleasure.)",
+            "*Engaged in sexual foreplay (petting) reserved for marriage?",
+            "*Preyed upon children or youth for my sexual pleasure?",
+            "*Engaged in unnatural sexual activities?",
+            "*Engaged in prostitution, or paid for the services of a prostitute?",
+            "*Seduced someone, or allowed myself to be seduced?",
+            "*Made uninvited and unwelcome sexual advances toward another?",
+            "*Purposely dressed immodestly?"]
+        
+        var seventhCommandment:CommandmentDetails = CommandmentDetails()
+        seventhCommandment.titles = [
+            "*Stolen? (Take something that doesn’t belong to me against the reasonable will of the owner.)",
+            "*Envied others on account of their possessions?",
+            "*Tried to live in a spirit of Gospel poverty and simplicity?",
+            "*Given generously to others in need?",
+            "*Considered that God has provided me with money so that I might use it to benefit others, as well as for my own legitimate needs?",
+            "*Freed myself from a consumer mentality?",
+            "*Practiced the works of mercy?",
+            "*Deliberately defaced, destroyed, or lost another’s property?",
+            "*Cheated on a test, taxes, sports, games, or in business?",
+            "*Squandered money in compulsive gambling?",
+            "*Make a false claim to an insurance company?",
+            "*Paid my employees a living wage, or failed to give a full day’s work for a full day’s pay?",
+            "*Failed to honor my part of a contract?",
+            "*Failed to make good on a debt?",
+            "*Overcharged someone, especially to take advantage of another’s hardship or ignorance?",
+            "*Misused natural resources?",]
+        
+        var eighthCommandment:CommandmentDetails = CommandmentDetails()
+        eighthCommandment.titles = [
+            "*Lied?",
+            "*Knowingly and willfully deceived another?",
+            "*Perjured myself under oath?",
+            "*Gossiped?",
+            "*Committed detraction? (Hurting a person’s reputation by telling others about his faults for no good reason.)",
+            "*Committed slander or calumny? (Telling lies about another person in order to hurt his reputation.)",
+            "*Committed libel? (Writing lies about another person in order to destroy his reputation.)",
+            "*Been guilty of rash judgment? (Assuming the worst of another person based on circumstantial evidence.)",
+            "*Failed to make reparation for a lie I told, or for harm done to a person’s reputation?",
+            "*Failed to speak out in defense of the Catholic Faith, the Church, or of another person?",
+            
+            "*Betrayed another’s confidence through speech?"]
             
             
-        commandmentsDetailsStructs.append(firstCommandment)
-        commandmentsDetailsStructs.append(secondCommandment)
-        commandmentsDetailsStructs.append(thirdCommandment)
-        commandmentsDetailsStructs.append(fourthCommandment)
-        commandmentsDetailsStructs.append(fifthCommandment)
+            commandmentsDetailsStructs.append(firstCommandment)
+            commandmentsDetailsStructs.append(secondCommandment)
+                       commandmentsDetailsStructs.append(thirdCommandment)
+                      commandmentsDetailsStructs.append(fourthCommandment)
+                     commandmentsDetailsStructs.append(fifthCommandment)
+            commandmentsDetailsStructs.append(sixthCommandment)
+            commandmentsDetailsStructs.append(seventhCommandment)
+            commandmentsDetailsStructs.append(eighthCommandment)
+        
         super.viewDidLoad()
         //   commandsTable.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
         
         
         // Do any additional setup after loading the view.
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellTitles.count
-    }
     
     
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellTitle = cellTitles[indexPath.row]
-
-        let cell: UITableViewCell = commandsTable.dequeueReusableCellWithIdentifier("commandmentCell")!
-        cell.textLabel!.text = cellTitle
-      //cell.detailTextLabel!.text = cellSubtitle
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("CommandTableView") as! CommandTableViewController
-        destinationVC.testTitleString =  commandmentsDescriptions[indexPath.row]
-        destinationVC.questionsArray =  commandmentsDetailsStructs[indexPath.row].titles
-   //    destinationVC.questionsSubtitlesArray =  commandmentsDetailsStructs[indexPath.row].subtitles
-        navigationController?.pushViewController(destinationVC, animated: true)
+        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            let cellTitle = cellTitles[indexPath.row]
+            let cellSubtitle = commandmentsSubtitle[indexPath.row]
+            let cell: UITableViewCell = commandsTable.dequeueReusableCellWithIdentifier("commandmentCell")!
+            cell.textLabel!.text = cellTitle
+           cell.detailTextLabel!.text = cellSubtitle
+            return cell
+        }
         
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    /*
+        func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+            let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("CommandTableView") as! CommandTableViewController
+            destinationVC.testTitleString =  commandmentsDescriptions[indexPath.row]
+               destinationVC.questionsArray =  commandmentsDetailsStructs[indexPath.row].titles
+          destinationVC.questionsSubtitlesArray =  commandmentsDetailsStructs[indexPath.row].subtitles
+            navigationController?.pushViewController(destinationVC, animated: true)
+            
+        }
+
+        
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+    
