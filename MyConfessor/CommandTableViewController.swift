@@ -18,7 +18,7 @@ class CommandTableViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet var testTitle: UILabel!
     var testTitleString:String!
     var questionsArray:[String]!
-   // var questionsSubtitlesArray:[String]!
+   var questionsSubtitlesArray:[String]!
     
     override func viewDidLoad() {
 
