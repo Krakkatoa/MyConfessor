@@ -29,6 +29,11 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
         
         
     }
+    @IBAction func dismissKeyboardOnTap(sender: AnyObject) {
+        noteText.resignFirstResponder()
+        titleText.resignFirstResponder()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.noteText.delegate = self;

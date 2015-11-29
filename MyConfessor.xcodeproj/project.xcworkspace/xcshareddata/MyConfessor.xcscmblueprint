@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "714BC084F1E89DB772F02EFE5D83BDA435136336",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EFCEC34FC392D043197DED70F666425490A9B1FE" : 0,
+    "714BC084F1E89DB772F02EFE5D83BDA435136336" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "45CC10DD-A58C-4A4D-B414-DFD194B0E028",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EFCEC34FC392D043197DED70F666425490A9B1FE" : "",
+    "714BC084F1E89DB772F02EFE5D83BDA435136336" : "MyConfessor"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyConfessor",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyConfessor.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Krakkatoa\/MyConfessor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "714BC084F1E89DB772F02EFE5D83BDA435136336"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:crisgarner\/VoiceCast-Backend.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EFCEC34FC392D043197DED70F666425490A9B1FE"
+    }
+  ]
+}

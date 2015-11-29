@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -93,7 +93,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-EC-xsi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-EC-xsi">
                                 <rect key="frame" x="467" y="72" width="90" height="56"/>
                                 <animations/>
                                 <constraints>
@@ -101,8 +101,9 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                     <constraint firstAttribute="height" constant="56" id="YGI-fZ-gAb"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Father Heilman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScP-4s-5dp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Father Heilman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScP-4s-5dp">
                                 <rect key="frame" x="22" y="73" width="443" height="24"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="UEo-5d-bFd"/>
                                 </constraints>
@@ -110,8 +111,9 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTE-f1-D4n">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTE-f1-D4n">
                                 <rect key="frame" x="22" y="183" width="535" height="22"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="0gx-n4-NUn"/>
                                 </constraints>
@@ -119,8 +121,9 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-vN-ILN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-vN-ILN">
                                 <rect key="frame" x="22" y="213" width="535" height="26"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25.5" id="YoM-ZV-i4n"/>
@@ -129,8 +132,9 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="0.92054665089999999" green="0.86144691330000001" blue="0.55261380280000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Until" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Q-gi-J1E">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Until" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Q-gi-J1E">
                                 <rect key="frame" x="22" y="119" width="535" height="22"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="0jU-1U-JOJ"/>
                                 </constraints>
@@ -138,8 +142,9 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="0.96862745098039216" green="0.73725490196078436" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w5-iD-Ljb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w5-iD-Ljb">
                                 <rect key="frame" x="22" y="144" width="535" height="26"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25.5" id="edw-9t-A8h"/>
@@ -148,8 +153,9 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="0.92054665089999999" green="0.86144691330000001" blue="0.55261380280000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="big3" translatesAutoresizingMaskIntoConstraints="NO" id="lIl-PO-4tr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" misplaced="YES" image="big3" translatesAutoresizingMaskIntoConstraints="NO" id="lIl-PO-4tr">
                                 <rect key="frame" x="47" y="255" width="507" height="288"/>
+                                <animations/>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -193,6 +199,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="25" sectionHeaderHeight="28" sectionFooterHeight="28" id="ROh-WJ-eYD">
                     <rect key="frame" x="0.0" y="0.0" width="268" height="23"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </objects>
@@ -221,6 +228,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The 10 Commandments" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CMe-Wg-JAd">
                                     <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
                                     <color key="textColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -238,6 +246,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tIO-GZ-L5c">
                                                     <rect key="frame" x="15" y="5" width="31" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="15"/>
                                                     <color key="textColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -247,6 +256,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MTa-8v-lNN">
                                                     <rect key="frame" x="15" y="27" width="42" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
                                                     <color key="textColor" red="0.92054665089999999" green="0.86144691330000001" blue="0.55261380280000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,6 +329,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uTf-4E-Ciq">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="199"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.43745274340000001" green="0.34018541149999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="16"/>
@@ -326,9 +337,11 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -463,6 +476,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="182" id="65a-XR-5qf"/>
@@ -471,6 +485,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New priests seeking access, please email Father Richard Heilman at rheilman@yahoo.com." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phh-sb-xdW">
                                 <rect key="frame" x="178" y="224" width="246" height="71"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="2MC-xb-mJh"/>
                                     <constraint firstAttribute="width" constant="246" id="dBd-on-oFI"/>
@@ -483,12 +498,16 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="aKl-B1-kGC" firstAttribute="top" secondItem="HG7-jh-ebB" secondAttribute="bottom" constant="33" id="D4S-0o-7z4"/>
                             <constraint firstItem="Phh-sb-xdW" firstAttribute="top" secondItem="aKl-B1-kGC" secondAttribute="bottom" constant="-11" id="Ezf-3i-I3N"/>
                             <constraint firstItem="aKl-B1-kGC" firstAttribute="centerX" secondItem="d2j-aE-mJf" secondAttribute="centerX" id="fAq-Ho-QZE"/>
                             <constraint firstItem="Phh-sb-xdW" firstAttribute="centerX" secondItem="aKl-B1-kGC" secondAttribute="centerX" id="t3b-DX-eOw"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2pv-Lx-582" appends="YES" id="G2Y-DP-3vz"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Bia-Rc-JJT"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -499,6 +518,11 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txn-18-wXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="2pv-Lx-582">
+                    <connections>
+                        <action selector="dismissKeyboardOnTap:" destination="3eM-Md-dXm" id="AZn-Sa-hTH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-3760" y="-2267"/>
         </scene>
@@ -532,6 +556,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Father is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-Bp-YFL">
                                 <rect key="frame" x="147" y="49" width="89" height="21"/>
                                 <animations/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -596,6 +621,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="JMB-Le-ZRr" firstAttribute="top" secondItem="rwA-cP-JMb" secondAttribute="bottom" constant="520" id="7GH-Gb-Slc"/>
                             <constraint firstItem="rwA-cP-JMb" firstAttribute="leading" secondItem="2Ym-9Z-YIv" secondAttribute="leadingMargin" constant="240" id="Cus-Uy-vfw"/>
@@ -612,6 +638,9 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <exclude reference="K8E-wA-Jgt"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="S7B-ei-aKI" appends="YES" id="pzC-BA-jxT"/>
+                        </connections>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
@@ -622,6 +651,11 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLK-M6-a6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="S7B-ei-aKI">
+                    <connections>
+                        <action selector="dismissKeyboardOnTap:" destination="gtU-Gw-VOl" id="UTk-JT-bxo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-2916" y="-2267"/>
         </scene>

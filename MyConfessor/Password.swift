@@ -21,6 +21,10 @@ class PasswordViewController: UIViewController {
         
     }
     
+    @IBAction func dismissKeyboardOnTap(sender: AnyObject) {
+        fatherTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
     
     
     override func didReceiveMemoryWarning() {
