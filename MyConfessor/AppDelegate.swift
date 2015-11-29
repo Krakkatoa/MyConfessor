@@ -58,26 +58,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     //Push notifications
-   // func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: //UIUserNotificationSettings) {
-       // UIApplication.sharedApplication().registerForRemoteNotifications()
+    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+        UIApplication.sharedApplication().registerForRemoteNotifications()
         
+    }
     
     
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        print(error.localizedDescription)
+        print("could not register: \(error)")
+    }
     
-   // func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
-    //    print(error.localizedDescription)
-      //  print("could not register: \(error)")
-    
-    
-   // func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData){
-      //  let currentInstallation: PFInstallation = PFInstallation.currentInstallation()
-      //  currentInstallation.setDeviceTokenFromData(deviceToken)
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData){
+        let currentInstallation: PFInstallation = PFInstallation.currentInstallation()
+        currentInstallation.setDeviceTokenFromData(deviceToken)
         //  currentInstallation.saveInBackground() This has been creating an error.
+    }
     
-    
-   // func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
-      // PFPush.handlePush(userInfo)
-
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        PFPush.handlePush(userInfo)
+    }
     
     
     func applicationWillResignActive(application: UIApplication) {
