@@ -23,9 +23,11 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var saveAction: UIButton!
     
+    @IBAction func dismissKeyboard(sender: AnyObject) {
+    }
     func noteTextShouldReturn(noteText: UITextField!) -> Bool {
-        noteText.resignFirstResponder()
-        return true;
+       noteText.resignFirstResponder()
+       return true;
         
         
     }
@@ -41,6 +43,8 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
         
         
+            
+ 
         
         
     }
