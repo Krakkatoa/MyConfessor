@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Confession Guide" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-y9-7XP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Confession Guide" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-y9-7XP">
                                 <rect key="frame" x="12" y="72" width="575" height="34"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,7 +31,7 @@
                                     <rect key="frame" x="66" y="28" width="269" height="34"/>
                                 </variation>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sxy-bg-zWu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sxy-bg-zWu">
                                 <rect key="frame" x="13" y="114" width="575" height="428"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,9 +101,6 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                     <constraint firstAttribute="height" constant="56" id="YGI-fZ-gAb"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="big3" translatesAutoresizingMaskIntoConstraints="NO" id="lIl-PO-4tr">
-                                <rect key="frame" x="22" y="255" width="535" height="288"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Father Heilman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScP-4s-5dp">
                                 <rect key="frame" x="22" y="73" width="443" height="24"/>
                                 <constraints>
@@ -151,12 +148,17 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="0.92054665089999999" green="0.86144691330000001" blue="0.55261380280000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="big3" translatesAutoresizingMaskIntoConstraints="NO" id="lIl-PO-4tr">
+                                <rect key="frame" x="47" y="255" width="507" height="288"/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="lIl-PO-4tr" secondAttribute="bottom" constant="8" id="3lB-u9-RbG"/>
+                            <constraint firstItem="lIl-PO-4tr" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="4Tu-dr-khb"/>
+                            <constraint firstItem="lIl-PO-4tr" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="27" id="7ds-DK-oPr"/>
                             <constraint firstItem="2ji-vN-ILN" firstAttribute="leading" secondItem="bTE-f1-D4n" secondAttribute="leading" id="9iT-kS-2m9"/>
                             <constraint firstItem="2ji-vN-ILN" firstAttribute="trailing" secondItem="bTE-f1-D4n" secondAttribute="trailing" id="BRs-Kx-DHl"/>
                             <constraint firstItem="bTE-f1-D4n" firstAttribute="leading" secondItem="2w5-iD-Ljb" secondAttribute="leading" id="DSU-9O-J74"/>
@@ -164,17 +166,16 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             <constraint firstItem="26Q-gi-J1E" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="22" id="IPC-rz-dz1"/>
                             <constraint firstItem="CUw-EC-xsi" firstAttribute="leading" secondItem="ScP-4s-5dp" secondAttribute="trailing" constant="2.5" id="Lvb-kr-mrs"/>
                             <constraint firstItem="26Q-gi-J1E" firstAttribute="top" secondItem="ScP-4s-5dp" secondAttribute="bottom" constant="22" id="OhP-aa-iqp"/>
-                            <constraint firstItem="lIl-PO-4tr" firstAttribute="leading" secondItem="2ji-vN-ILN" secondAttribute="leading" id="SJS-Vh-f3R"/>
                             <constraint firstItem="2w5-iD-Ljb" firstAttribute="top" secondItem="26Q-gi-J1E" secondAttribute="bottom" constant="3" id="VPf-JJ-HDE"/>
                             <constraint firstAttribute="trailing" secondItem="26Q-gi-J1E" secondAttribute="trailing" constant="43.5" id="X6h-bn-glH"/>
                             <constraint firstItem="2w5-iD-Ljb" firstAttribute="trailing" secondItem="26Q-gi-J1E" secondAttribute="trailing" id="Zgr-Gu-cL0"/>
                             <constraint firstItem="CUw-EC-xsi" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="dY8-Rf-vDG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lIl-PO-4tr" secondAttribute="trailing" constant="26" id="f3e-rq-HQT"/>
                             <constraint firstItem="bTE-f1-D4n" firstAttribute="top" secondItem="2w5-iD-Ljb" secondAttribute="bottom" constant="13.5" id="gab-oZ-ppG"/>
                             <constraint firstItem="2w5-iD-Ljb" firstAttribute="leading" secondItem="26Q-gi-J1E" secondAttribute="leading" id="mKE-zG-4cg"/>
-                            <constraint firstItem="lIl-PO-4tr" firstAttribute="trailing" secondItem="2ji-vN-ILN" secondAttribute="trailing" id="p41-ad-6Bo"/>
                             <constraint firstItem="2ji-vN-ILN" firstAttribute="top" secondItem="bTE-f1-D4n" secondAttribute="bottom" constant="8" id="qa9-sE-xMG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CUw-EC-xsi" secondAttribute="trailing" constant="23.5" id="t5L-dR-Gxl"/>
-                            <constraint firstItem="lIl-PO-4tr" firstAttribute="top" secondItem="2ji-vN-ILN" secondAttribute="bottom" constant="16.5" id="w1y-3t-C49"/>
+                            <constraint firstItem="lIl-PO-4tr" firstAttribute="top" secondItem="2ji-vN-ILN" secondAttribute="bottom" constant="16" id="w1y-3t-C49"/>
                             <constraint firstItem="ScP-4s-5dp" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="22" id="yiu-jE-6sl"/>
                             <constraint firstItem="ScP-4s-5dp" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="9" id="ywU-7F-puQ"/>
                         </constraints>
@@ -212,10 +213,11 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="80" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="esZ-6h-Xzc">
                                 <rect key="frame" x="0.0" y="6" width="600" height="545"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The 10 Commandments" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CMe-Wg-JAd">
                                     <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -276,7 +278,6 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Examination of Conscience" id="8Rf-Ud-6Me"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="commandsTable" destination="esZ-6h-Xzc" id="oYP-jC-K1C"/>
                         <segue destination="OeL-qX-dzP" kind="show" identifier="commandSegue" id="FDW-eX-uXZ"/>
@@ -301,12 +302,14 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Imc-0p-vmX">
                                 <rect key="frame" x="0.0" y="6" width="600" height="545"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="questionCell" textLabel="uTf-4E-Ciq" rowHeight="200" style="IBUITableViewCellStyleDefault" id="0zb-Lr-RFB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="questionCell" textLabel="uTf-4E-Ciq" rowHeight="200" style="IBUITableViewCellStyleDefault" id="0zb-Lr-RFB">
                                         <rect key="frame" x="0.0" y="92" width="600" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0zb-Lr-RFB" id="BkY-GJ-VtY">
@@ -316,15 +319,18 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uTf-4E-Ciq">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="199"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" red="0.43745274340000001" green="0.34018541149999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="16"/>
                                                     <color key="textColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -358,13 +364,16 @@ After confession, we should return thanks to God for His mercies in forgiving ou
             <objects>
                 <navigationController id="azH-Sc-AMX" userLabel="Command" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Exam" image="Decision Filled-50" selectedImage="Decision Filled-50" id="6Gx-HM-Fan"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="aqs-QK-Wzq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.93725496529999996" green="0.89411771299999998" blue="0.73725491759999995" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="textShadowColor" red="0.9581953607" green="0.90737159109999999" blue="0.70974306809999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -384,8 +393,12 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.9581953607" green="0.90737159109999999" blue="0.70974306809999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="0.9581953607" green="0.90737159109999999" blue="0.70974306809999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -409,7 +422,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKl-B1-kGC">
-                                <rect key="frame" x="149" y="130" width="303" height="182"/>
+                                <rect key="frame" x="149" y="53" width="303" height="182"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIn-ZO-wmu" userLabel="Password">
                                         <rect key="frame" x="116" y="80" width="167" height="30"/>
@@ -457,7 +470,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New priests seeking access, please email Father Richard Heilman at rheilman@yahoo.com." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phh-sb-xdW">
-                                <rect key="frame" x="177" y="333" width="246" height="71"/>
+                                <rect key="frame" x="178" y="224" width="246" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="2MC-xb-mJh"/>
                                     <constraint firstAttribute="width" constant="246" id="dBd-on-oFI"/>
@@ -471,13 +484,14 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aKl-B1-kGC" firstAttribute="top" secondItem="HG7-jh-ebB" secondAttribute="bottom" constant="66" id="D4S-0o-7z4"/>
-                            <constraint firstItem="Phh-sb-xdW" firstAttribute="top" secondItem="aKl-B1-kGC" secondAttribute="bottom" constant="21" id="Ezf-3i-I3N"/>
+                            <constraint firstItem="aKl-B1-kGC" firstAttribute="top" secondItem="HG7-jh-ebB" secondAttribute="bottom" constant="33" id="D4S-0o-7z4"/>
+                            <constraint firstItem="Phh-sb-xdW" firstAttribute="top" secondItem="aKl-B1-kGC" secondAttribute="bottom" constant="-11" id="Ezf-3i-I3N"/>
                             <constraint firstItem="aKl-B1-kGC" firstAttribute="centerX" secondItem="d2j-aE-mJf" secondAttribute="centerX" id="fAq-Ho-QZE"/>
                             <constraint firstItem="Phh-sb-xdW" firstAttribute="centerX" secondItem="aKl-B1-kGC" secondAttribute="centerX" id="t3b-DX-eOw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bia-Rc-JJT"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="fatherTextField" destination="KNs-J4-2yZ" id="vHi-6Z-lSP"/>
                         <outlet property="passwordTextField" destination="nIn-ZO-wmu" id="Brl-bP-AbO"/>
@@ -500,13 +514,6 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-hO-wyj">
-                                <rect key="frame" x="91" y="28" width="138" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtH-ww-rHj">
                                 <rect key="frame" x="132" y="141" width="335" height="225"/>
                                 <subviews>
@@ -578,7 +585,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="e1K-3C-WOP" secondAttribute="trailing" constant="141" id="Hre-wc-ynb"/>
                                     <constraint firstItem="e1K-3C-WOP" firstAttribute="leading" secondItem="qtH-ww-rHj" secondAttribute="leading" constant="141" id="UkB-XC-5Q7"/>
@@ -606,10 +613,11 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             <constraint firstItem="rwA-cP-JMb" firstAttribute="centerX" secondItem="2Ym-9Z-YIv" secondAttribute="centerX" id="Isx-11-kdq"/>
                             <constraint firstItem="qtH-ww-rHj" firstAttribute="centerX" secondItem="rwA-cP-JMb" secondAttribute="centerX" id="KnT-0T-nvq"/>
                             <constraint firstItem="qtH-ww-rHj" firstAttribute="top" secondItem="rwA-cP-JMb" secondAttribute="bottom" constant="25" id="OIa-TJ-ET4"/>
-                            <constraint firstItem="rwA-cP-JMb" firstAttribute="top" secondItem="49c-ei-era" secondAttribute="bottom" constant="31" id="YvS-np-P6w"/>
+                            <constraint firstItem="rwA-cP-JMb" firstAttribute="top" secondItem="49c-ei-era" secondAttribute="bottom" constant="75" id="YvS-np-P6w"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CoN-hv-ABP"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="lightSwitch" destination="1lP-kf-7UQ" id="yAt-S1-Nrv"/>
                         <outlet property="noteText" destination="z2H-V9-pNz" id="E9x-wY-MrM"/>
@@ -625,9 +633,8 @@ After confession, we should return thanks to God for His mercies in forgiving ou
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <animations/>
@@ -660,7 +667,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BJ6-n7-x0l">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BJ6-n7-x0l">
                                 <rect key="frame" x="27" y="64" width="560" height="487"/>
                                 <animations/>
                                 <string key="text">FAQ
