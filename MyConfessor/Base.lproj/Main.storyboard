@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -409,7 +409,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKl-B1-kGC">
-                                <rect key="frame" x="149" y="42" width="303" height="182"/>
+                                <rect key="frame" x="149" y="130" width="303" height="182"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIn-ZO-wmu" userLabel="Password">
                                         <rect key="frame" x="116" y="80" width="167" height="30"/>
@@ -457,7 +457,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New priests seeking access, please email Father Richard Heilman at rheilman@yahoo.com." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phh-sb-xdW">
-                                <rect key="frame" x="177" y="209" width="246" height="71"/>
+                                <rect key="frame" x="177" y="333" width="246" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="2MC-xb-mJh"/>
                                     <constraint firstAttribute="width" constant="246" id="dBd-on-oFI"/>
@@ -471,14 +471,13 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aKl-B1-kGC" firstAttribute="top" secondItem="HG7-jh-ebB" secondAttribute="bottom" constant="22" id="D4S-0o-7z4"/>
-                            <constraint firstItem="Phh-sb-xdW" firstAttribute="top" secondItem="aKl-B1-kGC" secondAttribute="bottom" constant="-15" id="Ezf-3i-I3N"/>
+                            <constraint firstItem="aKl-B1-kGC" firstAttribute="top" secondItem="HG7-jh-ebB" secondAttribute="bottom" constant="66" id="D4S-0o-7z4"/>
+                            <constraint firstItem="Phh-sb-xdW" firstAttribute="top" secondItem="aKl-B1-kGC" secondAttribute="bottom" constant="21" id="Ezf-3i-I3N"/>
                             <constraint firstItem="aKl-B1-kGC" firstAttribute="centerX" secondItem="d2j-aE-mJf" secondAttribute="centerX" id="fAq-Ho-QZE"/>
                             <constraint firstItem="Phh-sb-xdW" firstAttribute="centerX" secondItem="aKl-B1-kGC" secondAttribute="centerX" id="t3b-DX-eOw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bia-Rc-JJT"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="fatherTextField" destination="KNs-J4-2yZ" id="vHi-6Z-lSP"/>
                         <outlet property="passwordTextField" destination="nIn-ZO-wmu" id="Brl-bP-AbO"/>
@@ -501,44 +500,59 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="My Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-hO-wyj">
-                                <rect key="frame" x="217" y="28" width="138" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-hO-wyj">
+                                <rect key="frame" x="91" y="28" width="138" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtH-ww-rHj">
-                                <rect key="frame" x="119" y="67" width="335" height="225"/>
+                                <rect key="frame" x="132" y="141" width="335" height="225"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-3C-WOP">
+                                        <rect key="frame" x="141" y="187" width="53" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Nca-7b-ZRG"/>
+                                            <constraint firstAttribute="width" constant="53" id="jMb-Jg-RKe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="20"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="ZwF-C7-I06"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Father is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-Bp-YFL">
-                                        <rect key="frame" x="25" y="5" width="89" height="21"/>
+                                        <rect key="frame" x="26" y="5" width="89" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhF-Dg-Qpn">
-                                        <rect key="frame" x="186" y="5" width="42" height="21"/>
+                                        <rect key="frame" x="187" y="5" width="42" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="Clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-kf-7UQ">
-                                        <rect key="frame" x="228" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="229" y="0.0" width="51" height="31"/>
                                         <animations/>
                                         <color key="onTintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How long will you be out/in? (Date/Time.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkH-cP-kDO">
-                                        <rect key="frame" x="25" y="39" width="295" height="33"/>
+                                        <rect key="frame" x="26" y="39" width="295" height="33"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Old-Az-J77">
-                                        <rect key="frame" x="23" y="75" width="295" height="30"/>
+                                        <rect key="frame" x="24" y="75" width="295" height="30"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -563,45 +577,39 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-3C-WOP">
-                                        <rect key="frame" x="141" y="180" width="53" height="30"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Nca-7b-ZRG"/>
-                                            <constraint firstAttribute="width" constant="53" id="jMb-Jg-RKe"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="20"/>
-                                        <state key="normal" title="Save">
-                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="saveAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="ZwF-C7-I06"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="e1K-3C-WOP" firstAttribute="leading" secondItem="qtH-ww-rHj" secondAttribute="leading" constant="141" id="3Rg-3B-wRL"/>
-                                    <constraint firstItem="e1K-3C-WOP" firstAttribute="top" secondItem="qtH-ww-rHj" secondAttribute="top" constant="180" id="7Z4-ER-fPy"/>
-                                    <constraint firstAttribute="trailing" secondItem="e1K-3C-WOP" secondAttribute="trailing" constant="141" id="if3-FL-EN3"/>
+                                    <constraint firstAttribute="trailing" secondItem="e1K-3C-WOP" secondAttribute="trailing" constant="141" id="Hre-wc-ynb"/>
+                                    <constraint firstItem="e1K-3C-WOP" firstAttribute="leading" secondItem="qtH-ww-rHj" secondAttribute="leading" constant="141" id="UkB-XC-5Q7"/>
                                     <constraint firstAttribute="width" constant="335" id="jMf-gG-6dC"/>
+                                    <constraint firstItem="e1K-3C-WOP" firstAttribute="top" secondItem="qtH-ww-rHj" secondAttribute="top" constant="187" id="oDe-6q-2W0"/>
                                     <constraint firstAttribute="height" constant="225" id="sdB-ZD-SrD"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-cP-JMb">
+                                <rect key="frame" x="260" y="95" width="80" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="TyS-yb-e3x"/>
+                                    <constraint firstAttribute="height" constant="21" id="co8-Lp-c8M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JMB-Le-ZRr" firstAttribute="top" secondItem="e1K-3C-WOP" secondAttribute="bottom" constant="274" id="3Ny-TF-gYj"/>
-                            <constraint firstItem="qtH-ww-rHj" firstAttribute="leading" secondItem="2Ym-9Z-YIv" secondAttribute="leadingMargin" constant="99" id="I8h-Ef-9iI"/>
-                            <constraint firstItem="uzg-hO-wyj" firstAttribute="centerX" secondItem="2Ym-9Z-YIv" secondAttribute="centerX" id="TEn-oN-WdP"/>
-                            <constraint firstItem="qtH-ww-rHj" firstAttribute="top" secondItem="49c-ei-era" secondAttribute="bottom" constant="47" id="etO-hf-G4j"/>
-                            <constraint firstItem="e1K-3C-WOP" firstAttribute="centerX" secondItem="2Ym-9Z-YIv" secondAttribute="centerX" id="zYM-Jj-YlY"/>
+                            <constraint firstItem="rwA-cP-JMb" firstAttribute="centerX" secondItem="2Ym-9Z-YIv" secondAttribute="centerX" id="Isx-11-kdq"/>
+                            <constraint firstItem="qtH-ww-rHj" firstAttribute="centerX" secondItem="rwA-cP-JMb" secondAttribute="centerX" id="KnT-0T-nvq"/>
+                            <constraint firstItem="qtH-ww-rHj" firstAttribute="top" secondItem="rwA-cP-JMb" secondAttribute="bottom" constant="25" id="OIa-TJ-ET4"/>
+                            <constraint firstItem="rwA-cP-JMb" firstAttribute="top" secondItem="49c-ei-era" secondAttribute="bottom" constant="31" id="YvS-np-P6w"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CoN-hv-ABP"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="lightSwitch" destination="1lP-kf-7UQ" id="yAt-S1-Nrv"/>
                         <outlet property="noteText" destination="z2H-V9-pNz" id="E9x-wY-MrM"/>
