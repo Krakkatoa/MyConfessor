@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -539,7 +539,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-3C-WOP">
-                                <rect key="frame" x="274" y="186" width="53" height="30"/>
+                                <rect key="frame" x="160" y="267" width="53" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Nca-7b-ZRG"/>
@@ -553,16 +553,8 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                     <action selector="saveAction:" destination="gtU-Gw-VOl" eventType="touchUpInside" id="ZwF-C7-I06"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Father is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-Bp-YFL">
-                                <rect key="frame" x="147" y="49" width="89" height="21"/>
-                                <animations/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-cP-JMb">
-                                <rect key="frame" x="260" y="10" width="80" height="21"/>
+                                <rect key="frame" x="139" y="20" width="80" height="21"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="TyS-yb-e3x"/>
@@ -572,46 +564,54 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Father is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-Bp-YFL">
+                                <rect key="frame" x="47" y="104" width="89" height="21"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How long will you be out/in? (Date/Time.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkH-cP-kDO">
-                                <rect key="frame" x="147" y="74" width="295" height="33"/>
+                                <rect key="frame" x="47" y="133" width="295" height="33"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Old-Az-J77">
-                                <rect key="frame" x="145" y="153" width="295" height="30"/>
+                                <rect key="frame" x="47" y="229" width="295" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2H-V9-pNz">
-                                <rect key="frame" x="147" y="101" width="291" height="30"/>
+                                <rect key="frame" x="47" y="166" width="291" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add details or additional notes here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-7F-6xV">
-                                <rect key="frame" x="149" y="134" width="291" height="21"/>
+                                <rect key="frame" x="49" y="206" width="291" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhF-Dg-Qpn">
-                                <rect key="frame" x="308" y="49" width="42" height="21"/>
+                                <rect key="frame" x="208" y="104" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="Clock-50" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-kf-7UQ">
-                                <rect key="frame" x="350" y="44" width="51" height="31"/>
+                                <rect key="frame" x="250" y="99" width="51" height="31"/>
                                 <animations/>
                                 <color key="onTintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fag-Xx-LIy">
-                                <rect key="frame" x="407" y="49" width="31" height="21"/>
+                                <rect key="frame" x="307" y="104" width="31" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -623,26 +623,24 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="JMB-Le-ZRr" firstAttribute="top" secondItem="rwA-cP-JMb" secondAttribute="bottom" constant="520" id="7GH-Gb-Slc"/>
-                            <constraint firstItem="rwA-cP-JMb" firstAttribute="leading" secondItem="2Ym-9Z-YIv" secondAttribute="leadingMargin" constant="240" id="Cus-Uy-vfw"/>
-                            <constraint firstItem="rwA-cP-JMb" firstAttribute="centerX" secondItem="2Ym-9Z-YIv" secondAttribute="centerX" id="Cyb-iO-lxb"/>
-                            <constraint firstItem="e1K-3C-WOP" firstAttribute="leading" secondItem="2Ym-9Z-YIv" secondAttribute="leadingMargin" constant="254" id="DIZ-FL-Hnr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rwA-cP-JMb" secondAttribute="trailing" constant="248" id="K8E-wA-Jgt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="e1K-3C-WOP" secondAttribute="trailing" constant="253" id="OG2-mJ-D00"/>
-                            <constraint firstItem="rwA-cP-JMb" firstAttribute="top" secondItem="49c-ei-era" secondAttribute="bottom" constant="-10" id="WPc-HZ-8od"/>
-                            <constraint firstItem="e1K-3C-WOP" firstAttribute="centerX" secondItem="2Ym-9Z-YIv" secondAttribute="centerX" id="ZaV-uD-zgK"/>
-                            <constraint firstItem="JMB-Le-ZRr" firstAttribute="top" secondItem="e1K-3C-WOP" secondAttribute="bottom" constant="335" id="zXe-OF-nNZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rwA-cP-JMb" secondAttribute="trailing" constant="361" id="6ro-5D-o2S"/>
+                            <constraint firstItem="e1K-3C-WOP" firstAttribute="leading" secondItem="2Ym-9Z-YIv" secondAttribute="leadingMargin" constant="140" id="8VJ-q9-MTy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e1K-3C-WOP" secondAttribute="trailing" constant="367" id="EA2-nK-xYE"/>
+                            <constraint firstItem="e1K-3C-WOP" firstAttribute="top" secondItem="rwA-cP-JMb" secondAttribute="bottom" constant="226" id="HQ4-B5-nwi"/>
+                            <constraint firstItem="rwA-cP-JMb" firstAttribute="top" secondItem="49c-ei-era" secondAttribute="bottom" id="Q1i-Ta-pDu"/>
+                            <constraint firstItem="JMB-Le-ZRr" firstAttribute="top" secondItem="e1K-3C-WOP" secondAttribute="bottom" constant="254" id="RiX-FM-cdm"/>
+                            <constraint firstItem="rwA-cP-JMb" firstAttribute="leading" secondItem="2Ym-9Z-YIv" secondAttribute="leadingMargin" constant="119" id="WcD-18-KfU"/>
+                            <constraint firstItem="e1K-3C-WOP" firstAttribute="centerX" secondItem="2Ym-9Z-YIv" secondAttribute="centerX" id="xVd-k3-i2j"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="K8E-wA-Jgt"/>
+                                <exclude reference="xVd-k3-i2j"/>
                             </mask>
                         </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="S7B-ei-aKI" appends="YES" id="pzC-BA-jxT"/>
                         </connections>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="lightSwitch" destination="1lP-kf-7UQ" id="yAt-S1-Nrv"/>
                         <outlet property="noteText" destination="z2H-V9-pNz" id="E9x-wY-MrM"/>
@@ -657,7 +655,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2916" y="-2267"/>
+            <point key="canvasLocation" x="-2823" y="-2292"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
