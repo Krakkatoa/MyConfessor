@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Enable storing and querying data from Local Datastore.
         // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
-       Parse.enableLocalDatastore()
+      // Parse.enableLocalDatastore()
         
         // ****************************************************************************
         // Uncomment this line if you want to enable Crash Reporting
@@ -41,9 +41,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Uncomment the line inside ParseStartProject-Bridging-Header and the following line here:
         // PFFacebookUtils.initializeFacebook()
         // ****************************************************************************      //  
-        let notificationType: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
+let notificationType: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
         
-        let settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
+let settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         UIApplication.sharedApplication().registerForRemoteNotifications()
         
@@ -58,25 +58,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     //Push notifications
-    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
-        UIApplication.sharedApplication().registerForRemoteNotifications()
-        
+   func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings:
+    UIUserNotificationSettings) {
+      UIApplication.sharedApplication().registerForRemoteNotifications()
     }
     
     
-    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
-        print(error.localizedDescription)
-        print("could not register: \(error)")
+  func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+       print(error.localizedDescription)
+       print("could not register: \(error)")
     }
     
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData){
+   func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData){
         let currentInstallation: PFInstallation = PFInstallation.currentInstallation()
-        currentInstallation.setDeviceTokenFromData(deviceToken)
-        //  currentInstallation.saveInBackground() This has been creating an error.
+       currentInstallation.setDeviceTokenFromData(deviceToken)
+     //   currentInstallation.saveInBackground() This has been creating an error.
     }
     
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
-        PFPush.handlePush(userInfo)
+   func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+       PFPush.handlePush(userInfo)
     }
     
     

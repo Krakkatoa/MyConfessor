@@ -13,8 +13,10 @@ import Parse
 class FirstViewController: UIViewController {
     
     var notesData:NSMutableArray = []
+  @IBOutlet weak var titleLabelHeightConstraint: NSLayoutConstraint!
     
 
+  @IBOutlet weak var subtitleLabelConstraints: NSLayoutConstraint!
     @IBOutlet weak var statusImage: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -55,7 +57,9 @@ class FirstViewController: UIViewController {
             query.getFirstObjectInBackgroundWithBlock({ (object: PFObject?, error: NSError?) -> Void in
                 if error == nil {
                     self.titleLabel.text = object!["title"] as? String
+                 //  self.titleLabelHeightConstraint.constant = self.titleLabel.intrinsicContentSize().height
                      self.subtitleLabel.text = object!["note"] as? String
+                  // self.subtitleLabelConstraints.constant = self.subtitleLabel.intrinsicContentSize().height
                     if object! ["status"] as? String == "off" {
                         self.statusImage.image = UIImage(named: "out.png")
                     } else {

@@ -14,6 +14,7 @@ import Parse
 
 class StatusViewController: UIViewController, UITextFieldDelegate {
     
+  @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var titleText: UITextField!
     
     @IBOutlet weak var noteText: UITextField!
@@ -29,18 +30,30 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
         
         
     }
-    @IBAction func dismissKeyboardOnTap(sender: AnyObject) {
-        noteText.resignFirstResponder()
-        titleText.resignFirstResponder()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.noteText.delegate = self;
-        
-        // Do any additional setup after loading the view, typically from a nib.
+        self.titleText.delegate = self;
+      
+      
     }
-    
+  func textFieldShouldReturn(textField: UITextField) -> Bool {
+    /* textfield here will either be titleText or noteText so whichever it is
+      the textfield variable will handle it */
+    textField.resignFirstResponder()
+    return true
+  }
+  func textFieldDidBeginEditing(textField: UITextField) {
+    //let frame  = self.view.convertRect(textField.frame, toView: self.view)
+    self.scrollView.setContentOffset(CGPoint(x: 0, y: textField.frame.maxY), animated: true)
+  }
+ 
+  
+  func textFieldDidEndEditing(textField: UITextField) {
+    self.scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+  }
+  
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -51,8 +64,7 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
     }
     @IBAction func saveAction(sender: AnyObject) {
         //dismiss the keyboard from the UITextField
-        titleText.resignFirstResponder()
-        noteText.resignFirstResponder()
+        self.view.endEditing(true)
         //we check if we already have our identifier, if we do we save a note in parse
         if titleText.text == "" {
             let alertView = UIAlertController (title: "Alert", message: "Please complete all fields.", preferredStyle: UIAlertControllerStyle.Alert)
@@ -120,3 +132,4 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
     }
     
 }
+

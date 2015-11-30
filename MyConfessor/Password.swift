@@ -9,23 +9,26 @@ import Foundation
 
 import Parse
 
-class PasswordViewController: UIViewController {
+class PasswordViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var fatherTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      fatherTextField.delegate = self
+      passwordTextField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
         
         
     }
-    
-    @IBAction func dismissKeyboardOnTap(sender: AnyObject) {
-        fatherTextField.resignFirstResponder()
-        passwordTextField.resignFirstResponder()
-    }
-    
+  func textFieldShouldReturn(textField: UITextField) -> Bool {
+    /* textfield here will either be fatherTextField or passwordTextField so whichever it is
+    the textfield variable will handle it */
+    textField.resignFirstResponder()
+    return true
+  }
+  
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
