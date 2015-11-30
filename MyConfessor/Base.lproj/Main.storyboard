@@ -93,15 +93,15 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-EC-xsi">
-                                <rect key="frame" x="467" y="73" width="90" height="56"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-EC-xsi">
+                                <rect key="frame" x="467" y="72" width="90" height="56"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="89.5" id="7Bk-6g-CtT"/>
                                     <constraint firstAttribute="height" constant="56" id="YGI-fZ-gAb"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Father Heilman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScP-4s-5dp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Father Heilman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScP-4s-5dp">
                                 <rect key="frame" x="22" y="73" width="443" height="24"/>
                                 <animations/>
                                 <constraints>
@@ -111,7 +111,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTE-f1-D4n">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTE-f1-D4n">
                                 <rect key="frame" x="22" y="183" width="535" height="22"/>
                                 <animations/>
                                 <constraints>
@@ -121,32 +121,7 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="0.96963398320000005" green="0.73714640669999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Until" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Q-gi-J1E">
-                                <rect key="frame" x="22" y="119" width="535" height="22"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="0jU-1U-JOJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
-                                <color key="textColor" red="0.96862745098039216" green="0.73725490196078436" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w5-iD-Ljb">
-                                <rect key="frame" x="22" y="144" width="535" height="26"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25.5" id="edw-9t-A8h"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
-                                <color key="textColor" red="0.92054665089999999" green="0.86144691330000001" blue="0.55261380280000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="big3" translatesAutoresizingMaskIntoConstraints="NO" id="lIl-PO-4tr">
-                                <rect key="frame" x="47" y="255" width="507" height="288"/>
-                                <animations/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-vN-ILN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-vN-ILN">
                                 <rect key="frame" x="22" y="213" width="535" height="26"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,6 +132,31 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                                 <color key="textColor" red="0.92054665089999999" green="0.86144691330000001" blue="0.55261380280000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Until" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Q-gi-J1E">
+                                <rect key="frame" x="22" y="119" width="535" height="22"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0jU-1U-JOJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.73725490196078436" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w5-iD-Ljb">
+                                <rect key="frame" x="22" y="144" width="535" height="26"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25.5" id="edw-9t-A8h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="textColor" red="0.92054665089999999" green="0.86144691330000001" blue="0.55261380280000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" misplaced="YES" image="big3" translatesAutoresizingMaskIntoConstraints="NO" id="lIl-PO-4tr">
+                                <rect key="frame" x="47" y="255" width="507" height="288"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,21 +175,21 @@ After confession, we should return thanks to God for His mercies in forgiving ou
                             <constraint firstItem="2w5-iD-Ljb" firstAttribute="top" secondItem="26Q-gi-J1E" secondAttribute="bottom" constant="3" id="VPf-JJ-HDE"/>
                             <constraint firstAttribute="trailing" secondItem="26Q-gi-J1E" secondAttribute="trailing" constant="43.5" id="X6h-bn-glH"/>
                             <constraint firstItem="2w5-iD-Ljb" firstAttribute="trailing" secondItem="26Q-gi-J1E" secondAttribute="trailing" id="Zgr-Gu-cL0"/>
-                            <constraint firstItem="CUw-EC-xsi" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="53" id="dY8-Rf-vDG"/>
+                            <constraint firstItem="CUw-EC-xsi" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="dY8-Rf-vDG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lIl-PO-4tr" secondAttribute="trailing" constant="26" id="f3e-rq-HQT"/>
-                            <constraint firstItem="bTE-f1-D4n" firstAttribute="top" secondItem="2w5-iD-Ljb" secondAttribute="bottom" constant="13" id="gab-oZ-ppG"/>
+                            <constraint firstItem="bTE-f1-D4n" firstAttribute="top" secondItem="2w5-iD-Ljb" secondAttribute="bottom" constant="13.5" id="gab-oZ-ppG"/>
                             <constraint firstItem="2w5-iD-Ljb" firstAttribute="leading" secondItem="26Q-gi-J1E" secondAttribute="leading" id="mKE-zG-4cg"/>
                             <constraint firstItem="2ji-vN-ILN" firstAttribute="top" secondItem="bTE-f1-D4n" secondAttribute="bottom" constant="8" id="qa9-sE-xMG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CUw-EC-xsi" secondAttribute="trailing" constant="23.5" id="t5L-dR-Gxl"/>
                             <constraint firstItem="lIl-PO-4tr" firstAttribute="top" secondItem="2ji-vN-ILN" secondAttribute="bottom" constant="16" id="w1y-3t-C49"/>
                             <constraint firstItem="ScP-4s-5dp" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="22" id="yiu-jE-6sl"/>
-                            <constraint firstItem="ScP-4s-5dp" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="53" id="ywU-7F-puQ"/>
+                            <constraint firstItem="ScP-4s-5dp" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="9" id="ywU-7F-puQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Status" image="Clock-50" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="jYV-a6-ovE"/>
                     <connections>
-                        <outlet property="statusImage" destination="CUw-EC-xsi" id="fQx-As-fm6"/>
+                        <outlet property="statusImage" destination="CUw-EC-xsi" id="QQ4-oT-MMb"/>
                         <outlet property="statusTableView" destination="ROh-WJ-eYD" id="xDs-Gb-d8X"/>
                         <outlet property="subtitleLabel" destination="2ji-vN-ILN" id="YCS-Bg-iI4"/>
                         <outlet property="titleLabel" destination="2w5-iD-Ljb" id="dfX-Gd-Wxa"/>
