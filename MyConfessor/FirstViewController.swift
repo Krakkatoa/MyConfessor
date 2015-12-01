@@ -45,13 +45,12 @@ class FirstViewController: UIViewController {
     
     
     override func viewWillAppear(animated: Bool) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        if let identifier = defaults.stringForKey("UserIdentifier")
-        {
+
+
             let query = PFQuery(className:"Status")
             query.orderByDescending("updatedAt")
             
-            query.whereKey("UserIdentifier", equalTo:identifier)
+           
             query.getFirstObjectInBackgroundWithBlock({ (object: PFObject?, error: NSError?) -> Void in
                 if error == nil {
                     self.titleLabel.text = object!["title"] as? String
@@ -69,8 +68,7 @@ class FirstViewController: UIViewController {
                     
                 }
             })
-            
-        }
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
