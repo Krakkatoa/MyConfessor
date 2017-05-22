@@ -201,23 +201,23 @@ class CommandListViewController: UIViewController, UITableViewDataSource, UITabl
         // Do any additional setup after loading the view.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellTitles.count
     }
     
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellTitle = cellTitles[indexPath.row]
         let cellSubtitle = commandmentsSubtitle[indexPath.row]
-        let cell: UITableViewCell = commandsTable.dequeueReusableCellWithIdentifier("commandmentCell")!
+        let cell: UITableViewCell = commandsTable.dequeueReusableCell(withIdentifier: "commandmentCell")!
         cell.textLabel!.text = cellTitle
         cell.detailTextLabel!.text = cellSubtitle
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("CommandTableView") as! CommandTableViewController
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let destinationVC = self.storyboard?.instantiateViewController(withIdentifier: "CommandTableView") as! CommandTableViewController
         destinationVC.testTitleString =  commandmentsDescriptions[indexPath.row]
         destinationVC.questionsArray =  commandmentsDetailsStructs[indexPath.row].titles
         destinationVC.questionsSubtitlesArray =  commandmentsDetailsStructs[indexPath.row].subtitles

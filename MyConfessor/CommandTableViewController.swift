@@ -28,17 +28,17 @@ class CommandTableViewController: UIViewController, UITableViewDelegate, UITable
         
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questionsArray.count
     }
     
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellTitle = questionsArray[indexPath.row]
     
         // = questionsSubtitlesArray[indexPath.row]
-        let cell: UITableViewCell = commandTableView.dequeueReusableCellWithIdentifier("questionCell")!
+        let cell: UITableViewCell = commandTableView.dequeueReusableCell(withIdentifier: "questionCell")!
         cell.textLabel!.text = cellTitle
         
         return cell

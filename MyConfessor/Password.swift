@@ -21,7 +21,7 @@ class PasswordViewController: UIViewController {
         
     }
     
-    @IBAction func dismissKeyboardOnTap(sender: AnyObject) {
+    @IBAction func dismissKeyboardOnTap(_ sender: AnyObject) {
         fatherTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
     }
@@ -32,25 +32,25 @@ class PasswordViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func loginAction(sender: AnyObject)
+    @IBAction func loginAction(_ sender: AnyObject)
     {
         fatherTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
         let query = PFQuery(className:"Father")
-        query.orderByDescending("updatedAt")
+        query.order(byDescending: "updatedAt")
         
         query.whereKey("User", equalTo:fatherTextField.text!)
         query.whereKey("Password", equalTo: passwordTextField.text!)
-        query.getFirstObjectInBackgroundWithBlock({ (object: PFObject?, error: NSError?) -> Void in
+        query.getFirstObjectInBackground(block: { (object: PFObject?, error: NSError?) -> Void in
             if error == nil {
-                self.performSegueWithIdentifier("loginSegue", sender: self)
+                self.performSegue(withIdentifier: "loginSegue", sender: self)
             } else {
-                let alertView = UIAlertController (title: "Alert", message: "User name and password do not match.", preferredStyle: UIAlertControllerStyle.Alert)
-                let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in
+                let alertView = UIAlertController (title: "Alert", message: "User name and password do not match.", preferredStyle: UIAlertControllerStyle.alert)
+                let cancelAction = UIAlertAction(title: "Okay", style: .cancel) { (action) in
                     // ...
                 }
                 alertView.addAction(cancelAction)
-                self.presentViewController(alertView, animated: true, completion: nil)                // Log details of the failure
+                self.present(alertView, animated: true, completion: nil)                // Log details of the failure
                 NSLog("Error: %@ %@", error!, error!.userInfo)
                 
             }

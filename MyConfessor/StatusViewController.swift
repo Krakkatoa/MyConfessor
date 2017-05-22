@@ -23,13 +23,13 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var saveAction: UIButton!
     
-    func noteTextShouldReturn(noteText: UITextField!) -> Bool {
+    func noteTextShouldReturn(_ noteText: UITextField!) -> Bool {
         noteText.resignFirstResponder()
         return true;
         
         
     }
-    @IBAction func dismissKeyboardOnTap(sender: AnyObject) {
+    @IBAction func dismissKeyboardOnTap(_ sender: AnyObject) {
         noteText.resignFirstResponder()
         titleText.resignFirstResponder()
     }
@@ -49,45 +49,45 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
         
         
     }
-    @IBAction func saveAction(sender: AnyObject) {
+    @IBAction func saveAction(_ sender: AnyObject) {
         //dismiss the keyboard from the UITextField
         titleText.resignFirstResponder()
         noteText.resignFirstResponder()
         //we check if we already have our identifier, if we do we save a note in parse
         if titleText.text == "" {
-            let alertView = UIAlertController (title: "Alert", message: "Please complete all fields.", preferredStyle: UIAlertControllerStyle.Alert)
-            let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in
+            let alertView = UIAlertController (title: "Alert", message: "Please complete all fields.", preferredStyle: UIAlertControllerStyle.alert)
+            let cancelAction = UIAlertAction(title: "Okay", style: .cancel) { (action) in
                 // ...
             }
             alertView.addAction(cancelAction)
-            self.presentViewController(alertView, animated: true, completion: nil)
+            self.present(alertView, animated: true, completion: nil)
         } else {
-            let defaults = NSUserDefaults.standardUserDefaults()
-            if let identifier = defaults.stringForKey("UserIdentifier")
+            let defaults = UserDefaults.standard
+            if let identifier = defaults.string(forKey: "UserIdentifier")
             {
                 var status = ""
-                if lightSwitch.on {
+                if lightSwitch.isOn {
                     status = "on"}
                 else {
                     status = "off"}
                 
                 let query = PFQuery(className:"Status")
                 
-                query.getObjectInBackgroundWithId("Pna320IvTS"){ ( object: PFObject?, error: NSError?) -> Void in
+                query.getObjectInBackground(withId: "Pna320IvTS"){ ( object: PFObject?, error: NSError?) -> Void in
                     
                     object!["status"] = status
                     object!["title"] = self.titleText.text
                     object!["note"] = self.noteText.text
                     object!["UserIdentifier"] = identifier
-                    object!.saveInBackgroundWithBlock {
+                    object!.saveInBackground {
                         (success: Bool, error: NSError?) -> Void in
                         if (success) {
                             // The object has been saved.
                             print("Note Saved!")
-                            let alertView = UIAlertController (title: "Your message was saved and updated.", message: "Please return to Status Tab.", preferredStyle: UIAlertControllerStyle.Alert)
-                            let cancelAction = UIAlertAction(title: "Okay", style: .Cancel) { (action) in}
+                            let alertView = UIAlertController (title: "Your message was saved and updated.", message: "Please return to Status Tab.", preferredStyle: UIAlertControllerStyle.alert)
+                            let cancelAction = UIAlertAction(title: "Okay", style: .cancel) { (action) in}
                             
-                            self.dismissViewControllerAnimated(true) { () -> Void in
+                            self.dismiss(animated: true) { () -> Void in
                                 // There was a problem, check error.description
                                 self.noteText.resignFirstResponder()
                                 
@@ -95,7 +95,7 @@ class StatusViewController: UIViewController, UITextFieldDelegate {
                             }
                             alertView.addAction(cancelAction)
                             
-                            self.presentViewController(alertView, animated: true, completion: nil)
+                            self.present(alertView, animated: true, completion: nil)
                             
                             
                             self.titleText.text = ""

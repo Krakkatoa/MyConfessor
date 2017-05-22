@@ -39,19 +39,19 @@ class FirstViewController: UIViewController {
         self.statusTableView?.rowHeight = UITableViewAutomaticDimension
         let nib = UINib(nibName: "NoteTableViewCell", bundle: nil)
         
-        statusTableView?.registerNib(nib, forCellReuseIdentifier: "statusIdentifier")
+        statusTableView?.register(nib, forCellReuseIdentifier: "statusIdentifier")
     }
     
     
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
 
 
             let query = PFQuery(className:"Status")
-            query.orderByDescending("updatedAt")
+            query.order(byDescending: "updatedAt")
             
            
-            query.getFirstObjectInBackgroundWithBlock({ (object: PFObject?, error: NSError?) -> Void in
+            query.getFirstObjectInBackground(block: { (object: PFObject?, error: NSError?) -> Void in
                 if error == nil {
                     self.titleLabel.text = object!["title"] as? String
                      self.subtitleLabel.text = object!["note"] as? String
@@ -76,20 +76,20 @@ class FirstViewController: UIViewController {
     // Dispose of any resources that can be recreated.
     
     //Defines how big is the tableView
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notesData.count
     }
     
     //Asigns a value to each table cell
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         //we create a row data with the value of the index on our notes array and then assing the values
-        let rowData: AnyObject = self.notesData[indexPath.row]
-        let cell: NoteTableViewCell = tableView.dequeueReusableCellWithIdentifier("statusIdentifier", forIndexPath: indexPath) as! NoteTableViewCell
+        let rowData: AnyObject = self.notesData[indexPath.row] as AnyObject
+        let cell: NoteTableViewCell = tableView.dequeueReusableCell(withIdentifier: "statusIdentifier", for: indexPath) as! NoteTableViewCell
         
         print(rowData.createdAt)
-        let formatter = NSDateFormatter()
-        formatter.dateStyle = .MediumStyle
-        formatter.timeStyle = .NoStyle
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
         
         
         

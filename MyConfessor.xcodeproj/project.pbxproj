@@ -276,9 +276,11 @@
 					716044711B9BF1E600323E6E = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 4UV7252NR9;
+						LastSwiftMigration = 0820;
 					};
 					716044881B9BF1E600323E6E = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 						TestTargetID = 716044711B9BF1E600323E6E;
 					};
 				};
@@ -488,6 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = MyConfessor_Bridging_Header.h;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = MyConfessor_Bridging_Header.h;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -510,6 +513,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = MyConfessor_Bridging_Header.h;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = MyConfessor_Bridging_Header.h;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -531,6 +535,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carmelheartmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyConfessor.app/MyConfessor";
 			};
 			name = Debug;
@@ -549,6 +554,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carmelheartmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyConfessor.app/MyConfessor";
 			};
 			name = Release;
